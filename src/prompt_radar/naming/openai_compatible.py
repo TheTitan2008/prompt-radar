@@ -111,6 +111,7 @@ class OpenAICompatibleClusterEnrichmentProvider:
             model=self.settings.model,
             max_examples=self.config.max_representative_examples,
             max_example_chars=self.config.max_example_chars,
+            max_payload_chars=self.config.max_api_payload_chars,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
             redact_text=self.config.redact_external_text,

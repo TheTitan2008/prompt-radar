@@ -67,8 +67,9 @@ attachments:
 
 cluster_enrichment:
   min_cluster_members: 5
-  max_representative_examples: 5
+  max_representative_examples: 10
   max_example_chars: 1500
+  max_api_payload_chars: 12000
   timeout_seconds: 60
   max_tokens: 1400
   max_response_bytes: 1000000

@@ -62,14 +62,21 @@ def build_naming_context(
     *,
     max_examples: int = 5,
     max_example_chars: int = 1500,
+    max_payload_chars: int = 12000,
     redact_text: bool = True,
 ) -> dict[str, object]:
     """Build bounded, data-only cluster context."""
     def clean(value: str) -> str:
-        bounded = value[:max_example_chars]
+        if len(value) <= max_example_chars:
+            bounded = value
+        else:
+            head = max_example_chars // 2
+            tail = max_example_chars - head - len("\n[…]\n")
+            bounded = value[:head] + "\n[…]\n" + value[-max(0, tail):]
         return redact_external_text(bounded) if redact_text else bounded
 
-    return {
+    examples = [clean(example) for example in request.representative_examples[:max_examples]]
+    context: dict[str, object] = {
         "cluster_id": request.cluster_id,
         "analysis_dataset_id": request.analysis_dataset_id,
         "analysis_hash": request.analysis_hash,
@@ -88,15 +95,40 @@ def build_naming_context(
             redact_external_text(value) if redact_text else value
             for value in request.local_keywords
         ],
-        "representative_examples": [
-            clean(example)
-            for example in request.representative_examples[:max_examples]
+        "representative_examples": examples,
+        "compact_packet_rules": {
+            "full_prompts_sent": False,
+            "max_examples": max_examples,
+            "max_example_chars": max_example_chars,
+            "max_api_payload_chars": max_payload_chars,
+        },
+        "token_statistics": {
+            "example_char_lengths": [len(example) for example in examples],
+            "rough_example_token_estimate": sum(len(example) // 4 for example in examples),
+        },
+        "uncertainty_flags": [
+            "manual baseline means likely non-agent process, not necessarily work from zero",
+            "MODEL_ESTIMATE is potential-only until reviewed or measured",
         ],
         "external_text_redaction_version": (
             EXTERNAL_TEXT_REDACTION_VERSION if redact_text else None
         ),
         "required_json_schema": requested_output_schema(),
     }
+    encoded = json.dumps(context, ensure_ascii=False, sort_keys=True)
+    while len(encoded) > max_payload_chars and context["representative_examples"]:
+        current = list(context["representative_examples"])
+        if len(current) > 1:
+            current.pop()
+        else:
+            current[0] = current[0][: max(200, len(current[0]) // 2)]
+        context["representative_examples"] = current
+        context["token_statistics"] = {
+            "example_char_lengths": [len(example) for example in current],
+            "rough_example_token_estimate": sum(len(example) // 4 for example in current),
+        }
+        encoded = json.dumps(context, ensure_ascii=False, sort_keys=True)
+    return context
 
 
 def build_chat_completion_payload(
@@ -105,6 +137,7 @@ def build_chat_completion_payload(
     model: str,
     max_examples: int = 5,
     max_example_chars: int = 1500,
+    max_payload_chars: int = 12000,
     max_tokens: int = 1400,
     temperature: float = 0.1,
     redact_text: bool = True,
@@ -114,6 +147,7 @@ def build_chat_completion_payload(
         request,
         max_examples=max_examples,
         max_example_chars=max_example_chars,
+        max_payload_chars=max_payload_chars,
         redact_text=redact_text,
     )
     return {
@@ -141,10 +175,11 @@ def build_naming_payload(
     *,
     eligible: bool = True,
     minimum_members: int = 5,
+    max_payload_chars: int = 12000,
 ) -> dict[str, object]:
     """Build an auditable preview without secrets or a network call."""
     return {
-        **build_naming_context(request),
+        **build_naming_context(request, max_payload_chars=max_payload_chars),
         "system_prompt": SYSTEM_PROMPT,
         "minimum_members_for_api": minimum_members,
         "api_eligible": eligible,

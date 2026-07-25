@@ -8,6 +8,20 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 EvidenceLevel = Literal["E0", "E1", "E2", "E3"]
+BaselineEvidenceSource = Literal[
+    "MODEL_ESTIMATE",
+    "EXPERT_REVIEWED",
+    "PROCESS_OWNER_APPROVED",
+    "MEASURED",
+]
+BaselineType = Literal[
+    "baseline_manual",
+    "baseline_web_ai",
+    "baseline_automation",
+    "baseline_colleague",
+    "baseline_not_done",
+    "baseline_reduced_scope",
+]
 TargetType = Literal["cluster", "known_use_case", "category"]
 
 
@@ -62,6 +76,12 @@ class EconomicPassport(StrictModel):
     business_goal: str = Field(min_length=3)
     manual_steps: list[ManualStep] = Field(min_length=1)
     manual_minutes: NumericRange
+    baseline_type: BaselineType = "baseline_manual"
+    baseline_components: list[BaselineType] = Field(
+        default_factory=lambda: ["baseline_manual"]
+    )
+    baseline_evidence_source: BaselineEvidenceSource = "MODEL_ESTIMATE"
+    baseline_assumptions: list[str] = Field(default_factory=list)
     human_followup_minutes: NumericRange
     active_wait_ratio: RatioRange
     manual_time_confidence: float = Field(ge=0, le=1)

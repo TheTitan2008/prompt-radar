@@ -13,6 +13,11 @@ endpoint.
 The separate `economics` layer calculates evidence-aware potential and proven
 economics from an existing analysis directory. It never calls an API.
 
+Economics treats `manual_minutes` as the most likely process without the
+agent platform: manual work, ordinary web AI, Excel, an existing script, a
+colleague, reduced scope or a task that would not be done. It is not
+automatically "work fully by hand from zero".
+
 ## Why the unit of analysis is `run_id`
 
 One business task may contain several user clarifications, assistant messages,
@@ -197,6 +202,17 @@ known-use-case matches whose confidence margin is below
 `minimum_economic_classification_margin` are left without a baseline and
 reported as insufficient evidence.
 
+Cluster passports provide the baseline for a typical task. Run-level economics
+then adjusts it by `size_factor`, `complexity_factor` and
+`attachment_factor`, producing `adjusted_manual_minutes_low/base/high` in the
+run ledger. Repeated runs inside one `business_task_episode_id` count value
+once and retain the cost of every attempt.
+
+Unknown-value runs are never dropped from platform economics. They appear as
+`insufficient_evidence_runs`, `insufficient_evidence_cost`,
+`insufficient_evidence_token_cost` and reduce conservative overall ROI because
+their value is treated as zero while their cost remains real.
+
 `--quality` is optional. Without it the command calculates potential
 LOW/BASE/HIGH, platform break-even and required quality, but never claims
 proven positive ROI.
@@ -214,8 +230,8 @@ metadata and `economics_report.md`. It also creates:
 Per-person statistics separate potential and actual savings, show passport
 coverage, AI wall time, gross labor value, allocated platform cost and net
 effect. Assumed prompt effort is explicitly marked and never presented as
-measured actual savings. See
-`docs/ECONOMICS_METHODOLOGY.md`.
+measured actual savings. See `docs/ECONOMICS_METHODOLOGY.md` and
+`docs/ECONOMICS_BASELINE_EPISODES.md`.
 
 ### Download the pinned model explicitly
 
@@ -358,6 +374,14 @@ the local content-addressed cache in `.cache/cluster_enrichment`, so repeated
 demo runs do not pay for the same enrichment again. `pipeline_metadata.json`
 records real HTTP call count, cache-hit count and billed-call token usage.
 
+External enrichment sends only a compact evidence packet: stable cluster
+fingerprint, representative short examples, local keywords, token statistics
+and uncertainty flags. Long prompts are represented by bounded head/tail
+snippets and never sent in full. The limits are controlled by
+`cluster_enrichment.max_representative_examples`,
+`cluster_enrichment.max_example_chars` and
+`cluster_enrichment.max_api_payload_chars`.
+
 For immutable demonstration datasets, `analyze` first checks
 `configs/precomputed_cluster_enrichments.json`. A local decision is used only
 when the dataset id, filename, archive SHA-256, analysis hash, cluster
@@ -425,6 +449,8 @@ What to say:
 - the model now also exposes token economics and FTE-based value;
 - the statistics report shows totals, request types and per-person usage;
 - these are sensitivity results unless prompt effort and quality are measured.
+- baseline is now the likely non-agent process, not always "fully manual";
+- unknown-value requests stay in the cost denominator.
 
 4. If asked about “what happens on another dataset”:
 

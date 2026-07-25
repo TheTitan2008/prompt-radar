@@ -279,6 +279,9 @@ def build_statistics_summary(
             ),
             "potential_net_value": potential_base.get("net_value"),
             "potential_roi": potential_base.get("roi"),
+            "insufficient_evidence_runs": platform.get("insufficient_evidence_runs"),
+            "insufficient_evidence_cost": platform.get("insufficient_evidence_cost"),
+            "insufficient_evidence_share": platform.get("insufficient_evidence_share"),
             "actual_evaluated_runs": sum(
                 person["actual_evaluated_runs"] for person in people
             ),
@@ -470,6 +473,8 @@ def build_statistics_html(summary: dict[str, Any]) -> str:
   <div class="card"><small>Стоимость платформы за период</small><b>{_fmt(totals['fully_loaded_platform_period_cost'],0)} ₽</b></div>
   <div class="card"><small>Потенциальный net value</small><b class="{'positive' if _number(totals['potential_net_value']) >= 0 else 'negative'}">{_fmt(totals['potential_net_value'],0)} ₽</b></div>
   <div class="card"><small>Actual оценённых запусков</small><b>{totals['actual_evaluated_runs']}</b></div>
+  <div class="card"><small>Недостаточно evidence</small><b>{_fmt(totals.get('insufficient_evidence_runs'),0)}</b></div>
+  <div class="card"><small>Стоимость без evidence</small><b>{_fmt(totals.get('insufficient_evidence_cost'),0)} ₽</b></div>
 </section>
 <h2>Статистика сотрудников</h2>
 <div class="toolbar"><input id="personSearch" placeholder="Найти сотрудника, подразделение или тип задачи…"><button id="openAll">Раскрыть всех</button><button id="closeAll">Свернуть</button></div>

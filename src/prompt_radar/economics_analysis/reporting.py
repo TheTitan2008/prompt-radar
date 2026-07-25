@@ -49,6 +49,11 @@ def build_economics_report(
         for item in ledger
         for reason in (item.get("missing_evidence") or [])
     )
+    baseline_sources = Counter(
+        str(item.get("baseline_evidence_source"))
+        for item in ledger
+        if item.get("baseline_evidence_source")
+    )
 
     lines = [
         "# Prompt Radar economics report",
@@ -68,6 +73,9 @@ def build_economics_report(
         f"- Potential BASE saved minutes: {_safe(base.get('saved_minutes'))}",
         f"- Potential BASE net value: {_safe(base.get('net_value'))} RUB",
         f"- Potential BASE ROI: {_safe(base.get('roi'))}",
+        f"- Insufficient evidence runs: {_safe(platform.get('insufficient_evidence_runs'))}",
+        f"- Insufficient evidence cost: {_safe(platform.get('insufficient_evidence_cost'))} RUB",
+        f"- Insufficient evidence share: {_safe(platform.get('insufficient_evidence_share'))}",
         f"- Total tokens: {_safe(token_economics.get('total_tokens'))}",
         f"- Full cost per 1k tokens: {_safe(token_economics.get('full_cost_per_1k_tokens_rub'))} RUB",
         f"- Saved FTE-months (BASE): {_safe(fte_view.get('base_saved_fte_months'))}",
@@ -118,6 +126,11 @@ def build_economics_report(
         lines.extend(["", "Most frequent missing evidence:"])
         for reason, count in missing.most_common(8):
             lines.append(f"- `{_safe(reason)}`: {count} runs")
+
+    if baseline_sources:
+        lines.extend(["", "Manual baseline evidence sources:"])
+        for source, count in baseline_sources.most_common():
+            lines.append(f"- `{_safe(source)}`: {count} runs")
 
     lines.extend(
         [
@@ -170,8 +183,8 @@ def build_economics_report(
             "## Use-case and cluster evidence",
             "",
             "| Target | Runs | Evaluated | Coverage | Potential ROI BASE | "
-            "ROI interval | q break-even BASE | Status |",
-            "|---|---:|---:|---:|---:|---:|---:|---|",
+            "ROI interval | q break-even BASE | Passport | Status |",
+            "|---|---:|---:|---:|---:|---:|---:|---|---|",
         ]
     )
     for item in evidence_rows:
@@ -182,7 +195,7 @@ def build_economics_report(
             f"| {_safe(_target_name(item))} | {item['run_count']} | "
             f"{item['evaluated_run_count']} | {item['evaluation_coverage']:.2%} | "
             f"{_safe(potential.get('roi'))} | {interval} | "
-            f"{_safe(qbe.get('base'))} | `{_safe(item['status'])}` |"
+            f"{_safe(qbe.get('base'))} | `{_safe(item.get('economic_passport_status'))}` | `{_safe(item['status'])}` |"
         )
     if omitted:
         lines.extend(
@@ -224,6 +237,10 @@ def build_economics_report(
             "## Interpretation limits",
             "",
             "- Potential ROI uses q=1 and is not observed quality.",
+            "- `manual_minutes` means the most likely process without the agent platform, not necessarily fully manual work from zero.",
+            "- `MODEL_ESTIMATE` baselines are potential-only; proven economics requires MEASURED or PROCESS_OWNER_APPROVED baseline evidence plus sufficient quality coverage.",
+            "- Repeated runs inside one business_task_episode count value once and cost every attempt.",
+            "- Unknown-value runs stay in platform cost and reduce conservative ROI.",
             "- Technical run completion is not business-result correctness.",
             "- Tokens are only a GPU allocation proxy when stronger telemetry is absent.",
             "- Negative saved time and negative value are retained.",

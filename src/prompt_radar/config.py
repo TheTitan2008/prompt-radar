@@ -91,8 +91,9 @@ class ClusterEnrichmentConfig(BaseModel):
     """Explicit, bounded external enrichment for stable emerging clusters."""
 
     min_cluster_members: int = Field(default=5, ge=2)
-    max_representative_examples: int = Field(default=5, ge=1, le=10)
+    max_representative_examples: int = Field(default=5, ge=1, le=15)
     max_example_chars: int = Field(default=1500, ge=100, le=5000)
+    max_api_payload_chars: int = Field(default=12000, ge=2000, le=50000)
     timeout_seconds: float = Field(default=60.0, gt=0, le=180)
     max_tokens: int = Field(default=1400, ge=300, le=4000)
     max_response_bytes: int = Field(default=1_000_000, ge=1024, le=5_000_000)

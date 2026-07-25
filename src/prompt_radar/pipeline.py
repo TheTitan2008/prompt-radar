@@ -560,6 +560,7 @@ def analyze_dataset(
                 request,
                 eligible=eligible,
                 minimum_members=config.cluster_enrichment.min_cluster_members,
+                max_payload_chars=config.cluster_enrichment.max_api_payload_chars,
             )
             if eligible and precomputed is not None:
                 precomputed_enrichment_count += 1

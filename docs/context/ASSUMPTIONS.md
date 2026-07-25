@@ -1,5 +1,17 @@
 # Допущения первой версии
 
+## Economics baseline additions
+
+- `manual_minutes` is the likely non-agent baseline process, not necessarily
+  fully manual work from zero.
+- Baseline source is explicit: `MODEL_ESTIMATE`, `EXPERT_REVIEWED`,
+  `PROCESS_OWNER_APPROVED`, or `MEASURED`.
+- Proven ROI requires a measured or process-owner-approved baseline plus
+  sufficient quality evidence.
+- Repeated runs inside one `business_task_episode_id` count value once and
+  cost every attempt.
+- Unknown-value runs stay in platform cost and reduce conservative ROI.
+
 1. Официальные материалы не задают готовую схему `dataset.zip`; версия `1.x`
    в `DATASET_SPEC.md` — проектный контракт для воспроизводимого прототипа.
 2. Семь широких направлений и связь 31 сценария с ними являются черновой

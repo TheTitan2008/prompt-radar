@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from collections import Counter, defaultdict
 from datetime import datetime
 from decimal import Decimal
@@ -34,6 +35,13 @@ from prompt_radar.economics_analysis.quality import (
     lowest_evidence,
     quality_summary,
 )
+
+BASELINE_SOURCE_RANK = {
+    "MODEL_ESTIMATE": 0,
+    "EXPERT_REVIEWED": 1,
+    "PROCESS_OWNER_APPROVED": 2,
+    "MEASURED": 3,
+}
 
 
 def _passport_index(
@@ -95,6 +103,104 @@ def _target(
 def _run_status(row: dict[str, Any]) -> str:
     metadata = row.get("run_metadata") or {}
     return str(metadata.get("status") or ("unknown" if metadata.get("is_fallback") else "unknown"))
+
+
+def _range_dump(low: Decimal, base: Decimal, high: Decimal) -> dict[str, float]:
+    return {"low": metric(low), "base": metric(base), "high": metric(high)}
+
+
+def _adjustment_factors(row: dict[str, Any]) -> tuple[dict[str, float], list[str]]:
+    assumptions: list[str] = []
+    tokens = row.get("raw_prompt_token_count")
+    goal = str(row.get("current_goal") or "")
+    token_value = float(tokens) if isinstance(tokens, (int, float)) else len(goal) / 4
+    if token_value < 250:
+        size_label, size_factor = "small", 0.6
+    elif token_value < 4000:
+        size_label, size_factor = "medium", 1.0
+    elif token_value < 50000:
+        size_label, size_factor = "large", 1.8
+    else:
+        size_label, size_factor = "huge", 2.5
+    if not isinstance(tokens, (int, float)):
+        assumptions.append("size_factor estimated from goal text length")
+
+    attachment_ids = row.get("attachment_ids") or []
+    attachment_count = len(attachment_ids) if isinstance(attachment_ids, list) else 0
+    attachment_tokens = row.get("attachment_token_count")
+    attachment_token_value = (
+        float(attachment_tokens) if isinstance(attachment_tokens, (int, float)) else 0
+    )
+    if attachment_count == 0 and attachment_token_value == 0:
+        attachment_label, attachment_factor = "no_attachments", 0.8
+    elif attachment_count <= 1 and attachment_token_value < 8000:
+        attachment_label, attachment_factor = "one_simple_file", 1.0
+    elif attachment_count <= 4 and attachment_token_value < 50000:
+        attachment_label, attachment_factor = "multiple_or_complex_files", 1.4
+    else:
+        attachment_label, attachment_factor = "huge_files", 1.8
+
+    categories = " ".join(
+        str(item.get("id") or item.get("name") or "")
+        for item in (row.get("categories") or [])
+        if isinstance(item, dict)
+    ).lower()
+    goal_lower = goal.lower()
+    if row.get("multiple_goals") or any(
+        word in goal_lower
+        for word in ("отчёт", "презентац", "договор", "deliverable", "report")
+    ):
+        complexity_label, complexity_factor = "production_deliverable", 2.0
+    elif any(
+        word in goal_lower
+        for word in ("сравни", "проанализ", "рассчитай", "план", "таблиц")
+    ) or any(word in categories for word in ("finance", "analytics", "sales")):
+        complexity_label, complexity_factor = "analysis", 1.0
+    elif any(word in goal_lower for word in ("несколько", "шаг", "потом", "сначала")):
+        complexity_label, complexity_factor = "multi_step", 1.5
+    else:
+        complexity_label, complexity_factor = "simple_lookup", 0.7
+
+    return (
+        {
+            "size_factor": size_factor,
+            "complexity_factor": complexity_factor,
+            "attachment_factor": attachment_factor,
+            "size_bucket": size_label,
+            "complexity_bucket": complexity_label,
+            "attachment_bucket": attachment_label,
+        },
+        assumptions,
+    )
+
+
+def _adjust_manual_minutes(
+    passport: EconomicPassport, factors: dict[str, float]
+) -> dict[str, float]:
+    multiplier = (
+        dec(factors["size_factor"])
+        * dec(factors["complexity_factor"])
+        * dec(factors["attachment_factor"])
+    )
+    return _range_dump(
+        dec(passport.manual_minutes.low) * multiplier,
+        dec(passport.manual_minutes.base) * multiplier,
+        dec(passport.manual_minutes.high) * multiplier,
+    )
+
+
+def _episode_id(
+    row: dict[str, Any], target_type: str | None, target_id: str | None
+) -> str:
+    source = "|".join(
+        [
+            str(row.get("user_id") or ""),
+            str(row.get("conversation_id") or ""),
+            str(target_type or "unresolved"),
+            str(target_id or row.get("run_id") or ""),
+        ]
+    )
+    return "episode_" + hashlib.sha256(source.encode("utf-8")).hexdigest()[:16]
 
 
 def _wall_minutes(
@@ -204,6 +310,7 @@ def build_run_ledger(
     passport_by_target = _passport_index(passports)
     labor_per_minute = dec(config.employee_cost_per_hour) / Decimal(60)
     ledger: list[dict[str, Any]] = []
+    seen_episodes: set[str] = set()
     for row in rows:
         run_id = str(row["run_id"])
         evaluation = quality.get(run_id)
@@ -238,7 +345,21 @@ def build_run_ledger(
         max_costs: dict[str, float | None] | None = None
         max_ai: dict[str, float | None] | None = None
         active_waits: dict[str, float | None] = {}
+        factors: dict[str, float] | None = None
+        factor_assumptions: list[str] = []
+        adjusted_manual_minutes: dict[str, float] | None = None
+        value_manual_minutes: dict[str, float] | None = None
+        business_episode_id = _episode_id(row, target_type, target_id)
+        value_counted_in_episode = business_episode_id not in seen_episodes
+        seen_episodes.add(business_episode_id)
         if passport is not None:
+            factors, factor_assumptions = _adjustment_factors(row)
+            adjusted_manual_minutes = _adjust_manual_minutes(passport, factors)
+            value_manual_minutes = (
+                adjusted_manual_minutes
+                if value_counted_in_episode
+                else {"low": 0.0, "base": 0.0, "high": 0.0}
+            )
             for name, (_, _, ratio_key, _) in scenario_specs.items():
                 if evaluation and evaluation.active_wait_minutes is not None:
                     active_waits[name] = evaluation.active_wait_minutes
@@ -256,7 +377,7 @@ def build_run_ledger(
             max_costs = {}
             max_ai = {}
             for name, (manual_key, followup_key, ratio_key, run_cost) in scenario_specs.items():
-                manual = dec(getattr(passport.manual_minutes, manual_key))
+                manual = dec(value_manual_minutes[manual_key])
                 followup = dec(getattr(passport.human_followup_minutes, followup_key))
                 ratio = dec(getattr(passport.active_wait_ratio, ratio_key))
                 active_wait = dec(active_waits[name])
@@ -315,7 +436,7 @@ def build_run_ledger(
             and active_waits.get("base") is not None
         ):
             saved = actual_saved_minutes(
-                dec(passport.manual_minutes.base),
+                dec((value_manual_minutes or adjusted_manual_minutes)["base"]),
                 dec(prompt),
                 dec(active_waits["base"]),
                 dec(evaluation.review_minutes),
@@ -360,6 +481,15 @@ def build_run_ledger(
             ],
             default="E0",
         )
+        baseline_evidence_source = (
+            passport.baseline_evidence_source if passport else None
+        )
+        proven_baseline = baseline_evidence_source in {
+            "PROCESS_OWNER_APPROVED",
+            "MEASURED",
+        }
+        if combined_evidence == "E2" and not proven_baseline:
+            combined_evidence = "E1"
         status, reason, failed_conditions = _status(
             missing=missing,
             potential=potential,
@@ -370,7 +500,7 @@ def build_run_ledger(
             evaluated=1 if evaluation else 0,
             coverage=1.0 if evaluation else 0.0,
             config=config,
-            manual_base=passport.manual_minutes.base if passport else None,
+            manual_base=adjusted_manual_minutes["base"] if adjusted_manual_minutes else None,
             ai_wall=wall,
             max_ai_base=max_ai.get("base") if max_ai else None,
         )
@@ -408,8 +538,34 @@ def build_run_ledger(
                 "target_id": target_id,
                 "target_name": passport.cluster_name if passport else target_name,
                 "discovery_status": row.get("discovery_status"),
+                "membership_probability": row.get("membership_probability"),
                 "run_status": _run_status(row),
-                "manual_minutes": passport.manual_minutes.model_dump() if passport else None,
+                "business_task_episode_id": business_episode_id,
+                "episode_confidence": 0.85 if target_type and target_id else 0.5,
+                "episode_value_counted": value_counted_in_episode,
+                "baseline_cluster_minutes": passport.manual_minutes.model_dump() if passport else None,
+                "baseline_cluster_minutes_low": passport.manual_minutes.low if passport else None,
+                "baseline_cluster_minutes_base": passport.manual_minutes.base if passport else None,
+                "baseline_cluster_minutes_high": passport.manual_minutes.high if passport else None,
+                "size_factor": factors["size_factor"] if factors else None,
+                "size_bucket": factors["size_bucket"] if factors else None,
+                "complexity_factor": factors["complexity_factor"] if factors else None,
+                "complexity_bucket": factors["complexity_bucket"] if factors else None,
+                "attachment_factor": factors["attachment_factor"] if factors else None,
+                "attachment_bucket": factors["attachment_bucket"] if factors else None,
+                "adjusted_manual_minutes": adjusted_manual_minutes,
+                "adjusted_manual_minutes_low": adjusted_manual_minutes["low"] if adjusted_manual_minutes else None,
+                "adjusted_manual_minutes_base": adjusted_manual_minutes["base"] if adjusted_manual_minutes else None,
+                "adjusted_manual_minutes_high": adjusted_manual_minutes["high"] if adjusted_manual_minutes else None,
+                "baseline_evidence_source": baseline_evidence_source,
+                "baseline_type": passport.baseline_type if passport else None,
+                "baseline_components": passport.baseline_components if passport else [],
+                "baseline_assumptions": (
+                    (passport.baseline_assumptions or passport.assumptions) + factor_assumptions
+                    if passport
+                    else []
+                ),
+                "manual_minutes": adjusted_manual_minutes,
                 "human_followup_minutes": passport.human_followup_minutes.model_dump() if passport else None,
                 "prompt_minutes": prompt,
                 "ai_wall_minutes": wall,
@@ -435,7 +591,9 @@ def build_run_ledger(
                 "failed_conditions": failed_conditions,
                 "evidence_level": combined_evidence,
                 "missing_evidence": missing,
-                "assumptions": passport.assumptions if passport else [],
+                "assumptions": (
+                    passport.assumptions + factor_assumptions if passport else []
+                ),
                 "uncertainty_drivers": passport.uncertainty_drivers if passport else [],
                 "provenance": {
                     "passport": (
@@ -443,6 +601,8 @@ def build_run_ledger(
                             "target_type": passport.target_type,
                             "target_id": passport.target_id,
                             "evidence_level": passport.evidence_level,
+                            "baseline_evidence_source": passport.baseline_evidence_source,
+                            "baseline_type": passport.baseline_type,
                             "owner": passport.owner,
                             "valid_from": passport.valid_from.isoformat() if passport.valid_from else None,
                             "valid_to": passport.valid_to.isoformat() if passport.valid_to else None,
@@ -623,6 +783,41 @@ def aggregate_clusters(
         )
         durations = [item["ai_wall_minutes"] for item in records if item["ai_wall_minutes"] is not None]
         statuses = Counter(item["run_status"] for item in records)
+        membership_values = []
+        source_names = set()
+        baseline_sources = Counter()
+        for item in records:
+            baseline_source = item.get("baseline_evidence_source")
+            if baseline_source:
+                baseline_sources[str(baseline_source)] += 1
+            source_names.add(str(item.get("target_name") or "unknown"))
+        if target_type == "cluster":
+            membership_values = [
+                float(item.get("membership_probability"))
+                for item in records
+                if isinstance(item.get("membership_probability"), (int, float))
+            ]
+        cluster_coherence = (
+            sum(membership_values) / len(membership_values)
+            if membership_values
+            else (1.0 if target_type == "known_use_case" else None)
+        )
+        economic_homogeneity = len(valid) / len(records) if records else 0.0
+        if not valid:
+            passport_status = "insufficient_evidence"
+            passport_reason = "No accepted economic passport/baseline is available."
+        elif len(source_names) > 1 and target_type == "cluster":
+            passport_status = "needs_split"
+            passport_reason = "Cluster contains several target names; split before a strong economic claim."
+        elif cluster_coherence is not None and cluster_coherence < 0.55:
+            passport_status = "rejected_mixed_scenario"
+            passport_reason = "Low text-cluster coherence makes one economic passport unsafe."
+        elif economic_homogeneity < 0.8:
+            passport_status = "needs_split"
+            passport_reason = "Not all runs share a usable economic passport."
+        else:
+            passport_status = "accepted"
+            passport_reason = "Runs are economically homogeneous enough for aggregate reporting."
         clusters.append(
             {
                 "schema_version": "1.0",
@@ -634,6 +829,12 @@ def aggregate_clusters(
                 "conversation_count": len({item["conversation_id"] for item in records}),
                 "run_status_counts": dict(statuses),
                 "manual_minutes": records[0]["manual_minutes"],
+                "baseline_cluster_minutes": records[0].get("baseline_cluster_minutes"),
+                "baseline_evidence_sources": dict(baseline_sources),
+                "cluster_coherence": metric(dec(cluster_coherence)) if cluster_coherence is not None else None,
+                "economic_homogeneity": metric(dec(economic_homogeneity)),
+                "economic_passport_status": passport_status,
+                "economic_passport_reason": passport_reason,
                 "human_followup_minutes": records[0]["human_followup_minutes"],
                 "evaluated_run_count": len(evaluations),
                 "evaluation_coverage": coverage,
@@ -844,6 +1045,17 @@ def aggregate_platform(
     )
     statuses = Counter(item["run_status"] for item in ledger)
     cluster_statuses = Counter(item["status"] for item in clusters)
+    insufficient_records = [
+        item for item in ledger if item.get("potential") is None
+    ]
+    insufficient_cost = sum(
+        (dec(item.get("fully_loaded_cost") or 0) for item in insufficient_records),
+        Decimal(0),
+    )
+    insufficient_token_cost = sum(
+        (dec(item.get("marginal_cost") or 0) for item in insufficient_records),
+        Decimal(0),
+    )
     return {
         "schema_version": "1.0",
         "platform_cost_scenarios": platform_scenarios(config),
@@ -862,6 +1074,15 @@ def aggregate_platform(
         ),
         "potential": potential,
         "overall_roi": potential["base"]["roi"] if potential else None,
+        "overall_roi_conservative_unknown_value_zero": (
+            potential["base"]["roi"] if potential else None
+        ),
+        "insufficient_evidence_runs": len(insufficient_records),
+        "insufficient_evidence_cost": money(insufficient_cost),
+        "insufficient_evidence_token_cost": money(insufficient_token_cost),
+        "insufficient_evidence_share": (
+            len(insufficient_records) / len(ledger) if ledger else 0
+        ),
         "allocated_cost": money(sum(dec(item["fully_loaded_cost"]) for item in ledger)),
         "fully_loaded_platform_period_cost": fully_loaded_platform_period_cost,
         "unallocated_idle_license_cost": reconciliation["licenses"]["unallocated_idle_license_cost"],

@@ -188,6 +188,25 @@ Economics is deliberately downstream from `analyze` and accepts:
 Passports may target `cluster`, `known_use_case`, or `category`. A missing or
 abstained passport produces `INSUFFICIENT_EVIDENCE`; values are not invented.
 
+The passport field `manual_minutes` means the likely baseline process without
+the agent platform. It may describe fully manual work, ordinary web AI, an
+existing automation, asking a colleague, reduced scope, or a task that would
+not be done. The exact route is recorded with:
+
+| Field | Type | Notes |
+|---|---|---|
+| `baseline_type` | string | One primary baseline route |
+| `baseline_components` | array | One or more baseline routes |
+| `baseline_evidence_source` | string | `MODEL_ESTIMATE`, `EXPERT_REVIEWED`, `PROCESS_OWNER_APPROVED`, or `MEASURED` |
+| `baseline_assumptions` | array | Explicit assumptions behind the baseline |
+
+Economics adds run-level fields that are not part of the input ZIP:
+`business_task_episode_id`, `episode_confidence`,
+`baseline_cluster_minutes_low/base/high`, `size_factor`,
+`complexity_factor`, `attachment_factor`,
+`adjusted_manual_minutes_low/base/high`, `baseline_evidence_source`,
+`baseline_type` and `baseline_assumptions`.
+
 Quality rows are unique by `run_id`. Criteria weights must sum to one, scores
 must be in `[0,1]`, and all minute fields are non-negative. A quality
 evaluation's `completed` field is an explicit binary review label; the

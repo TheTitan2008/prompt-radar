@@ -10,6 +10,7 @@ from prompt_radar.economics_analysis.allocation import allocate_costs
 from prompt_radar.economics_analysis.engine import (
     _aggregate_break_even_quality,
     _aggregate_economic_values,
+    _adjustment_factors,
     _status,
 )
 from prompt_radar.economics_analysis.formulas import (
@@ -343,3 +344,22 @@ def test_cluster_break_even_uses_weighted_aggregate_equation(
     )
     assert result["base"] == pytest.approx(19 / 110, abs=1e-6)
     assert result["base"] != pytest.approx((0.9 + 0.1) / 2)
+
+
+def test_run_adjustment_factors_use_size_complexity_and_attachments() -> None:
+    factors, assumptions = _adjustment_factors(
+        {
+            "current_goal": "сделай итоговый отчёт и проанализируй таблицу",
+            "raw_prompt_token_count": 60000,
+            "attachment_ids": ["a1", "a2", "a3"],
+            "attachment_token_count": 60000,
+            "categories": [{"id": "finance"}],
+            "multiple_goals": False,
+        }
+    )
+
+    assert factors["size_bucket"] == "huge"
+    assert factors["attachment_bucket"] == "huge_files"
+    assert factors["complexity_bucket"] == "production_deliverable"
+    assert factors["size_factor"] == 2.5
+    assert assumptions == []
