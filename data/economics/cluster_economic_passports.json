@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "passports": [
+    {
+      "target_type": "cluster",
+      "target_id": "9acca54a34dff6ac4f3ad7429323fd3eb13936f0f998bcc1c0aff4cd3f830e88",
+      "analysis_dataset_id": "demo_prompt_radar",
+      "analysis_hash": "f8d6112b906becacc6945bc9e2743076cde8d9382923d869ba1c5610639f7f67",
+      "analysis_configuration_hash": "b504764a7c87cfdd20ccce25229e3bcf3692c1b19cf9f1671c924ad7fbc356ca",
+      "cluster_fingerprint": "9acca54a34dff6ac4f3ad7429323fd3eb13936f0f998bcc1c0aff4cd3f830e88",
+      "member_run_ids_hash": "865aa09f234296135bd752b2a45ec0f2eff4066702dc908539bac70e7c833681",
+      "source_model": "Qwen/Qwen3-Embedding-0.6B",
+      "source_model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "source_prompt_version": "1.0.0",
+      "is_coherent_cluster": true,
+      "abstain": false,
+      "abstention_reason": null,
+      "cluster_name": "Диагностика состояния растений",
+      "business_goal": "Определить проблему растения и предложить действия",
+      "manual_steps": [
+        {"step": "Изучить описание и фото", "minutes_low": 10, "minutes_base": 20, "minutes_high": 35},
+        {"step": "Сопоставить признаки", "minutes_low": 15, "minutes_base": 30, "minutes_high": 50},
+        {"step": "Подготовить рекомендации", "minutes_low": 10, "minutes_base": 20, "minutes_high": 35}
+      ],
+      "manual_minutes": {"low": 35, "base": 70, "high": 120},
+      "human_followup_minutes": {"low": 3, "base": 8, "high": 20},
+      "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.5},
+      "manual_time_confidence": 0.55,
+      "assumptions": ["есть качественное изображение", "не требуется лабораторный анализ"],
+      "uncertainty_drivers": ["качество фотографии", "редкость заболевания"],
+      "evidence_level": "E0",
+      "requires_human_validation": true,
+      "owner": "demo_process_owner",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "target_type": "known_use_case",
+      "target_id": "daily_email_digest",
+      "cluster_name": "Подготовка ежедневной сводки почты",
+      "business_goal": "Сократить время просмотра входящей почты",
+      "manual_steps": [
+        {"step": "Отобрать письма", "minutes_low": 8, "minutes_base": 12, "minutes_high": 20},
+        {"step": "Прочитать и приоритизировать", "minutes_low": 15, "minutes_base": 25, "minutes_high": 50},
+        {"step": "Подготовить сводку", "minutes_low": 7, "minutes_base": 13, "minutes_high": 20}
+      ],
+      "manual_minutes": {"low": 30, "base": 50, "high": 90},
+      "human_followup_minutes": {"low": 2, "base": 5, "high": 15},
+      "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.4},
+      "manual_time_confidence": 0.7,
+      "assumptions": ["до 50 писем"], "uncertainty_drivers": ["объём почты"],
+      "evidence_level": "E1", "requires_human_validation": true
+    },
+    {
+      "target_type": "known_use_case",
+      "target_id": "group_common_slot",
+      "cluster_name": "Поиск общего слота группы",
+      "business_goal": "Сократить ручное сопоставление календарей",
+      "manual_steps": [
+        {"step": "Собрать требования", "minutes_low": 5, "minutes_base": 10, "minutes_high": 20},
+        {"step": "Сопоставить календари", "minutes_low": 15, "minutes_base": 30, "minutes_high": 70},
+        {"step": "Создать встречу", "minutes_low": 5, "minutes_base": 10, "minutes_high": 20}
+      ],
+      "manual_minutes": {"low": 25, "base": 50, "high": 110},
+      "human_followup_minutes": {"low": 2, "base": 8, "high": 25},
+      "active_wait_ratio": {"low": 0.0, "base": 0.15, "high": 0.6},
+      "manual_time_confidence": 0.6,
+      "assumptions": ["до 20 участников"], "uncertainty_drivers": ["закрытые календари"],
+      "evidence_level": "E0", "requires_human_validation": true
+    },
+    {
+      "target_type": "known_use_case",
+      "target_id": "jira_assigned_tasks",
+      "cluster_name": "Получение списка задач Jira",
+      "business_goal": "Быстро получить назначенные задачи",
+      "manual_steps": [
+        {"step": "Открыть и отфильтровать Jira", "minutes_low": 3, "minutes_base": 5, "minutes_high": 8},
+        {"step": "Проверить и оформить список", "minutes_low": 3, "minutes_base": 7, "minutes_high": 12}
+      ],
+      "manual_minutes": {"low": 6, "base": 12, "high": 20},
+      "human_followup_minutes": {"low": 1, "base": 3, "high": 8},
+      "active_wait_ratio": {"low": 0.0, "base": 0.2, "high": 0.8},
+      "manual_time_confidence": 0.8,
+      "assumptions": ["один проект Jira"], "uncertainty_drivers": ["число задач"],
+      "evidence_level": "E1", "requires_human_validation": true
+    },
+    {
+      "target_type": "known_use_case",
+      "target_id": "client_thread_reply",
+      "cluster_name": "Ответ клиенту по переписке",
+      "business_goal": "Ускорить подготовку корректного ответа клиенту",
+      "manual_steps": [
+        {"step": "Прочитать переписку", "minutes_low": 10, "minutes_base": 20, "minutes_high": 45},
+        {"step": "Подготовить ответ", "minutes_low": 15, "minutes_base": 25, "minutes_high": 50},
+        {"step": "Проверить факты и тон", "minutes_low": 5, "minutes_base": 10, "minutes_high": 25}
+      ],
+      "manual_minutes": {"low": 30, "base": 55, "high": 120},
+      "human_followup_minutes": {"low": 5, "base": 12, "high": 35},
+      "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.5},
+      "manual_time_confidence": 0.6,
+      "assumptions": ["переписка средней длины"], "uncertainty_drivers": ["необходимость согласования"],
+      "evidence_level": "E1", "requires_human_validation": true
+    },
+    {
+      "target_type": "known_use_case",
+      "target_id": "project_team_vendor_owner",
+      "cluster_name": "Поиск команды проекта и владельца вендора",
+      "business_goal": "Найти ответственных в корпоративной системе",
+      "manual_steps": [
+        {"step": "Найти проект", "minutes_low": 5, "minutes_base": 10, "minutes_high": 20},
+        {"step": "Проверить команду и владельца", "minutes_low": 10, "minutes_base": 20, "minutes_high": 40}
+      ],
+      "manual_minutes": {"low": 15, "base": 30, "high": 60},
+      "human_followup_minutes": {"low": 3, "base": 8, "high": 20},
+      "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.5},
+      "manual_time_confidence": 0.6,
+      "assumptions": ["CRM актуальна"], "uncertainty_drivers": ["неполные связи"],
+      "evidence_level": "E0", "requires_human_validation": true
+    },
+    {
+      "target_type": "known_use_case",
+      "target_id": "analysis_results_excel_export",
+      "cluster_name": "Экспорт анализа в Excel",
+      "business_goal": "Сформировать редактируемую выгрузку",
+      "manual_steps": [
+        {"step": "Подготовить данные", "minutes_low": 1, "minutes_base": 2, "minutes_high": 3},
+        {"step": "Оформить Excel", "minutes_low": 1, "minutes_base": 2, "minutes_high": 3}
+      ],
+      "manual_minutes": {"low": 2, "base": 4, "high": 6},
+      "human_followup_minutes": {"low": 2, "base": 4, "high": 8},
+      "active_wait_ratio": {"low": 0.0, "base": 0.4, "high": 1.0},
+      "manual_time_confidence": 0.7,
+      "assumptions": ["простая таблица"], "uncertainty_drivers": ["форматирование"],
+      "evidence_level": "E0", "requires_human_validation": true
+    }
+  ]
+}

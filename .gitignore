@@ -12,6 +12,10 @@ outputs/*
 !data/inbox/.gitkeep
 !data/work/.gitkeep
 !data/processed/.gitkeep
+!data/economics/
+!data/economics/**
+!data/generated_200/
+!data/generated_200/**
 !outputs/.gitkeep
 !outputs/prompt_radar_generated_800_20260725T112030Z/
 !outputs/prompt_radar_generated_800_20260725T112030Z/**

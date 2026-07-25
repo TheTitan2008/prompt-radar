@@ -1,0 +1,41 @@
+{"department": "HR", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_001"}
+{"department": "Finance", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_002"}
+{"department": "Legal", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_003"}
+{"department": "Sales", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_004"}
+{"department": "Procurement", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_005"}
+{"department": "IT", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_006"}
+{"department": "Project Management", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_007"}
+{"department": "Operations", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_008"}
+{"department": "Marketing", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_009"}
+{"department": "Administration", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_010"}
+{"department": "HR", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_011"}
+{"department": "Finance", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_012"}
+{"department": "Legal", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_013"}
+{"department": "Sales", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_014"}
+{"department": "Procurement", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_015"}
+{"department": "IT", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_016"}
+{"department": "Project Management", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_017"}
+{"department": "Operations", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_018"}
+{"department": "Marketing", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_019"}
+{"department": "Administration", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_020"}
+{"department": "HR", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_021"}
+{"department": "Finance", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_022"}
+{"department": "Legal", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_023"}
+{"department": "Sales", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_024"}
+{"department": "Procurement", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_025"}
+{"department": "IT", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_026"}
+{"department": "Project Management", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_027"}
+{"department": "Operations", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_028"}
+{"department": "Marketing", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_029"}
+{"department": "Administration", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_030"}
+{"department": "HR", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_031"}
+{"department": "Finance", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_032"}
+{"department": "Legal", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_033"}
+{"department": "Sales", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_034"}
+{"department": "Procurement", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_035"}
+{"department": "IT", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_036"}
+{"department": "Project Management", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_037"}
+{"department": "Operations", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_038"}
+{"department": "Marketing", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_039"}
+{"department": "Administration", "metadata": {"synthetic": true}, "role": "synthetic_employee", "user_id": "user_040"}
+{"department": "Administration", "metadata": {"display_name": "Татьяна Белякова", "synthetic": true}, "role": "student_office_requester", "user_id": "tatiana_belyakova"}

@@ -1,0 +1,147 @@
+{
+  "attachments": 15,
+  "attachments_by_type": {
+    "application/json": 1,
+    "application/pdf": 3,
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 4,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 2,
+    "image/png": 2,
+    "text/csv": 2,
+    "text/markdown": 1
+  },
+  "conversation_count": 97,
+  "conversations": 97,
+  "emerging_group_count": 5,
+  "emerging_group_names": {
+    "emerging_group_01": "Заявки на внутреннюю библиотеку промптов",
+    "emerging_group_02": "Проверка качества данных в витринах",
+    "emerging_group_03": "Офисные IoT и датчики помещений",
+    "emerging_group_04": "Онбординг внутренних AI-ассистентов",
+    "emerging_mephi": "Запросы о НИЯУ МИФИ"
+  },
+  "emerging_runs": 20,
+  "events": 120,
+  "exact_100k_run_ids": [
+    "run_199",
+    "run_200"
+  ],
+  "exact_100k_token_runs": 2,
+  "known_distribution": {
+    "analysis_results_excel_export": 5,
+    "client_company_group_lookup": 5,
+    "client_contacts_by_company": 5,
+    "client_thread_reply": 5,
+    "confluence_process_search": 5,
+    "crm_client_excel_report": 5,
+    "daily_email_digest": 5,
+    "discussion_notes": 5,
+    "email_to_project_ticket": 4,
+    "executive_calendar_slot": 5,
+    "followup_reminders": 4,
+    "generic_excel_data_export": 5,
+    "group_common_slot": 5,
+    "isup_project_status_monitoring": 4,
+    "isup_ticket_create_edit": 5,
+    "jira_assigned_tasks": 5,
+    "jira_priority_tasks": 5,
+    "manager_employee_observations": 5,
+    "manager_feedback_after_review": 5,
+    "meeting_body_information": 4,
+    "meeting_room_search": 5,
+    "next_day_meetings": 4,
+    "open_source_company_brief": 5,
+    "personal_task_history": 5,
+    "pre_review_employee_note": 5,
+    "project_team_vendor_owner": 5,
+    "supplier_blog_search": 5,
+    "task_completion_approval": 5,
+    "unanswered_price_request_monitoring": 5,
+    "weekly_tender_sales_report": 5,
+    "weekly_won_tenders_notification": 5
+  },
+  "known_runs": 150,
+  "known_use_case_count": 31,
+  "large_source_file_handling": [
+    {
+      "filename": "Темы для генерации датасета.xlsx",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\Темы для генерации датасета.xlsx",
+      "size_bytes": 55059
+    },
+    {
+      "filename": "17 (2).txt",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\17 (2).txt",
+      "size_bytes": 32341
+    },
+    {
+      "filename": "27_B__abzyn.txt",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\27_B__abzyn.txt",
+      "size_bytes": 250420
+    },
+    {
+      "filename": "вариант 1.1 new 2024.docx",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\вариант 1.1 new 2024.docx",
+      "size_bytes": 74056
+    },
+    {
+      "filename": "Демодень_ДЗ (1).ipynb",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\Демодень_ДЗ (1).ipynb",
+      "size_bytes": 283731
+    },
+    {
+      "filename": "ДЗ_демодень_Кирилин_Александр_ipynb_.ipynb",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\ДЗ_демодень_Кирилин_Александр_ipynb_.ipynb",
+      "size_bytes": 283759
+    },
+    {
+      "filename": "Menschen_A1_2_AB.pdf",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\Menschen_A1_2_AB.pdf",
+      "size_bytes": 46770901
+    },
+    {
+      "filename": "Menschen_A1_2_KB.pdf",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\Menschen_A1_2_KB.pdf",
+      "size_bytes": 56564223
+    },
+    {
+      "filename": "DEMO_24 (1).txt",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\DEMO_24 (1).txt",
+      "size_bytes": 10000000
+    },
+    {
+      "filename": "DEMO_24 (2).txt",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\DEMO_24 (2).txt",
+      "size_bytes": 10000000
+    }
+  ],
+  "length_distribution": {
+    "101_500": 50,
+    "1_20": 40,
+    "21_100": 80,
+    "3001_10000": 8,
+    "501_3000": 20,
+    "exact_100000": 2
+  },
+  "mephi_runs": 5,
+  "message_count": 234,
+  "messages": 234,
+  "noise_runs": 25,
+  "run_count": 200,
+  "runs_with_attachments": 15,
+  "runs_without_attachments": 185,
+  "total_attachment_files": 15,
+  "total_runs": 200,
+  "user_count": 41,
+  "user_message_count": 200,
+  "users": 41,
+  "validation_passed": true
+}
