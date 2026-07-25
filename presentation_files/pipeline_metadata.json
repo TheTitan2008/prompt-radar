@@ -1,0 +1,112 @@
+{
+  "analysis_finished_at": "2026-07-25T13:12:56.727961+00:00",
+  "analysis_hash": "b8b8497bf9676a955cb261f0601b3173e32a029c5d952b805517c0a10e53d168",
+  "analysis_runtime_seconds": 222.973847,
+  "analysis_started_at": "2026-07-25T13:09:13.754159+00:00",
+  "clustering_status": "clustered",
+  "configuration_hash": "89b5ee1428993e3c5ad19689acf05dd5333c17b9e0064f392610eda862cd4867",
+  "dataset_id": "prompt_radar_generated_800",
+  "dependency_versions": {
+    "PyYAML": "6.0.3",
+    "hdbscan": "0.8.44",
+    "numpy": "2.4.6",
+    "openpyxl": "3.1.5",
+    "pydantic": "2.13.4",
+    "pypdf": "6.14.2",
+    "python-docx": "1.2.0",
+    "scikit-learn": "1.9.0",
+    "sentence-transformers": "5.6.1",
+    "torch": "2.13.0",
+    "transformers": "4.57.6",
+    "umap-learn": "0.5.12"
+  },
+  "device": "cpu",
+  "effective_parameters": {
+    "classification": {
+      "additional_category_threshold": 0.55,
+      "additional_use_case_threshold": 0.8,
+      "known_use_case_threshold": 0.6,
+      "max_categories": 3,
+      "max_use_cases": 3,
+      "primary_category_threshold": 0.52
+    },
+    "cluster_enrichment": {
+      "cache_dir": ".cache/cluster_enrichment",
+      "max_api_payload_chars": 12000,
+      "max_example_chars": 1500,
+      "max_representative_examples": 10,
+      "max_response_bytes": 1000000,
+      "max_tokens": 1400,
+      "min_cluster_members": 5,
+      "redact_external_text": true,
+      "temperature": 0.1,
+      "timeout_seconds": 60.0
+    },
+    "clustering": {
+      "boundary_count": 2,
+      "cluster_selection_method": "eom",
+      "effective_min_cluster_size": 5,
+      "effective_min_samples": 3,
+      "effective_umap_components": 10,
+      "effective_umap_neighbors": 15,
+      "min_cluster_size": 5,
+      "min_samples": 3,
+      "random_seed": 42,
+      "representative_count": 5,
+      "umap_components": 10,
+      "umap_min_dist": 0.0,
+      "umap_neighbors": 15,
+      "use_umap": true
+    },
+    "economics": {
+      "employee_cost_per_hour": 1500
+    },
+    "resources": {
+      "embedding_batch_size_cpu": 2,
+      "embedding_batch_size_cuda": 32,
+      "max_compression_ratio": 100.0,
+      "max_directory_depth": 10,
+      "max_files": 5000,
+      "max_single_file_mb": 100,
+      "max_unpacked_mb": 2048
+    },
+    "text_processing": {
+      "chunk_overlap_tokens": 256,
+      "chunk_size_tokens": 3000,
+      "direct_embedding_max_tokens": 8000,
+      "goal_max_tokens": 512,
+      "instruction_candidate_limit": 8,
+      "rag_top_k": 5,
+      "representative_chunk_limit": 6
+    }
+  },
+  "embedding_backend": "qwen",
+  "external_generative_api_cache_hit_count": 0,
+  "external_generative_api_call_count": 0,
+  "external_generative_api_called": false,
+  "external_generative_api_failure_count": 0,
+  "external_generative_api_usage": {
+    "completion_tokens": 0,
+    "prompt_tokens": 0,
+    "total_tokens": 0
+  },
+  "git_commit": "3380e5283e61c314eaa653ef5e020d145a0d8709",
+  "ground_truth_loaded": false,
+  "input_archive_sha256": "0f6770410200ae0ced25a168f67e3409271df901f5ead950b807bce8f75cb9f5",
+  "known_use_case_passport_count": 31,
+  "model_id": "Qwen/Qwen3-Embedding-0.6B",
+  "model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "offline": true,
+  "precomputed_abstention_count": 0,
+  "precomputed_dataset_matched": false,
+  "precomputed_enrichment_count": 0,
+  "preprocessing_version": "1.0.0",
+  "processed_records": 800,
+  "python_version": "3.13.5",
+  "random_seed": 42,
+  "schema_version": "1.0",
+  "skipped_records": 0,
+  "timestamp": "20260725T130914Z",
+  "tokenizer_version": "Qwen/Qwen3-Embedding-0.6B@97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3:Qwen2TokenizerFast",
+  "warning_count": 8
+}
