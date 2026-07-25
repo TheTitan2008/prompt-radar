@@ -1,0 +1,36 @@
+{
+  "analysis_period_months": 0.203657407407407,
+  "gpu": {
+    "allocated": 339429.01,
+    "expected": 339429.01,
+    "reconciled": true,
+    "unallocated": 0.0
+  },
+  "gpu_allocation_method": "token_proxy",
+  "licenses": {
+    "active_users": 20,
+    "allocated": 40731.4,
+    "idle_licensed_users": 130,
+    "reconciled": true,
+    "total": 305486.11,
+    "unallocated_idle_license_cost": 264754.71
+  },
+  "marginal": {
+    "allocated": 0.0,
+    "duplicate_cost_events_ignored": 0
+  },
+  "selected_platform_scenario": "conservative_full_gpu",
+  "shared_fixed": {
+    "allocated": 0.0,
+    "components": {
+      "development": 0.0,
+      "electricity": 0.0,
+      "shared_tools": 0.0,
+      "support": 0.0
+    },
+    "reconciled": true,
+    "total": 0.0,
+    "unallocated": 0.0
+  },
+  "token_allocation_is_proxy": true
+}

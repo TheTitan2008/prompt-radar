@@ -1,0 +1,244 @@
+﻿target_type,target_id,name,run_count,user_count,conversation_count,evaluated_run_count,evaluation_coverage,mean_quality,quality_ci_low,quality_ci_high,potential_saved_minutes_base,potential_roi_base,roi_lower,roi_upper,break_even_quality_base,fully_loaded_cost,status,evidence_level
+category,projects_tasks,Проекты и задачи,2,1,2,0,0.0,,,,,,,,,81.24,INSUFFICIENT_EVIDENCE,E0
+cluster,0f4a51dd87d4acd8ec4e73560853c690c6ada272605b115c67ed600d00b80ae8,Ответы студентам по сервисам НИЯУ МИФИ,12,1,4,0,0.0,,,,234.4825,1.562896,,,0.602802,2287.28,POTENTIALLY_EFFECTIVE,E0
+cluster,0f4f6aaa02f3184ced18d0b8e39fb7d6dc154e466b7d1f2212e318a6e2932c4f,Сверка витрин учебных материалов,11,1,4,0,0.0,,,,424.842,1.077369,,,0.635814,5112.74,POTENTIALLY_EFFECTIVE,E0
+cluster,175e48e660c00cdc0784597c0d33d9ab3639cb1bc68ddb03e15e350ad0277e00,Контроль локальных справочников оборудования,8,2,5,0,0.0,,,,207.888,0.379113,,,0.821414,3768.51,HIGH_RISK,E0
+cluster,26958b837d7d885ae5340b2b030ae4661dd7ca82f69015388ac4cffe1531075b,Смешанные long-context и случайные запросы,17,5,10,0,0.0,,,,,,,,,8548.49,INSUFFICIENT_EVIDENCE,E0
+cluster,3254733515f4fd9c0a2fad6d7b3e9b7e6b1fe3e52b7a9842f51a2d37c38d5892,Проверка небольших списков закупок,5,2,4,0,0.0,,,,72.773,-0.280905,,,1.227416,2530.0,POTENTIALLY_INEFFECTIVE,E0
+cluster,3b720529fe577dee894a0088d85851ba19021a9bc72ea14028142fac3cf0ac3f,Смешанные проверки данных и микроопросы,20,3,15,0,0.0,,,,,,,,,3937.75,INSUFFICIENT_EVIDENCE,E0
+cluster,4bbf2f178daa76f45e11271209212ce17c4a11d3e0ad99c59fa6fee7e844031f,Ошибочно нераспознанные известные сценарии,8,2,6,0,0.0,,,,,,,,,194.42,INSUFFICIENT_EVIDENCE,E0
+cluster,745e04a976981c08d1bc807b07c1d98e7fd6d0442bcbcecdd276142ef7d94c95,Онбординг внутренних AI-ассистентов,16,2,6,0,0.0,,,,649.499,1.284962,,,0.619532,7106.24,POTENTIALLY_EFFECTIVE,E0
+cluster,7a2b6d9f700861d1fdcd5a1177d121edc2772afdaab4cfec819fbc23069efc29,Обработка заявок в библиотеку промптов,15,1,6,0,0.0,,,,513.8232,5.26241,,,0.424301,2051.22,POTENTIALLY_EFFECTIVE,E0
+cluster,9c5fc6d87fcbd3c91e4f42f7571ddc23a1dfc2b7d40e3c403ea3d28898a33339,Подготовка черновиков внутренних объявлений,10,1,4,0,0.0,,,,233.1535,0.192411,,,0.892508,4888.28,HIGH_RISK,E0
+cluster,9f9c6677e88abd39f165f84911bc138adccbe18c432bc050f292428c9a053184,Почти полностью известные сценарии с шумовым хвостом,9,5,9,0,0.0,,,,,,,,,2312.43,INSUFFICIENT_EVIDENCE,E0
+cluster,a7ad6e3232a0a362e7ca477c1870dcc0367b938f5cd95029b63d339f022a6948,Небольшая группа ошибочно нераспознанных known-запросов,6,3,5,0,0.0,,,,,,,,,334.18,INSUFFICIENT_EVIDENCE,E0
+cluster,c90ec9ce68439e55749888b6ed6b64c63218a74e404af29861e3f2f0eb1aaccb,Смешанные long-context запросы,15,5,10,0,0.0,,,,,,,,,5555.95,INSUFFICIENT_EVIDENCE,E0
+cluster,e36493241b36a2dcf6bdbd8cc334467941ac30fc584bbb497f828457b56a2891,Анализ применения офисных IoT-датчиков,16,1,6,0,0.0,,,,545.175,4.953687,,,0.432993,2289.23,POTENTIALLY_EFFECTIVE,E0
+cluster,ef929cde84c69d4c87c1ede855119db14b99ad87292aacce89b42317c2c08739,Смешанные известные и мусорные запросы,24,7,14,0,0.0,,,,,,,,,74442.9,INSUFFICIENT_EVIDENCE,E0
+cluster,f38fc4e18f4a2f3113e1b4e0b5a1854082a33ad1a13ff523a3580453026ec9af,Ошибочно нераспознанные известные задачи,17,3,16,0,0.0,,,,,,,,,936.18,INSUFFICIENT_EVIDENCE,E0
+known_use_case,analysis_results_excel_export,Экспорт аналитических результатов в Excel,4,2,4,0,0.0,,,,53.809,6.591219,,,0.532794,177.21,POTENTIALLY_EFFECTIVE,E0
+known_use_case,client_company_group_lookup,Сбор данных по группе компаний клиента,16,1,10,0,0.0,,,,1456.338,49.168038,,,0.25661,725.73,POTENTIALLY_EFFECTIVE,E0
+known_use_case,client_contacts_by_company,Поиск контактных лиц клиента,91,2,26,0,0.0,,,,1404.46,8.014717,,,0.451137,3894.91,POTENTIALLY_EFFECTIVE,E0
+known_use_case,client_thread_reply,Подготовка ответа клиенту по переписке,20,1,9,0,0.0,,,,627.599,13.374309,,,0.416062,1091.53,POTENTIALLY_EFFECTIVE,E0
+known_use_case,confluence_process_search,Поиск корпоративного процесса в Confluence,21,3,21,0,0.0,,,,383.931,2.526209,,,0.56341,2721.98,POTENTIALLY_EFFECTIVE,E0
+known_use_case,crm_client_excel_report,Формирование Excel-отчёта по клиенту,22,2,18,0,0.0,,,,792.181,24.997033,,,0.370488,761.8,POTENTIALLY_EFFECTIVE,E0
+known_use_case,daily_email_digest,Подготовка ежедневной сводки почты,26,2,22,0,0.0,,,,868.834,13.925745,,,0.307159,1455.26,POTENTIALLY_EFFECTIVE,E0
+known_use_case,discussion_notes,Оформление итогов обсуждения,5,2,5,0,0.0,,,,93.818,7.315724,,,0.44976,282.05,POTENTIALLY_EFFECTIVE,E0
+known_use_case,email_to_project_ticket,Создание проектного тикета из письма,6,1,6,0,0.0,,,,96.984,2.293157,,,0.624813,736.26,POTENTIALLY_EFFECTIVE,E0
+known_use_case,executive_calendar_slot,Поиск слота руководителя и создание встречи,20,1,10,0,0.0,,,,308.24,6.829471,,,0.462258,984.23,POTENTIALLY_EFFECTIVE,E0
+known_use_case,followup_reminders,Создание напоминаний по договорённостям,11,2,11,0,0.0,,,,232.539,2.627592,,,0.562503,1602.57,POTENTIALLY_EFFECTIVE,E0
+known_use_case,generic_excel_data_export,Выгрузка выбранных данных в Excel,36,2,13,0,0.0,,,,373.999,4.79385,,,0.570211,1613.78,POTENTIALLY_EFFECTIVE,E0
+known_use_case,group_common_slot,Поиск общего календарного слота группы,7,3,6,0,0.0,,,,194.5755,4.370458,,,0.497318,905.77,POTENTIALLY_EFFECTIVE,E0
+known_use_case,isup_project_status_monitoring,Контроль изменений статусов проектов ИСУП,6,2,6,0,0.0,,,,108.668,2.465722,,,0.570484,783.88,POTENTIALLY_EFFECTIVE,E0
+known_use_case,isup_ticket_create_edit,Создание и обновление тикета ИСУП,29,3,25,0,0.0,,,,386.802,3.891864,,,0.575543,1976.77,POTENTIALLY_EFFECTIVE,E0
+known_use_case,jira_assigned_tasks,Получение списка назначенных задач Jira,1,1,1,0,0.0,,,,3.3245,-0.997234,,,100.893258,30051.09,IMPOSSIBLE_TO_BREAK_EVEN,E0
+known_use_case,jira_priority_tasks,Приоритизация назначенных задач Jira,2,1,2,0,0.0,,,,23.302,6.440925,,,0.49574,78.29,POTENTIALLY_EFFECTIVE,E0
+known_use_case,manager_employee_observations,Фиксация наблюдений о сотруднике,5,1,5,0,0.0,,,,68.8005,8.093793,,,0.510121,189.14,POTENTIALLY_EFFECTIVE,E0
+known_use_case,meeting_body_information,Извлечение сведений из описания встречи,6,1,6,0,0.0,,,,33.1335,0.057297,,,0.975068,783.46,HIGH_RISK,E0
+known_use_case,meeting_room_search,Поиск и бронирование переговорной,2,1,2,0,0.0,,,,22.696,4.291923,,,0.53982,107.22,POTENTIALLY_EFFECTIVE,E0
+known_use_case,personal_task_history,Ведение истории личных задач,20,2,19,0,0.0,,,,155.014,2.568232,,,0.628096,1086.07,POTENTIALLY_EFFECTIVE,E0
+known_use_case,pre_review_employee_note,Подготовка заметки о сотруднике,20,1,16,0,0.0,,,,135.033,3.309504,,,0.654337,783.35,POTENTIALLY_EFFECTIVE,E0
+known_use_case,project_team_vendor_owner,Поиск команды проекта и владельца вендора,2,1,2,0,0.0,,,,56.538,28.282163,,,0.31741,48.27,POTENTIALLY_EFFECTIVE,E0
+known_use_case,supplier_blog_search,Поиск публикаций о поставщике,4,1,4,0,0.0,,,,93.134,12.71958,,,0.383246,169.71,POTENTIALLY_EFFECTIVE,E0
+known_use_case,task_completion_approval,Проверка и подтверждение выполнения задач,6,2,4,0,0.0,,,,88.2175,0.064725,,,0.970207,2071.37,HIGH_RISK,E0
+unresolved,run_001,,1,1,1,0,0.0,,,,,,,,,22.21,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_011,,1,1,1,0,0.0,,,,,,,,,22.85,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_021,,1,1,1,0,0.0,,,,,,,,,23.44,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_041,,1,1,1,0,0.0,,,,,,,,,22.36,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_051,,1,1,1,0,0.0,,,,,,,,,23.0,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_081,,1,1,1,0,0.0,,,,,,,,,22.27,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_091,,1,1,1,0,0.0,,,,,,,,,22.91,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_101,,1,1,1,0,0.0,,,,,,,,,23.5,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_102,,1,1,1,0,0.0,,,,,,,,,23.8,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_103,,1,1,1,0,0.0,,,,,,,,,24.1,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_107,,1,1,1,0,0.0,,,,,,,,,25.35,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_110,,1,1,1,0,0.0,,,,,,,,,26.29,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_111,,1,1,1,0,0.0,,,,,,,,,26.58,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_115,,1,1,1,0,0.0,,,,,,,,,25.4,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_118,,1,1,1,0,0.0,,,,,,,,,26.29,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_119,,1,1,1,0,0.0,,,,,,,,,26.58,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_141,,1,1,1,0,0.0,,,,,,,,,25.89,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_142,,1,1,1,0,0.0,,,,,,,,,26.19,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_143,,1,1,1,0,0.0,,,,,,,,,26.49,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_147,,1,1,1,0,0.0,,,,,,,,,25.3,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_150,,1,1,1,0,0.0,,,,,,,,,26.25,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_151,,1,1,1,0,0.0,,,,,,,,,26.55,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_155,,1,1,1,0,0.0,,,,,,,,,25.36,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_158,,1,1,1,0,0.0,,,,,,,,,26.25,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_159,,1,1,1,0,0.0,,,,,,,,,26.55,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_201,,1,1,1,0,0.0,,,,,,,,,43.69,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_202,,1,1,1,0,0.0,,,,,,,,,42.26,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_203,,1,1,1,0,0.0,,,,,,,,,44.28,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_204,,1,1,1,0,0.0,,,,,,,,,42.31,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_205,,1,1,1,0,0.0,,,,,,,,,44.97,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_206,,1,1,1,0,0.0,,,,,,,,,45.17,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_207,,1,1,1,0,0.0,,,,,,,,,43.74,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_208,,1,1,1,0,0.0,,,,,,,,,45.76,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_209,,1,1,1,0,0.0,,,,,,,,,43.79,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_210,,1,1,1,0,0.0,,,,,,,,,46.5,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_211,,1,1,1,0,0.0,,,,,,,,,37.83,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_212,,1,1,1,0,0.0,,,,,,,,,36.4,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_213,,1,1,1,0,0.0,,,,,,,,,38.42,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_214,,1,1,1,0,0.0,,,,,,,,,36.45,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_215,,1,1,1,0,0.0,,,,,,,,,39.11,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_216,,1,1,1,0,0.0,,,,,,,,,39.31,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_217,,1,1,1,0,0.0,,,,,,,,,37.88,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_218,,1,1,1,0,0.0,,,,,,,,,39.9,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_219,,1,1,1,0,0.0,,,,,,,,,37.93,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_220,,1,1,1,0,0.0,,,,,,,,,40.59,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_221,,1,1,1,0,0.0,,,,,,,,,40.34,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_222,,1,1,1,0,0.0,,,,,,,,,38.91,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_223,,1,1,1,0,0.0,,,,,,,,,40.93,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_224,,1,1,1,0,0.0,,,,,,,,,38.96,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_225,,1,1,1,0,0.0,,,,,,,,,41.52,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_226,,1,1,1,0,0.0,,,,,,,,,41.82,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_227,,1,1,1,0,0.0,,,,,,,,,40.39,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_228,,1,1,1,0,0.0,,,,,,,,,42.41,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_229,,1,1,1,0,0.0,,,,,,,,,40.44,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_230,,1,1,1,0,0.0,,,,,,,,,43.05,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_231,,1,1,1,0,0.0,,,,,,,,,43.35,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_232,,1,1,1,0,0.0,,,,,,,,,41.93,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_233,,1,1,1,0,0.0,,,,,,,,,43.95,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_234,,1,1,1,0,0.0,,,,,,,,,41.98,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_235,,1,1,1,0,0.0,,,,,,,,,44.54,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_236,,1,1,1,0,0.0,,,,,,,,,44.83,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_237,,1,1,1,0,0.0,,,,,,,,,43.4,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_238,,1,1,1,0,0.0,,,,,,,,,29.22,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_239,,1,1,1,0,0.0,,,,,,,,,43.45,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_240,,1,1,1,0,0.0,,,,,,,,,46.01,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_242,,1,1,1,0,0.0,,,,,,,,,36.21,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_243,,1,1,1,0,0.0,,,,,,,,,38.23,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_244,,1,1,1,0,0.0,,,,,,,,,36.21,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_245,,1,1,1,0,0.0,,,,,,,,,38.82,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_246,,1,1,1,0,0.0,,,,,,,,,39.12,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_247,,1,1,1,0,0.0,,,,,,,,,37.69,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_248,,1,1,1,0,0.0,,,,,,,,,39.71,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_249,,1,1,1,0,0.0,,,,,,,,,37.69,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_250,,1,1,1,0,0.0,,,,,,,,,40.35,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_252,,1,1,1,0,0.0,,,,,,,,,39.22,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_253,,1,1,1,0,0.0,,,,,,,,,41.24,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_254,,1,1,1,0,0.0,,,,,,,,,39.22,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_255,,1,1,1,0,0.0,,,,,,,,,41.83,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_256,,1,1,1,0,0.0,,,,,,,,,42.12,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_257,,1,1,1,0,0.0,,,,,,,,,40.7,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_258,,1,1,1,0,0.0,,,,,,,,,42.71,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_259,,1,1,1,0,0.0,,,,,,,,,40.7,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_260,,1,1,1,0,0.0,,,,,,,,,43.31,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_273,,1,1,1,0,0.0,,,,,,,,,38.28,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_275,,1,1,1,0,0.0,,,,,,,,,38.87,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_276,,1,1,1,0,0.0,,,,,,,,,39.17,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_279,,1,1,1,0,0.0,,,,,,,,,37.79,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_381,,1,1,1,0,0.0,,,,,,,,,54.02,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_391,,1,1,1,0,0.0,,,,,,,,,48.16,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_393,,1,1,1,0,0.0,,,,,,,,,48.76,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_394,,1,1,1,0,0.0,,,,,,,,,46.79,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_395,,1,1,1,0,0.0,,,,,,,,,49.35,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_399,,1,1,1,0,0.0,,,,,,,,,48.27,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_422,,1,1,1,0,0.0,,,,,,,,,50.68,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_423,,1,1,1,0,0.0,,,,,,,,,52.7,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_424,,1,1,1,0,0.0,,,,,,,,,50.73,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_425,,1,1,1,0,0.0,,,,,,,,,53.29,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_426,,1,1,1,0,0.0,,,,,,,,,53.59,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_427,,1,1,1,0,0.0,,,,,,,,,52.16,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_428,,1,1,1,0,0.0,,,,,,,,,54.18,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_429,,1,1,1,0,0.0,,,,,,,,,52.21,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_430,,1,1,1,0,0.0,,,,,,,,,54.82,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_432,,1,1,1,0,0.0,,,,,,,,,53.69,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_433,,1,1,1,0,0.0,,,,,,,,,55.71,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_434,,1,1,1,0,0.0,,,,,,,,,53.74,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_435,,1,1,1,0,0.0,,,,,,,,,56.3,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_436,,1,1,1,0,0.0,,,,,,,,,56.59,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_437,,1,1,1,0,0.0,,,,,,,,,55.16,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_438,,1,1,1,0,0.0,,,,,,,,,57.19,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_439,,1,1,1,0,0.0,,,,,,,,,55.22,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_440,,1,1,1,0,0.0,,,,,,,,,57.78,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_464,,1,1,1,0,0.0,,,,,,,,,57.24,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_471,,1,1,1,0,0.0,,,,,,,,,61.63,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_502,,1,1,1,0,0.0,,,,,,,,,126.24,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_503,,1,1,1,0,0.0,,,,,,,,,112.11,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_504,,1,1,1,0,0.0,,,,,,,,,126.29,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_505,,1,1,1,0,0.0,,,,,,,,,128.85,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_506,,1,1,1,0,0.0,,,,,,,,,129.14,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_507,,1,1,1,0,0.0,,,,,,,,,127.72,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_508,,1,1,1,0,0.0,,,,,,,,,113.58,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_509,,1,1,1,0,0.0,,,,,,,,,127.77,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_510,,1,1,1,0,0.0,,,,,,,,,130.38,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_512,,1,1,1,0,0.0,,,,,,,,,133.09,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_513,,1,1,1,0,0.0,,,,,,,,,118.96,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_514,,1,1,1,0,0.0,,,,,,,,,133.14,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_515,,1,1,1,0,0.0,,,,,,,,,135.7,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_516,,1,1,1,0,0.0,,,,,,,,,136.0,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_517,,1,1,1,0,0.0,,,,,,,,,134.57,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_518,,1,1,1,0,0.0,,,,,,,,,120.44,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_519,,1,1,1,0,0.0,,,,,,,,,134.62,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_520,,1,1,1,0,0.0,,,,,,,,,137.18,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_524,,1,1,1,0,0.0,,,,,,,,,136.2,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_525,,1,1,1,0,0.0,,,,,,,,,138.76,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_526,,1,1,1,0,0.0,,,,,,,,,139.05,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_529,,1,1,1,0,0.0,,,,,,,,,137.67,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_530,,1,1,1,0,0.0,,,,,,,,,140.29,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_534,,1,1,1,0,0.0,,,,,,,,,139.21,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_535,,1,1,1,0,0.0,,,,,,,,,141.77,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_536,,1,1,1,0,0.0,,,,,,,,,142.06,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_539,,1,1,1,0,0.0,,,,,,,,,141.13,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_540,,1,1,1,0,0.0,,,,,,,,,143.69,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_544,,1,1,1,0,0.0,,,,,,,,,116.02,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_545,,1,1,1,0,0.0,,,,,,,,,118.58,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_546,,1,1,1,0,0.0,,,,,,,,,118.92,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_549,,1,1,1,0,0.0,,,,,,,,,117.54,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_550,,1,1,1,0,0.0,,,,,,,,,120.1,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_553,,1,1,1,0,0.0,,,,,,,,,104.49,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_554,,1,1,1,0,0.0,,,,,,,,,118.68,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_555,,1,1,1,0,0.0,,,,,,,,,125.86,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_556,,1,1,1,0,0.0,,,,,,,,,126.15,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_557,,1,1,1,0,0.0,,,,,,,,,124.72,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_558,,1,1,1,0,0.0,,,,,,,,,110.59,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_559,,1,1,1,0,0.0,,,,,,,,,124.77,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_560,,1,1,1,0,0.0,,,,,,,,,127.33,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_562,,1,1,1,0,0.0,,,,,,,,,126.25,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_563,,1,1,1,0,0.0,,,,,,,,,112.12,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_564,,1,1,1,0,0.0,,,,,,,,,126.3,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_565,,1,1,1,0,0.0,,,,,,,,,128.86,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_566,,1,1,1,0,0.0,,,,,,,,,129.15,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_567,,1,1,1,0,0.0,,,,,,,,,127.73,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_568,,1,1,1,0,0.0,,,,,,,,,113.59,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_571,,1,1,1,0,0.0,,,,,,,,,129.7,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_581,,1,1,1,0,0.0,,,,,,,,,132.71,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_591,,1,1,1,0,0.0,,,,,,,,,137.24,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_609,,1,1,1,0,0.0,,,,,,,,,193.47,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_629,,1,1,1,0,0.0,,,,,,,,,153.18,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_702,,1,1,1,0,0.0,,,,,,,,,451.85,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_703,,1,1,1,0,0.0,,,,,,,,,437.72,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_706,,1,1,1,0,0.0,,,,,,,,,454.51,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_709,,1,1,1,0,0.0,,,,,,,,,453.38,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_712,,1,1,1,0,0.0,,,,,,,,,466.72,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_739,,1,1,1,0,0.0,,,,,,,,,491.04,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_750,,1,1,1,0,0.0,,,,,,,,,496.45,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_751,,1,1,1,0,0.0,,,,,,,,,496.75,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_754,,1,1,1,0,0.0,,,,,,,,,495.12,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_756,,1,1,1,0,0.0,,,,,,,,,523.67,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_759,,1,1,1,0,0.0,,,,,,,,,522.0,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_760,,1,1,1,0,0.0,,,,,,,,,524.66,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_761,,1,1,1,0,0.0,,,,,,,,,1710.79,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_762,,1,1,1,0,0.0,,,,,,,,,1709.37,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_763,,1,1,1,0,0.0,,,,,,,,,1694.99,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_764,,1,1,1,0,0.0,,,,,,,,,1709.03,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_765,,1,1,1,0,0.0,,,,,,,,,1711.19,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_766,,1,1,1,0,0.0,,,,,,,,,1711.44,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_769,,1,1,1,0,0.0,,,,,,,,,1710.7,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_771,,1,1,1,0,0.0,,,,,,,,,1755.43,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_774,,1,1,1,0,0.0,,,,,,,,,1754.74,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_775,,1,1,1,0,0.0,,,,,,,,,1756.42,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_779,,1,1,1,0,0.0,,,,,,,,,1755.3,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_780,,1,1,1,0,0.0,,,,,,,,,1758.35,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_781,,1,1,1,0,0.0,,,,,,,,,1758.89,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_785,,1,1,1,0,0.0,,,,,,,,,1844.48,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_786,,1,1,1,0,0.0,,,,,,,,,1845.86,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_787,,1,1,1,0,0.0,,,,,,,,,1844.04,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_789,,1,1,1,0,0.0,,,,,,,,,1844.04,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_790,,1,1,1,0,0.0,,,,,,,,,1846.61,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_794,,1,1,1,0,0.0,,,,,,,,,29882.07,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_795,,1,1,1,0,0.0,,,,,,,,,29884.48,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_796,,1,1,1,0,0.0,,,,,,,,,29884.63,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_797,,1,1,1,0,0.0,,,,,,,,,30052.71,INSUFFICIENT_EVIDENCE,E0
+unresolved,run_800,,1,1,1,0,0.0,,,,,,,,,30053.95,INSUFFICIENT_EVIDENCE,E0

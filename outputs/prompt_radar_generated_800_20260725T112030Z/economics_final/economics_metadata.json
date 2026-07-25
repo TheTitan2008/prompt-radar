@@ -1,0 +1,60 @@
+{
+  "analysis_schema_version": "1.0",
+  "automatic_passport_count": 35,
+  "average_fte_month_cost_rub": 400000.0,
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 42,
+  "cost_allocation_method": "token_proxy",
+  "cost_schema_version": "1.0",
+  "currency": "RUB",
+  "dependency_versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "pyarrow": "21.0.0",
+    "pydantic": "2.13.4"
+  },
+  "employee_cost_per_hour": 1500,
+  "explicit_passport_override_count": 0,
+  "external_api_called": false,
+  "git_commit": null,
+  "inputs": {
+    "analysis_cluster_members": {
+      "path": "D:\\Codex_mifi\\outputs\\prompt_radar_generated_800_20260725T112030Z\\cluster_members.jsonl",
+      "sha256": "eaea3915439011df69f74a38eda4c1ed384b5e692cd6685a0233e2a4c3e7a9b5"
+    },
+    "analysis_clusters": {
+      "path": "D:\\Codex_mifi\\outputs\\prompt_radar_generated_800_20260725T112030Z\\clusters.json",
+      "sha256": "a4ba9b35ec5a367d9a6d2224293eb80202be6f3ebd51ec94b6c9d2899bcf7d9a"
+    },
+    "analysis_metadata": {
+      "path": "D:\\Codex_mifi\\outputs\\prompt_radar_generated_800_20260725T112030Z\\pipeline_metadata.json",
+      "sha256": "ac84348547c92f784341172967f2d0bc6a12e6f2e34fc893b1819402274ecae3"
+    },
+    "analysis_runs": {
+      "path": "D:\\Codex_mifi\\outputs\\prompt_radar_generated_800_20260725T112030Z\\runs_analysis.jsonl",
+      "sha256": "b5eaec0e23382895e5c8659592001832f3911e00b40f86d2cddb98df7943784d"
+    },
+    "analysis_validation": {
+      "path": "D:\\Codex_mifi\\outputs\\prompt_radar_generated_800_20260725T112030Z\\validation_report.json",
+      "sha256": "5ed930f6a5bd26b330c6dfebc3bd3600cc2ba21ebe6b4a2d97d5deb5e7c2b778"
+    },
+    "cost_config": {
+      "path": "D:\\Codex_mifi\\data\\generated_800\\economics_cost_config.json",
+      "sha256": "39babf379904f87a7d5898178bf3b0682435cc81d4a1f19ea17379ae9e5d705b"
+    }
+  },
+  "labor_cost_per_minute": 25.0,
+  "passport_schema_version": "1.0",
+  "processed_records": 800,
+  "python_version": "3.13.5",
+  "quality_evaluation_count": 0,
+  "rounding_rules": {
+    "metrics": "Decimal ROUND_HALF_UP to 0.000001",
+    "money": "Decimal ROUND_HALF_UP to 0.01 RUB"
+  },
+  "schema_version": "1.0",
+  "selected_platform_scenario": "conservative_full_gpu",
+  "skipped_records": 0,
+  "timestamp": "2026-07-25T11:23:27.492361+00:00",
+  "warning_count": 0
+}

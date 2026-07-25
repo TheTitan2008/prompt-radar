@@ -1,0 +1,1789 @@
+[
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "до 50 писем за период",
+      "критерии важности заранее известны"
+    ],
+    "cluster_name": "Подготовка ежедневной сводки почты",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 1125.0,
+        "high": 2250.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 45,
+      "high": 90,
+      "low": 25
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Отобрать письма за нужный период"
+      },
+      {
+        "minutes_base": 25,
+        "step": "Прочитать и приоритизировать письма"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Подготовить структурированную сводку"
+      }
+    ],
+    "manual_time_confidence": 0.7,
+    "use_case_id": "daily_email_digest"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.2,
+      "high": 0.7,
+      "low": 0.05
+    },
+    "assumptions": [
+      "связи компаний отражены в CRM",
+      "не требуется юридическая проверка бенефициаров"
+    ],
+    "cluster_name": "Сбор данных по группе компаний клиента",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 25,
+      "high": 60,
+      "low": 10
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 625.0,
+        "high": 1500.0,
+        "low": 250.0
+      },
+      "manual_work_value_rub": {
+        "base": 3000.0,
+        "high": 6000.0,
+        "low": 1500.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 120,
+      "high": 240,
+      "low": 60
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 25,
+        "step": "Найти карточку клиента и связанные компании"
+      },
+      {
+        "minutes_base": 35,
+        "step": "Проверить структуру и руководителей"
+      },
+      {
+        "minutes_base": 40,
+        "step": "Собрать сведения о сделках"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Оформить итоговую карточку"
+      }
+    ],
+    "manual_time_confidence": 0.55,
+    "use_case_id": "client_company_group_lookup"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "проверяется один почтовый ящик",
+      "правила SLA однозначны"
+    ],
+    "cluster_name": "Контроль неотвеченных запросов цены",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 5,
+      "high": 12,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 125.0,
+        "high": 300.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1125.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 25,
+      "high": 45,
+      "low": 15
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 8,
+        "step": "Отобрать письма с запросами цены"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить наличие ответа и срок SLA"
+      },
+      {
+        "minutes_base": 7,
+        "step": "Сформировать список просрочек"
+      }
+    ],
+    "manual_time_confidence": 0.72,
+    "use_case_id": "unanswered_price_request_monitoring"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "статусы тендеров актуальны в CRM",
+      "список получателей стабилен"
+    ],
+    "cluster_name": "Рассылка сводки выигранных тендеров",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 1125.0,
+        "high": 2250.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 45,
+      "high": 90,
+      "low": 25
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Получить список тендеров за период"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Проверить статусы и состав данных"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Подготовить сводку"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Отправить отчёт группе"
+      }
+    ],
+    "manual_time_confidence": 0.7,
+    "use_case_id": "weekly_won_tenders_notification"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "проект и вендор заведены в CRM",
+      "ответственные указаны актуально"
+    ],
+    "cluster_name": "Поиск команды проекта и владельца вендора",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 1000.0,
+        "high": 2250.0,
+        "low": 500.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 40,
+      "high": 90,
+      "low": 20
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 15,
+        "step": "Найти проект и его участников"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Определить ответственное направление"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить и оформить ответ"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "project_team_vendor_owner"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.2,
+      "high": 0.7,
+      "low": 0.05
+    },
+    "assumptions": [
+      "требуется обзор, а не due diligence",
+      "источники доступны без платной подписки"
+    ],
+    "cluster_name": "Подготовка справки о компании",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 35,
+      "high": 90,
+      "low": 15
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 875.0,
+        "high": 2250.0,
+        "low": 375.0
+      },
+      "manual_work_value_rub": {
+        "base": 3750.0,
+        "high": 7500.0,
+        "low": 1875.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 150,
+      "high": 300,
+      "low": 75
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 40,
+        "step": "Определить источники и критерии поиска"
+      },
+      {
+        "minutes_base": 60,
+        "step": "Собрать сведения из открытых источников"
+      },
+      {
+        "minutes_base": 30,
+        "step": "Сопоставить и проверить факты"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Подготовить аналитическую справку"
+      }
+    ],
+    "manual_time_confidence": 0.5,
+    "use_case_id": "open_source_company_brief"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.15,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "данные клиента хранятся в одной CRM",
+      "шаблон Excel не требует сложных формул"
+    ],
+    "cluster_name": "Формирование Excel-отчёта по клиенту",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 15,
+      "high": 30,
+      "low": 5
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 375.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1375.0,
+        "high": 3000.0,
+        "low": 750.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 55,
+      "high": 120,
+      "low": 30
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 15,
+        "step": "Определить необходимые поля клиента"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Собрать данные из CRM"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Сформировать и оформить Excel"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Проверить выгрузку"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "crm_client_excel_report"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "тезисы руководителя уже подготовлены",
+      "не требуется согласование с HR"
+    ],
+    "cluster_name": "Оформление отзыва руководителя",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 12,
+      "high": 25,
+      "low": 5
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 625.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1000.0,
+        "high": 1875.0,
+        "low": 500.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 40,
+      "high": 75,
+      "low": 20
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Изучить тезисы и контекст мониторинга"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Сформулировать структурированную обратную связь"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить и сохранить отзыв"
+      }
+    ],
+    "manual_time_confidence": 0.68,
+    "use_case_id": "manager_feedback_after_review"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.3,
+      "low": 0.0
+    },
+    "assumptions": [
+      "заметка относится к одному сотруднику",
+      "исходные наблюдения доступны"
+    ],
+    "cluster_name": "Подготовка заметки о сотруднике",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 5,
+      "high": 10,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 125.0,
+        "high": 250.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 375.0,
+        "high": 875.0,
+        "low": 200.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 15,
+      "high": 35,
+      "low": 8
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Собрать исходные наблюдения"
+      },
+      {
+        "minutes_base": 7,
+        "step": "Сформулировать заметку"
+      },
+      {
+        "minutes_base": 3,
+        "step": "Сохранить заметку в анкете"
+      }
+    ],
+    "manual_time_confidence": 0.75,
+    "use_case_id": "pre_review_employee_note"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "структура тикета стандартная",
+      "не требуется согласование постановки"
+    ],
+    "cluster_name": "Создание и обновление тикета ИСУП",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 15,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 375.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1500.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 25,
+      "high": 60,
+      "low": 12
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Уточнить содержание и найти связанный тикет"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Заполнить или обновить поля тикета"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Проверить и сохранить изменения"
+      }
+    ],
+    "manual_time_confidence": 0.7,
+    "use_case_id": "isup_ticket_create_edit"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.15,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "данные за неделю полны",
+      "метрики отчёта заранее определены"
+    ],
+    "cluster_name": "Подготовка отчёта по выигранным тендерам",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 15,
+      "high": 35,
+      "low": 5
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 375.0,
+        "high": 875.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1500.0,
+        "high": 3000.0,
+        "low": 750.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 60,
+      "high": 120,
+      "low": 30
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 15,
+        "step": "Получить данные по тендерам"
+      },
+      {
+        "minutes_base": 25,
+        "step": "Проверить и агрегировать показатели"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Сформировать отчёт"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Проверить итоговые значения"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "weekly_tender_sales_report"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.25,
+      "low": 0.0
+    },
+    "assumptions": [
+      "задачи находятся в одном экземпляре Jira",
+      "права доступа настроены"
+    ],
+    "cluster_name": "Получение списка назначенных задач Jira",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 3,
+      "high": 7,
+      "low": 1
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 75.0,
+        "high": 175.0,
+        "low": 25.0
+      },
+      "manual_work_value_rub": {
+        "base": 300.0,
+        "high": 625.0,
+        "low": 125.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 12,
+      "high": 25,
+      "low": 5
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 4,
+        "step": "Открыть Jira и применить фильтр исполнителя"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Просмотреть найденные задачи"
+      },
+      {
+        "minutes_base": 3,
+        "step": "Сформировать список"
+      }
+    ],
+    "manual_time_confidence": 0.8,
+    "use_case_id": "jira_assigned_tasks"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.3,
+      "low": 0.0
+    },
+    "assumptions": [
+      "приоритет и срок заполнены в задачах",
+      "не требуется управленческая переприоритизация"
+    ],
+    "cluster_name": "Приоритизация назначенных задач Jira",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 5,
+      "high": 12,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 125.0,
+        "high": 300.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 500.0,
+        "high": 1125.0,
+        "low": 250.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 20,
+      "high": 45,
+      "low": 10
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Получить список назначенных задач"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить приоритеты и сроки"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Сформировать отсортированный список"
+      }
+    ],
+    "manual_time_confidence": 0.76,
+    "use_case_id": "jira_priority_tasks"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.3,
+      "low": 0.0
+    },
+    "assumptions": [
+      "обрабатывается одно наблюдение",
+      "критерии оценки уже определены"
+    ],
+    "cluster_name": "Фиксация наблюдений о сотруднике",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 15,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 375.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1250.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 25,
+      "high": 50,
+      "low": 12
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Собрать контекст наблюдения"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Сформулировать и структурировать запись"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Сохранить наблюдение и статус прогресса"
+      }
+    ],
+    "manual_time_confidence": 0.72,
+    "use_case_id": "manager_employee_observations"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "объём данных умеренный",
+      "не требуется сложное форматирование книги"
+    ],
+    "cluster_name": "Экспорт аналитических результатов в Excel",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 18,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 450.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1500.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 25,
+      "high": 60,
+      "low": 12
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Подготовить набор результатов к выгрузке"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Выгрузить и оформить Excel-файл"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Проверить структуру и значения"
+      }
+    ],
+    "manual_time_confidence": 0.72,
+    "use_case_id": "analysis_results_excel_export"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "выгрузка выполняется из одной системы",
+      "поля доступны пользователю"
+    ],
+    "cluster_name": "Выгрузка выбранных данных в Excel",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 6,
+      "high": 15,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 150.0,
+        "high": 375.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 500.0,
+        "high": 1125.0,
+        "low": 250.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 20,
+      "high": 45,
+      "low": 10
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Определить состав выгрузки"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Экспортировать данные в Excel"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Проверить файл"
+      }
+    ],
+    "manual_time_confidence": 0.7,
+    "use_case_id": "generic_excel_data_export"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "корпоративный блог индексируется",
+      "название поставщика однозначно"
+    ],
+    "cluster_name": "Поиск публикаций о поставщике",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 875.0,
+        "high": 1875.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 35,
+      "high": 75,
+      "low": 15
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Сформировать критерии поиска"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Найти и прочитать релевантные публикации"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Подготовить список результатов"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "supplier_blog_search"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "процесс документирован",
+      "пользователь имеет доступ к нужному пространству"
+    ],
+    "cluster_name": "Поиск корпоративного процесса в Confluence",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 1875.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 30,
+      "high": 75,
+      "low": 12
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Уточнить формулировку процесса"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Найти и проверить документы Confluence"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Подготовить ссылку и выдержку"
+      }
+    ],
+    "manual_time_confidence": 0.62,
+    "use_case_id": "confluence_process_search"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "доступ к календарю предоставлен",
+      "не требуется длительное согласование участников"
+    ],
+    "cluster_name": "Поиск слота руководителя и создание встречи",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 6,
+      "high": 15,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 150.0,
+        "high": 375.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1250.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 25,
+      "high": 50,
+      "low": 12
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 8,
+        "step": "Проверить требования к встрече"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Найти свободный слот руководителя"
+      },
+      {
+        "minutes_base": 7,
+        "step": "Создать и проверить встречу"
+      }
+    ],
+    "manual_time_confidence": 0.72,
+    "use_case_id": "executive_calendar_slot"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.3,
+      "low": 0.0
+    },
+    "assumptions": [
+      "проверяется небольшой пакет задач",
+      "результаты выполнения приложены"
+    ],
+    "cluster_name": "Проверка и подтверждение выполнения задач",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 12,
+      "high": 30,
+      "low": 5
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 2250.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 30,
+      "high": 90,
+      "low": 15
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Получить список заявленных выполненными задач"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Проверить результаты и критерии выполнения"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Подтвердить и закрыть задачи"
+      }
+    ],
+    "manual_time_confidence": 0.55,
+    "use_case_id": "task_completion_approval"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.25,
+      "low": 0.0
+    },
+    "assumptions": [
+      "обрабатывается одна задача",
+      "история ведётся в одной системе"
+    ],
+    "cluster_name": "Ведение истории личных задач",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 4,
+      "high": 8,
+      "low": 1
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 100.0,
+        "high": 200.0,
+        "low": 25.0
+      },
+      "manual_work_value_rub": {
+        "base": 375.0,
+        "high": 750.0,
+        "low": 175.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 15,
+      "high": 30,
+      "low": 7
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Открыть историю задач"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Добавить или обновить задачу"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Отметить состояние выполнения"
+      }
+    ],
+    "manual_time_confidence": 0.78,
+    "use_case_id": "personal_task_history"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "каталог комнат содержит вместимость",
+      "бронирование доступно через календарь"
+    ],
+    "cluster_name": "Поиск и бронирование переговорной",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 5,
+      "high": 12,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 125.0,
+        "high": 300.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 500.0,
+        "high": 1125.0,
+        "low": 250.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 20,
+      "high": 45,
+      "low": 10
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Уточнить время и вместимость"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить доступные переговорные"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Забронировать и проверить комнату"
+      }
+    ],
+    "manual_time_confidence": 0.75,
+    "use_case_id": "meeting_room_search"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "переписка средней длины",
+      "ответ не требует юридического согласования"
+    ],
+    "cluster_name": "Подготовка ответа клиенту по переписке",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 15,
+      "high": 40,
+      "low": 5
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 375.0,
+        "high": 1000.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1250.0,
+        "high": 3000.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 50,
+      "high": 120,
+      "low": 25
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 15,
+        "step": "Прочитать историю переписки"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Подготовить содержательный ответ"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Проверить факты, тон и отправку"
+      }
+    ],
+    "manual_time_confidence": 0.58,
+    "use_case_id": "client_thread_reply"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.3,
+      "low": 0.0
+    },
+    "assumptions": [
+      "обсуждение продолжалось до одного часа",
+      "исходные заметки доступны"
+    ],
+    "cluster_name": "Оформление итогов обсуждения",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 1875.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 30,
+      "high": 75,
+      "low": 15
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Собрать записи и контекст обсуждения"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Выделить решения и договорённости"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Оформить и сохранить заметку"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "discussion_notes"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "название компании однозначно",
+      "контакты актуальны в CRM"
+    ],
+    "cluster_name": "Поиск контактных лиц клиента",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 6,
+      "high": 15,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 150.0,
+        "high": 375.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1500.0,
+        "low": 250.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 25,
+      "high": 60,
+      "low": 10
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Найти компанию в CRM"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить связанные контакты"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Сформировать список контактов"
+      }
+    ],
+    "manual_time_confidence": 0.68,
+    "use_case_id": "client_contacts_by_company"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.15,
+      "high": 0.6,
+      "low": 0.0
+    },
+    "assumptions": [
+      "до 20 участников",
+      "календари участников доступны"
+    ],
+    "cluster_name": "Поиск общего календарного слота группы",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 12,
+      "high": 35,
+      "low": 5
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 875.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1125.0,
+        "high": 3000.0,
+        "low": 500.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 45,
+      "high": 120,
+      "low": 20
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 15,
+        "step": "Собрать требования и список участников"
+      },
+      {
+        "minutes_base": 20,
+        "step": "Сопоставить календари и выбрать варианты"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Создать и проверить встречу"
+      }
+    ],
+    "manual_time_confidence": 0.6,
+    "use_case_id": "group_common_slot"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.05,
+      "high": 0.25,
+      "low": 0.0
+    },
+    "assumptions": [
+      "встреча однозначно определена",
+      "информация находится в текстовом описании"
+    ],
+    "cluster_name": "Извлечение сведений из описания встречи",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 3,
+      "high": 8,
+      "low": 1
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 75.0,
+        "high": 200.0,
+        "low": 25.0
+      },
+      "manual_work_value_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 12,
+      "high": 30,
+      "low": 5
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 3,
+        "step": "Найти нужную встречу"
+      },
+      {
+        "minutes_base": 6,
+        "step": "Прочитать и извлечь сведения из описания"
+      },
+      {
+        "minutes_base": 3,
+        "step": "Подготовить ответ"
+      }
+    ],
+    "manual_time_confidence": 0.8,
+    "use_case_id": "meeting_body_information"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "есть текстовые итоги встречи",
+      "сроки и ответственные указаны или выводимы"
+    ],
+    "cluster_name": "Создание напоминаний по договорённостям",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 10,
+      "high": 25,
+      "low": 4
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 250.0,
+        "high": 625.0,
+        "low": 100.0
+      },
+      "manual_work_value_rub": {
+        "base": 875.0,
+        "high": 2250.0,
+        "low": 450.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 35,
+      "high": 90,
+      "low": 18
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Просмотреть итоги встречи"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Выделить и сгруппировать договорённости"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Создать и проверить напоминания"
+      }
+    ],
+    "manual_time_confidence": 0.63,
+    "use_case_id": "followup_reminders"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.4,
+      "low": 0.0
+    },
+    "assumptions": [
+      "в календаре до десяти встреч",
+      "материалы прикреплены или доступны по ссылкам"
+    ],
+    "cluster_name": "Подготовка плана встреч на следующий день",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 6,
+      "high": 15,
+      "low": 2
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 150.0,
+        "high": 375.0,
+        "low": 50.0
+      },
+      "manual_work_value_rub": {
+        "base": 500.0,
+        "high": 1250.0,
+        "low": 250.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 20,
+      "high": 50,
+      "low": 10
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Получить список завтрашних встреч"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Проверить описания и материалы"
+      },
+      {
+        "minutes_base": 5,
+        "step": "Сформировать план подготовки"
+      }
+    ],
+    "manual_time_confidence": 0.7,
+    "use_case_id": "next_day_meetings"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "письмо относится к одной задаче",
+      "проект и правила заполнения известны"
+    ],
+    "cluster_name": "Создание проектного тикета из письма",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 10,
+      "high": 25,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 250.0,
+        "high": 625.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 1875.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 30,
+      "high": 75,
+      "low": 15
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 5,
+        "step": "Прочитать письмо и выделить задачу"
+      },
+      {
+        "minutes_base": 15,
+        "step": "Создать или найти проектный тикет"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Заполнить поля и проверить связи"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "email_to_project_ticket"
+  },
+  {
+    "active_wait_ratio": {
+      "base": 0.1,
+      "high": 0.5,
+      "low": 0.0
+    },
+    "assumptions": [
+      "проверяется ограниченный список проектов",
+      "предыдущие статусы сохранены"
+    ],
+    "cluster_name": "Контроль изменений статусов проектов ИСУП",
+    "draft": true,
+    "estimation_source": "expert_seed_without_production_telemetry",
+    "human_followup_minutes": {
+      "base": 8,
+      "high": 20,
+      "low": 3
+    },
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 1875.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "manual_minutes": {
+      "base": 30,
+      "high": 75,
+      "low": 15
+    },
+    "manual_steps": [
+      {
+        "minutes_base": 10,
+        "step": "Получить текущие статусы проектов"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Сравнить статусы с предыдущей проверкой"
+      },
+      {
+        "minutes_base": 10,
+        "step": "Подготовить уведомления об изменениях"
+      }
+    ],
+    "manual_time_confidence": 0.65,
+    "use_case_id": "isup_project_status_monitoring"
+  }
+]

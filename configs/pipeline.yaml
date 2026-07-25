@@ -1,0 +1,80 @@
+schema_version: "1.0"
+random_seed: 42
+preprocessing_version: "1.0.0"
+
+model:
+  id: "Qwen/Qwen3-Embedding-0.6B"
+  revision: "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+  cache_dir: ".cache/huggingface"
+  query_instruction: "Instruct: Represent the corporate user task for matching to business use cases.\nQuery: "
+
+resources:
+  max_files: 5000
+  max_single_file_mb: 100
+  max_unpacked_mb: 2048
+  max_compression_ratio: 100
+  max_directory_depth: 10
+  embedding_batch_size_cpu: 2
+  embedding_batch_size_cuda: 32
+
+text_processing:
+  direct_embedding_max_tokens: 8000
+  goal_max_tokens: 512
+  chunk_size_tokens: 3000
+  chunk_overlap_tokens: 256
+  rag_top_k: 5
+  instruction_candidate_limit: 8
+  representative_chunk_limit: 6
+
+fallback_segmentation:
+  max_gap_minutes: 45
+  adjacent_similarity_threshold: 0.42
+  dependent_phrases:
+    - "сделай это"
+    - "продолжай"
+    - "добавь ещё"
+    - "как выше"
+    - "по предыдущему варианту"
+  topic_change_phrases:
+    - "теперь другая задача"
+    - "ещё один вопрос"
+    - "перейдём к"
+
+classification:
+  known_use_case_threshold: 0.60
+  additional_use_case_threshold: 0.80
+  primary_category_threshold: 0.52
+  additional_category_threshold: 0.55
+  max_use_cases: 3
+  max_categories: 3
+
+clustering:
+  use_umap: true
+  umap_components: 10
+  umap_neighbors: 15
+  umap_min_dist: 0.0
+  min_cluster_size: 5
+  min_samples: 3
+  cluster_selection_method: "eom"
+  random_seed: 42
+  representative_count: 5
+  boundary_count: 2
+
+attachments:
+  max_json_depth: 12
+  max_json_value_chars: 4000
+  max_cells_per_sheet: 20000
+
+cluster_enrichment:
+  min_cluster_members: 5
+  max_representative_examples: 5
+  max_example_chars: 1500
+  timeout_seconds: 60
+  max_tokens: 1400
+  max_response_bytes: 1000000
+  temperature: 0.1
+  redact_external_text: true
+  cache_dir: .cache/cluster_enrichment
+
+economics:
+  employee_cost_per_hour: 1500

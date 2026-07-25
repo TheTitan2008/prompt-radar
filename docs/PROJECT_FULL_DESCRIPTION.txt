@@ -1,0 +1,561 @@
+PROMPT RADAR — FULL PROJECT DESCRIPTION
+Generated on: Saturday, July 25, 2026
+
+1. PROJECT PURPOSE
+
+Prompt Radar is an offline-first Python project for analyzing corporate AI-agent
+usage logs at the level of real user tasks. The system reconstructs tasks from
+chat/export data, extracts current user goals, classifies requests into known
+business scenarios, discovers emerging request clusters, and estimates
+potential economics of using AI agents.
+
+The project is explicitly split into two hackathon tasks:
+
+Task 1:
+- understand what prompts/users/tasks exist in the dataset;
+- group them into known themes, emerging themes and unresolved/noise;
+- produce stable structured outputs and cluster-level summaries.
+
+Task 2:
+- estimate the economic effect of agent usage;
+- compare cost of the platform/agent with value of saved labor time;
+- provide management-ready outputs such as ROI, break-even, token cost and
+  FTE-based value.
+
+2. CURRENT FINAL DEMO DATASET
+
+The fixed final demonstration dataset is:
+- data/generated_800/dataset.zip
+
+It is treated as immutable for demo purposes.
+
+Canonical final run for the fixed dataset:
+- outputs/prompt_radar_generated_800_20260725T112030Z
+
+Canonical final economics output:
+- outputs/prompt_radar_generated_800_20260725T112030Z/economics_final
+
+Key facts for this canonical run:
+- dataset_id: prompt_radar_generated_800
+- archive SHA-256:
+  0f6770410200ae0ced25a168f67e3409271df901f5ead950b807bce8f75cb9f5
+- analysis_hash:
+  3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27
+- precomputed local enrichment matched: true
+- external generative API calls: 0
+
+3. HIGH-LEVEL ARCHITECTURE
+
+The project has these major layers:
+
+3.1 Ingestion and security
+- reads dataset.zip safely;
+- validates manifest and all JSONL entities;
+- protects against Zip Slip, nested archive abuse, path traversal and related
+  import issues;
+- verifies relationships between users, conversations, messages, runs, events
+  and attachments.
+
+3.2 Run reconstruction and preprocessing
+- rebuilds task units around run_id;
+- has fallback segmentation when run_id is absent or incomplete;
+- extracts the active user goal from messages rather than using the entire chat
+  blindly;
+- routes each run into one of the processing modes:
+  - direct
+  - long-context
+  - attachment/RAG
+
+3.3 Attachments handling
+- reads text, markdown, CSV, JSON, XLSX, PDF and DOCX;
+- builds bounded textual representations for retrieval and task understanding;
+- does not require OCR for the first version.
+
+3.4 Embeddings and classification
+- embeds requests with a pinned Qwen embedding model;
+- matches tasks against 31 known business use cases and 8 draft categories;
+- keeps known classification separate from residual discovery.
+
+3.5 Clustering and emerging-theme discovery
+- clusters residual tasks with HDBSCAN;
+- extracts representatives and cluster fingerprints;
+- supports local reviewed cluster naming/economic passports for immutable demo
+  datasets;
+- can optionally use external OpenAI-compatible enrichment for other datasets.
+
+3.6 Economics
+- calculates potential savings and cost at run, cluster and platform level;
+- includes GPU amortization, licenses, optional support/development/electricity
+  overhead and variable costs;
+- reports ROI, break-even quality, token economics and FTE-based value.
+
+3.7 Reporting
+- writes machine-readable JSON/JSONL/CSV/Parquet/NPZ artifacts;
+- writes human-readable Markdown reports;
+- writes a self-contained HTML statistics report.
+
+4. PROJECT FILES AND WHAT THEY DO
+
+4.1 Main entry point
+- src/prompt_radar/cli.py
+  Command-line interface. Exposes validate, analyze, evaluate, economics and
+  supporting commands.
+
+4.2 Core pipeline orchestration
+- src/prompt_radar/pipeline.py
+  The main analysis pipeline. Coordinates ingestion, preprocessing,
+  embedding/classification, clustering, retrieval and report generation.
+
+4.3 Dataset binding and stable cluster identities
+- src/prompt_radar/analysis_binding.py
+  Builds analysis hashes, cluster fingerprints and member-run hashes. This is
+  critical for safely binding precomputed cluster decisions only to the exact
+  dataset/run they belong to.
+
+4.4 Configuration and models
+- src/prompt_radar/config.py
+  Loads config files and runtime settings.
+- src/prompt_radar/models.py
+  Shared internal data structures.
+- src/prompt_radar/errors.py
+  Shared exceptions.
+- src/prompt_radar/io_utils.py
+  Atomic writes and utility I/O.
+- src/prompt_radar/environment.py
+  Runtime environment helpers.
+
+4.5 Ingestion layer
+- src/prompt_radar/ingestion/zip_loader.py
+  Safe dataset archive loading.
+- src/prompt_radar/ingestion/jsonl_loader.py
+  JSONL entity loading.
+- src/prompt_radar/ingestion/relationship_builder.py
+  Entity relationship checks and indexes.
+- src/prompt_radar/ingestion/validator.py
+  Dataset validation logic.
+
+4.6 Preprocessing layer
+- src/prompt_radar/preprocessing/message_parser.py
+  Message parsing and extraction of semantically useful user content.
+- src/prompt_radar/preprocessing/run_builder.py
+  Builds analysis runs from source entities.
+- src/prompt_radar/preprocessing/fallback_run_segmenter.py
+  Fallback segmentation when proper run boundaries are missing.
+- src/prompt_radar/preprocessing/prompt_router.py
+  Chooses processing mode.
+- src/prompt_radar/preprocessing/task_passport.py
+  Builds bounded textual task passports for downstream matching and clustering.
+- src/prompt_radar/preprocessing/tokenizer.py
+  Token counting and bounded truncation helpers.
+- src/prompt_radar/preprocessing/chunker.py
+  Chunking for long-context and retrieval workflows.
+
+4.7 Attachments layer
+- src/prompt_radar/attachments/base.py
+  Base attachment abstraction.
+- src/prompt_radar/attachments/registry.py
+  File type dispatch.
+- src/prompt_radar/attachments/text.py
+  TXT and Markdown extraction.
+- src/prompt_radar/attachments/tabular.py
+  CSV/XLSX extraction.
+- src/prompt_radar/attachments/json_file.py
+  JSON extraction with depth/value limits.
+- src/prompt_radar/attachments/pdf_file.py
+  PDF text extraction.
+- src/prompt_radar/attachments/docx_file.py
+  DOCX extraction.
+
+4.8 Embeddings layer
+- src/prompt_radar/embeddings/base.py
+  Shared embedding interface.
+- src/prompt_radar/embeddings/qwen.py
+  Real Qwen embedding backend.
+- src/prompt_radar/embeddings/cache.py
+  Local embedding caching.
+- src/prompt_radar/embeddings/fake.py
+  Synthetic/test embedding backend.
+
+4.9 Classification layer
+- src/prompt_radar/classification/catalogs.py
+  Loads categories and known use cases.
+- src/prompt_radar/classification/classifier.py
+  Embedding-based matching of runs to known use cases and categories.
+
+4.10 Clustering layer
+- src/prompt_radar/clustering/hdbscan_clusterer.py
+  HDBSCAN clustering of residual requests.
+- src/prompt_radar/clustering/representatives.py
+  Representative and boundary examples per cluster.
+- src/prompt_radar/clustering/local_labeler.py
+  Provisional local naming helpers for residual groups.
+
+4.11 Retrieval layer
+- src/prompt_radar/retrieval/cosine.py
+  Similarity scoring.
+- src/prompt_radar/retrieval/mmr.py
+  Diversity-aware selection.
+- src/prompt_radar/retrieval/rag.py
+  Retrieval logic for attachment-heavy and long-context requests.
+
+4.12 Naming and enrichment layer
+- src/prompt_radar/naming/base.py
+  Shared enrichment interface.
+- src/prompt_radar/naming/disabled.py
+  No-HTTP enrichment mode.
+- src/prompt_radar/naming/openai_compatible.py
+  OpenAI-compatible HTTP path for Qwen/DeepSeek-like chat endpoints.
+- src/prompt_radar/naming/qwen_api_stub.py
+  Disabled-by-default stub for local development.
+- src/prompt_radar/naming/payload_builder.py
+  Safe request construction for cluster enrichment.
+- src/prompt_radar/naming/precomputed.py
+  Strictly matched local registry for immutable demo datasets.
+- src/prompt_radar/naming/known_requests.py
+  Helpers for known scenario passport preparation.
+
+4.13 Reporting
+- src/prompt_radar/reporting/markdown_report.py
+  Main analysis Markdown report.
+
+4.14 Economics layer
+- src/prompt_radar/economics.py
+  Higher-level economics command bridge.
+- src/prompt_radar/economics_analysis/models.py
+  Strict models for passports, quality and financial config.
+- src/prompt_radar/economics_analysis/formulas.py
+  Decimal-based formulas for money, ROI, break-even and platform scenarios.
+- src/prompt_radar/economics_analysis/allocation.py
+  Exact cost allocation and reconciliation, including cent-exact allocation.
+- src/prompt_radar/economics_analysis/engine.py
+  Builds run ledger, cluster economics, platform economics and value leakage.
+- src/prompt_radar/economics_analysis/loaders.py
+  Loads analysis data, passports, quality and config.
+- src/prompt_radar/economics_analysis/quality.py
+  Quality evidence handling and confidence aggregation.
+- src/prompt_radar/economics_analysis/reporting.py
+  Human-readable economics Markdown report.
+- src/prompt_radar/economics_analysis/statistics_report.py
+  Self-contained HTML and JSON management statistics report.
+- src/prompt_radar/economics_analysis/service.py
+  Orchestration of the economics command and artifact writing.
+
+4.15 Evaluation
+- src/prompt_radar/evaluation/metrics.py
+  Separate offline evaluation against ground truth.
+
+4.16 Demo helpers
+- src/prompt_radar/demo.py
+  Demo utilities and sample-flow helpers.
+
+5. CONFIGURATION FILES
+
+- configs/pipeline.yaml
+  Main pipeline parameters: random seed, model id/revision, token limits,
+  chunk sizes, thresholds, clustering and enrichment settings.
+
+- configs/categories.yaml
+  Draft category catalog.
+
+- configs/known_use_cases.yaml
+  Main catalog of the 31 known scenarios.
+
+- configs/known_use_case_passports.yaml
+  Local draft economic passports for the 31 known use cases.
+
+- configs/precomputed_cluster_enrichments.json
+  Strict local registry for immutable demo datasets. This allows the fixed
+  generated_800 dataset to be enriched without external API calls.
+
+6. MODELS USED
+
+6.1 Embedding model
+- Model id: Qwen/Qwen3-Embedding-0.6B
+- Revision:
+  97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
+
+What it does:
+- converts each task/request into a vector embedding;
+- supports matching to known scenarios and residual clustering;
+- is not used as a chat/generative model.
+
+6.2 External chat-style model path (optional)
+
+The project can optionally call an OpenAI-compatible endpoint for cluster
+enrichment on non-demo datasets. This is intended for Qwen or DeepSeek style
+chat models exposed through an OpenAI-compatible API.
+
+What it does when enabled:
+- names a coherent emerging cluster;
+- proposes manual steps and time ranges;
+- writes a bounded structured response.
+
+What it does not do:
+- it does not decide wages;
+- it does not directly compute economic value;
+- it does not override strict local matching rules for the fixed demo dataset.
+
+7. LIBRARIES USED
+
+Base runtime:
+- Python 3.11–3.13 supported by project constraints
+- numpy
+- pydantic
+- PyYAML
+- rich
+- typer
+
+Attachments / data formats:
+- openpyxl
+- pypdf
+- python-docx
+- pandas
+- pyarrow
+- reportlab
+
+ML / clustering / embeddings:
+- sentence-transformers
+- transformers
+- torch
+- scikit-learn
+- hdbscan
+- umap-learn
+
+Testing:
+- pytest
+- pytest-cov
+
+8. MATHEMATICAL AND ECONOMIC LOGIC
+
+8.1 Fixed labor rate
+
+The local labor-value calculations use:
+- employee_cost_per_hour = 1500 RUB
+
+This means:
+- 25 RUB per minute
+
+8.2 Platform cost components
+
+The platform can include:
+- GPU amortization
+- licenses
+- external API variable cost
+- tools cost
+- electricity
+- support
+- development
+- shared tools monthly overhead
+
+These are configured in:
+- data/generated_800/economics_cost_config.json
+
+8.3 Token economics
+
+The final economics layer can now calculate:
+- input tokens
+- output tokens
+- total tokens
+- allocated cost per token
+- full cost per token
+- cost per 1k tokens
+- cost per 1M tokens
+
+8.4 FTE economics
+
+The final economics layer can now calculate:
+- saved FTE-months
+- FTE-month value at a configured monthly cost
+- B > A comparison, where:
+  - A = platform/agent cost
+  - B = value of saved labor time in FTE terms
+
+The current config uses:
+- average_fte_month_cost_rub = 400000
+
+8.5 Important interpretation rule
+
+Potential ROI is not the same as proven ROI.
+
+Potential ROI means:
+- the system estimates value under assumptions and available baselines.
+
+Proven ROI requires:
+- real prompt effort measurements;
+- reviewed quality evidence;
+- enough evaluated coverage.
+
+9. FINAL CANONICAL RESULTS ON GENERATED_800
+
+Validation:
+- valid: true
+- users: 20
+- conversations: 140
+- messages: 934
+- runs: 800
+- events: 480
+- attachments: 60
+
+Analysis:
+- precomputed_dataset_matched: true
+- precomputed_enrichment_count: 16
+- external_generative_api_call_count: 0
+
+Economics:
+- total_runs: 800
+- overall_roi: -0.575773
+- full cost per 1k tokens: 93.558854 RUB
+- base saved FTE-months: 1.139959
+
+Key outputs to show:
+- outputs/prompt_radar_generated_800_20260725T112030Z/report.md
+- outputs/prompt_radar_generated_800_20260725T112030Z/pipeline_metadata.json
+- outputs/prompt_radar_generated_800_20260725T112030Z/cluster_enrichments.json
+- outputs/prompt_radar_generated_800_20260725T112030Z/economics_final/economics_report.md
+- outputs/prompt_radar_generated_800_20260725T112030Z/economics_final/platform_economics.json
+- outputs/prompt_radar_generated_800_20260725T112030Z/economics_final/statistics_report.html
+
+10. TESTS
+
+Current unit/regression status:
+- 76 passed
+- 1 deselected
+
+The repository also contains:
+- integration test for the real cached Qwen embedding model;
+- dataset-specific tests;
+- security tests;
+- economics/reporting tests;
+- clustering/classification/preprocessing tests.
+
+11. WHAT IS READY AND WHAT IS NOT
+
+Ready:
+- safe import and validation;
+- run reconstruction;
+- goal extraction;
+- Qwen embedding path;
+- known use case matching;
+- HDBSCAN clustering;
+- local precomputed cluster decisions for the fixed demo dataset;
+- economics with ROI, break-even, token economics and FTE view;
+- Markdown and HTML reporting;
+- deterministic demo workflow for generated_800.
+
+Not fully production-ready:
+- OCR is not implemented;
+- real production connectors are not implemented;
+- manual baselines still require domain validation;
+- quality evidence is limited or absent in the demo;
+- some economics outputs remain scenario-based, not proven;
+- very large corpora would benefit from disk-backed entity indexes.
+
+12. WHAT TO PUSH TO GITHUB
+
+Recommended to push:
+- src/
+- tests/
+- configs/
+- docs/
+- scripts/
+- pyproject.toml
+- README.md
+- LICENSE
+- .gitignore
+- .env.example
+
+Push data only if intentionally needed for demo:
+- data/generated_800/README.md
+- data/generated_800/ground_truth.jsonl
+- data/generated_800/generation_report.json
+- data/generated_800/economics_cost_config.json
+- data/generated_800/FINAL_ANALYSIS.md
+
+Think carefully before pushing:
+- data/generated_800/dataset.zip
+- outputs/
+
+Do not push:
+- .venv/
+- local secret-bearing .env
+- model cache if large and local-only
+- unnecessary generated outputs
+
+13. HOW TO MOVE THE PROJECT TO GITHUB
+
+Step 1. Check .gitignore
+Make sure it excludes at least:
+- .venv/
+- .env
+- .cache/
+- heavy outputs you do not want in the repo
+
+Step 2. Initialize git if needed
+
+PowerShell:
+git init
+
+Step 3. Review files
+
+PowerShell:
+git status
+
+Step 4. Add only what you want to publish
+
+Everything:
+git add .
+
+Or selective add:
+git add src tests configs docs scripts README.md pyproject.toml .gitignore LICENSE .env.example
+
+Step 5. Create the first commit
+
+git commit -m "Initial Prompt Radar implementation"
+
+Step 6. Create a GitHub repository
+
+Create an empty repository on GitHub, for example:
+- prompt-radar
+
+Step 7. Connect the local repo to GitHub
+
+HTTPS example:
+git remote add origin https://github.com/YOUR_USERNAME/prompt-radar.git
+
+Step 8. Push
+
+git branch -M main
+git push -u origin main
+
+14. RECOMMENDED GITHUB STRATEGIES
+
+Strategy A — clean code repository
+Push only code, configs, docs and tests. Keep large datasets and outputs local.
+This is the cleanest for review.
+
+Strategy B — demo-ready repository
+Push code plus one small demo dataset and one canonical output folder.
+This helps a reviewer reproduce the same visible result quickly.
+
+Strategy C — full archive repository
+Push almost everything, including final dataset and outputs.
+Only do this if file sizes are acceptable and there are no confidentiality
+issues.
+
+15. SIMPLE RECOMMENDATION
+
+For this project, the best balance is usually Strategy B:
+- push code, configs, docs and tests;
+- push the final generated_800 metadata and maybe the fixed dataset if size is
+  acceptable;
+- push one canonical output run or keep it referenced in docs;
+- do not push .venv, secrets or random old outputs.
+
+16. DEMO NARRATIVE IN ONE PARAGRAPH
+
+The system safely imports a chat/export dataset, reconstructs real user tasks,
+understands what people ask the agent to do, matches known business scenarios,
+discovers new coherent request groups with Qwen embeddings plus HDBSCAN,
+attaches reviewed local answers for the fixed demo dataset without paying for
+API calls, and then estimates token cost, labor savings, ROI and FTE value
+with transparent assumptions and management-friendly reports.

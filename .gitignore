@@ -1,0 +1,39 @@
+# Runtime inputs and derived data
+data/inbox/*
+data/work/*
+data/processed/*
+data/economics/
+data/generated_200/
+data/sample/
+outputs/*
+.cache/*
+
+# Keep directory placeholders and the deterministic sample
+!data/inbox/.gitkeep
+!data/work/.gitkeep
+!data/processed/.gitkeep
+!outputs/.gitkeep
+!outputs/prompt_radar_generated_800_20260725T112030Z/
+!outputs/prompt_radar_generated_800_20260725T112030Z/**
+
+# Models, secrets, Python and tools
+*.safetensors
+*.bin
+*.pt
+*.pth
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Local source-audit artifacts are intentionally not part of the project
+tmp/
+PROMPT_ADDENDUM_FIRST_PIPELINE.md
+PROMPT_GENERATE_DATASET_*.md

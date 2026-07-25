@@ -1,0 +1,315 @@
+schema_version: "1.0"
+draft: true
+source_note: "Draft normalization of 31 user-scenario rows from the official case workbook."
+use_cases:
+  - id: daily_email_digest
+    name: "Ежедневная сводка почты"
+    description: "Подготовить краткую структурированную сводку входящих писем за период по критериям пользователя."
+    examples: ["Подготовь сводку важных писем за вчера"]
+    systems: ["Email"]
+    actions: ["read", "summarize"]
+    expected_outcome: "Структурированная сводка писем"
+    category_ids: ["email_communications"]
+    source_reference: "scenario 01"
+    draft: true
+  - id: client_company_group_lookup
+    name: "Поиск данных по группе клиента"
+    description: "Собрать сведения о компании-клиенте, дочерних организациях, руководителях и сделках."
+    examples: ["Найди директоров дочерних компаний и выигранные сделки"]
+    systems: ["CRM"]
+    actions: ["search", "aggregate"]
+    expected_outcome: "Карточка группы компаний"
+    category_ids: ["crm_sales", "knowledge_search"]
+    source_reference: "scenario 02"
+    draft: true
+  - id: unanswered_price_request_monitoring
+    name: "Мониторинг неотвеченных ценовых запросов"
+    description: "Регулярно находить письма с запросом расчёта цены без ответа дольше заданного SLA."
+    examples: ["Проверяй письма с запросом цены без ответа два часа"]
+    systems: ["Email"]
+    actions: ["monitor", "notify"]
+    expected_outcome: "Список просроченных писем и уведомление"
+    category_ids: ["email_communications"]
+    source_reference: "scenario 03"
+    draft: true
+  - id: weekly_won_tenders_notification
+    name: "Рассылка по выигранным тендерам"
+    description: "Периодически собрать из CRM выигранные тендеры и отправить отчёт группе."
+    examples: ["Раз в неделю отправляй список выигранных тендеров"]
+    systems: ["CRM", "Email"]
+    actions: ["schedule", "aggregate", "send"]
+    expected_outcome: "Регулярный отчёт по тендерам"
+    category_ids: ["crm_sales", "data_reporting", "email_communications"]
+    source_reference: "scenario 04"
+    draft: true
+  - id: project_team_vendor_owner
+    name: "Поиск состава команды и владельца вендора"
+    description: "Найти в CRM проектную команду и ответственное направление за вендора."
+    examples: ["Покажи команду проекта и ответственного за вендора"]
+    systems: ["CRM"]
+    actions: ["search", "aggregate"]
+    expected_outcome: "Состав команды и ответственное направление"
+    category_ids: ["crm_sales", "projects_tasks"]
+    source_reference: "scenario 05"
+    draft: true
+  - id: open_source_company_brief
+    name: "Справка о компании из открытых источников"
+    description: "Найти открытые сведения о компании и подготовить аналитическую справку."
+    examples: ["Собери открытые данные о компании и сделай справку"]
+    systems: ["Web"]
+    actions: ["search", "summarize"]
+    expected_outcome: "Аналитическая справка о компании"
+    category_ids: ["knowledge_search", "crm_sales"]
+    source_reference: "scenario 06"
+    draft: true
+  - id: crm_client_excel_report
+    name: "Выгрузка карточки клиента в Excel"
+    description: "Собрать заданные поля клиента из CRM и сформировать сводный Excel-отчёт."
+    examples: ["Выгрузи данные клиента из CRM в Excel"]
+    systems: ["CRM", "Excel"]
+    actions: ["read", "export"]
+    expected_outcome: "Excel-отчёт по клиенту"
+    category_ids: ["crm_sales", "data_reporting"]
+    source_reference: "scenario 07"
+    draft: true
+  - id: manager_feedback_after_review
+    name: "Отзыв руководителя после мониторинга"
+    description: "Преобразовать тезисы руководителя в структурированную обратную связь в HR-системе."
+    examples: ["Запиши отзыв по итогам мониторинга сотрудника"]
+    systems: ["CoolFeedback"]
+    actions: ["structure", "write"]
+    expected_outcome: "Заполненная обратная связь"
+    category_ids: ["hr_feedback"]
+    source_reference: "scenario 08"
+    draft: true
+  - id: pre_review_employee_note
+    name: "Заметка перед мониторингом сотрудника"
+    description: "Сохранить подготовительную информацию о сотруднике в анкете мониторинга."
+    examples: ["Добавь заметку перед встречей с сотрудником"]
+    systems: ["HR survey"]
+    actions: ["write"]
+    expected_outcome: "Заметка в анкете"
+    category_ids: ["hr_feedback"]
+    source_reference: "scenario 09"
+    draft: true
+  - id: isup_ticket_create_edit
+    name: "Создание и изменение тикета ИСУП"
+    description: "Создать новый тикет и обновить существующий в системе управления проектами."
+    examples: ["Создай тикет и отредактируй старый в ИСУП"]
+    systems: ["ИСУП"]
+    actions: ["create", "update"]
+    expected_outcome: "Созданный или обновлённый тикет"
+    category_ids: ["projects_tasks"]
+    source_reference: "scenario 10"
+    draft: true
+  - id: weekly_tender_sales_report
+    name: "Еженедельный отчёт по тендерам"
+    description: "Сформировать отчёт по выигранным тендерам за последние семь дней."
+    examples: ["Покажи еженедельный отчёт по выигранным тендерам"]
+    systems: ["CRM"]
+    actions: ["aggregate", "report"]
+    expected_outcome: "Отчёт эффективности продаж"
+    category_ids: ["crm_sales", "data_reporting"]
+    source_reference: "scenario 11"
+    draft: true
+  - id: jira_assigned_tasks
+    name: "Список назначенных задач Jira"
+    description: "Показать пользователю задачи Jira, назначенные на него."
+    examples: ["Покажи мои задачи в Jira"]
+    systems: ["Jira"]
+    actions: ["search", "list"]
+    expected_outcome: "Список назначенных задач"
+    category_ids: ["projects_tasks"]
+    source_reference: "scenario 12"
+    draft: true
+  - id: jira_priority_tasks
+    name: "Приоритетные задачи Jira"
+    description: "Показать назначенные задачи Jira с фильтром и сортировкой по приоритету."
+    examples: ["Покажи мои самые приоритетные задачи Jira"]
+    systems: ["Jira"]
+    actions: ["search", "filter", "list"]
+    expected_outcome: "Приоритизированный список задач"
+    category_ids: ["projects_tasks"]
+    source_reference: "scenario 13"
+    draft: true
+  - id: manager_employee_observations
+    name: "Наблюдения руководителя о сотрудниках"
+    description: "Фиксировать наблюдения о работе сотрудников и отслеживать прогресс."
+    examples: ["Сохрани наблюдение о прогрессе сотрудника"]
+    systems: ["HR system"]
+    actions: ["write", "track"]
+    expected_outcome: "История наблюдений"
+    category_ids: ["hr_feedback"]
+    source_reference: "scenario 14"
+    draft: true
+  - id: analysis_results_excel_export
+    name: "Экспорт результатов анализа в Excel"
+    description: "Экспортировать результаты аналитики в редактируемый Excel-файл."
+    examples: ["Экспортируй результаты анализа в Excel"]
+    systems: ["Analytics", "Excel"]
+    actions: ["export"]
+    expected_outcome: "Excel-файл с результатами анализа"
+    category_ids: ["data_reporting"]
+    source_reference: "scenario 15"
+    draft: true
+  - id: generic_excel_data_export
+    name: "Выгрузка данных в Excel"
+    description: "Выгрузить выбранные данные из системы в Excel для дальнейшей отчётности."
+    examples: ["Выгрузи эти данные в Excel"]
+    systems: ["Excel"]
+    actions: ["export"]
+    expected_outcome: "Excel-выгрузка"
+    category_ids: ["data_reporting"]
+    source_reference: "scenario 16"
+    draft: true
+  - id: supplier_blog_search
+    name: "Поиск информации о поставщиках"
+    description: "Найти актуальные публикации и обновления о поставщиках в корпоративном блоге."
+    examples: ["Найди последние новости о поставщике в блоге"]
+    systems: ["Corporate blog"]
+    actions: ["search"]
+    expected_outcome: "Релевантные публикации о поставщике"
+    category_ids: ["knowledge_search"]
+    source_reference: "scenario 17"
+    draft: true
+  - id: confluence_process_search
+    name: "Поиск процесса в Confluence"
+    description: "Быстро найти описание нужного корпоративного процесса в базе знаний."
+    examples: ["Найди регламент процесса в Confluence"]
+    systems: ["Confluence"]
+    actions: ["search"]
+    expected_outcome: "Ссылка и выдержка из документа процесса"
+    category_ids: ["knowledge_search"]
+    source_reference: "scenario 18"
+    draft: true
+  - id: executive_calendar_slot
+    name: "Свободное время в календаре руководителя"
+    description: "Найти свободный слот руководителя и запланировать встречу."
+    examples: ["Найди свободное время директора и создай встречу"]
+    systems: ["Calendar"]
+    actions: ["find_slot", "create_meeting"]
+    expected_outcome: "Запланированная встреча"
+    category_ids: ["calendar_meetings"]
+    source_reference: "scenario 19"
+    draft: true
+  - id: task_completion_approval
+    name: "Подтверждение выполнения задач"
+    description: "Подтвердить выполнение задач и закрыть завершённые работы."
+    examples: ["Подтверди выполненные задачи команды"]
+    systems: ["Task tracker"]
+    actions: ["approve", "close"]
+    expected_outcome: "Подтверждённые и закрытые задачи"
+    category_ids: ["projects_tasks"]
+    source_reference: "scenario 20"
+    draft: true
+  - id: personal_task_history
+    name: "История выполненных личных задач"
+    description: "Добавлять задачи в историю и отмечать их выполненными."
+    examples: ["Добавь задачу в историю и отметь выполненной"]
+    systems: ["Task tracker"]
+    actions: ["create", "complete"]
+    expected_outcome: "Актуальная история задач"
+    category_ids: ["projects_tasks"]
+    source_reference: "scenario 21"
+    draft: true
+  - id: meeting_room_search
+    name: "Поиск переговорной комнаты"
+    description: "Найти свободную переговорную подходящей вместимости на время встречи."
+    examples: ["Найди переговорную на двадцать человек"]
+    systems: ["Calendar", "Rooms"]
+    actions: ["search", "reserve"]
+    expected_outcome: "Подходящая забронированная переговорная"
+    category_ids: ["calendar_meetings"]
+    source_reference: "scenario 22"
+    draft: true
+  - id: client_thread_reply
+    name: "Ответ клиенту по переписке"
+    description: "Прочитать историю переписки с клиентом и подготовить или отправить ответ."
+    examples: ["Прочитай переписку и ответь клиенту"]
+    systems: ["Email"]
+    actions: ["read", "draft_reply"]
+    expected_outcome: "Подготовленный ответ клиенту"
+    category_ids: ["email_communications", "crm_sales"]
+    source_reference: "scenario 23"
+    draft: true
+  - id: discussion_notes
+    name: "Фиксация итогов обсуждения"
+    description: "Структурировать и сохранить ключевые итоги обсуждения с коллегами."
+    examples: ["Запиши итоги обсуждения с командой"]
+    systems: ["Notes"]
+    actions: ["structure", "write"]
+    expected_outcome: "Структурированная заметка"
+    category_ids: ["knowledge_search"]
+    source_reference: "scenario 24"
+    draft: true
+  - id: client_contacts_by_company
+    name: "Поиск контактов клиента"
+    description: "Найти контактных лиц клиента по названию компании."
+    examples: ["Найди контакты клиента по компании"]
+    systems: ["CRM"]
+    actions: ["search"]
+    expected_outcome: "Список контактов клиента"
+    category_ids: ["crm_sales"]
+    source_reference: "scenario 25"
+    draft: true
+  - id: group_common_slot
+    name: "Общий слот группы"
+    description: "Сопоставить календари большого списка участников и создать встречу в общем окне."
+    examples: ["Найди общий слот всех коллег и создай встречу"]
+    systems: ["Calendar"]
+    actions: ["find_common_slot", "create_meeting"]
+    expected_outcome: "Встреча в общем свободном слоте"
+    category_ids: ["calendar_meetings"]
+    source_reference: "scenario 26"
+    draft: true
+  - id: meeting_body_information
+    name: "Поиск информации в теле встречи"
+    description: "Извлечь сведения, приложенные текстом к календарной встрече."
+    examples: ["Покажи текст, приложенный к встрече"]
+    systems: ["Calendar"]
+    actions: ["read", "extract"]
+    expected_outcome: "Найденная информация из описания встречи"
+    category_ids: ["calendar_meetings", "knowledge_search"]
+    source_reference: "scenario 27"
+    draft: true
+  - id: followup_reminders
+    name: "Напоминания по договорённостям"
+    description: "Выделить договорённости после встречи, сгруппировать дела и создать напоминания."
+    examples: ["Создай напоминания по договорённостям встречи"]
+    systems: ["Calendar", "Tasks"]
+    actions: ["extract", "group", "remind"]
+    expected_outcome: "Структурированный список напоминаний"
+    category_ids: ["calendar_meetings", "projects_tasks"]
+    source_reference: "scenario 28"
+    draft: true
+  - id: next_day_meetings
+    name: "План встреч на следующий день"
+    description: "Показать завтрашние встречи и материалы для подготовки."
+    examples: ["Покажи встречи на завтра"]
+    systems: ["Calendar"]
+    actions: ["list", "prepare"]
+    expected_outcome: "План встреч следующего дня"
+    category_ids: ["calendar_meetings"]
+    source_reference: "scenario 29"
+    draft: true
+  - id: email_to_project_ticket
+    name: "Создание проектных тикетов из писем"
+    description: "На основе входящих писем создавать или обновлять тикеты на проектной доске."
+    examples: ["Создай тикет Project из этого письма"]
+    systems: ["Email", "Project"]
+    actions: ["read", "create", "update"]
+    expected_outcome: "Актуальный тикет на проектной доске"
+    category_ids: ["email_communications", "projects_tasks"]
+    source_reference: "scenario 30"
+    draft: true
+  - id: isup_project_status_monitoring
+    name: "Мониторинг статусов проектов ИСУП"
+    description: "Периодически контролировать заданные статусы проектов и уведомлять о переходах."
+    examples: ["Следи за изменением статусов проектов в ИСУП"]
+    systems: ["ИСУП"]
+    actions: ["monitor", "notify"]
+    expected_outcome: "Уведомления о значимых переходах статуса"
+    category_ids: ["projects_tasks"]
+    source_reference: "scenario 31"
+    draft: true
+

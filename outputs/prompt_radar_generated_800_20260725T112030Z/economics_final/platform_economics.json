@@ -1,0 +1,222 @@
+{
+  "allocated_cost": 380160.41,
+  "analysis_period_months": 0.203657407407407,
+  "cluster_status_counts": {
+    "HIGH_RISK": 4,
+    "IMPOSSIBLE_TO_BREAK_EVEN": 1,
+    "INSUFFICIENT_EVIDENCE": 210,
+    "POTENTIALLY_EFFECTIVE": 27,
+    "POTENTIALLY_INEFFECTIVE": 1
+  },
+  "confirmed_wasted_cost": 0.0,
+  "external_api_called": false,
+  "failed_partial_cancelled_share": 0.06,
+  "fte_view": {
+    "average_fte_month_cost_rub": 400000.0,
+    "b_gt_a": false,
+    "base_saved_fte_months": 1.139959,
+    "base_saved_value_rub_by_fte_month": 455983.61,
+    "working_days_per_month": 20,
+    "working_hours_per_day": 8.0
+  },
+  "fully_loaded_platform_period_cost": 644915.12,
+  "gpu_allocation_method": "token_proxy",
+  "incremental_comparison_unavailable": true,
+  "insufficient_evidence_cluster_share": 0.8641975308641975,
+  "optimization_opportunity_cost": 308882.81,
+  "overall_roi": -0.575773,
+  "platform_cost_scenarios": {
+    "conservative_full_gpu": {
+      "agent_gpu_share": 1.0,
+      "annual_development_cost": 0.0,
+      "annual_electricity_cost": 0.0,
+      "annual_fixed_overhead_cost": 0.0,
+      "annual_gpu_amortization": 20000000.0,
+      "annual_license_cost": 18000000.0,
+      "annual_platform_cost": 38000000.0,
+      "annual_shared_tools_cost": 0.0,
+      "annual_support_cost": 0.0,
+      "break_even_hours_per_user_month": 14.074074,
+      "break_even_hours_per_year": 25333.333333,
+      "break_even_minutes_per_user_workday": 42.222222,
+      "cost_per_user_month": 21111.11,
+      "monthly_platform_cost": 3166666.67
+    },
+    "platform_token_ratio": {
+      "agent_gpu_share": 0.833333,
+      "annual_development_cost": 0.0,
+      "annual_electricity_cost": 0.0,
+      "annual_fixed_overhead_cost": 0.0,
+      "annual_gpu_amortization": 16666666.67,
+      "annual_license_cost": 18000000.0,
+      "annual_platform_cost": 34666666.67,
+      "annual_shared_tools_cost": 0.0,
+      "annual_support_cost": 0.0,
+      "break_even_hours_per_user_month": 12.839506,
+      "break_even_hours_per_year": 23111.111111,
+      "break_even_minutes_per_user_workday": 38.518519,
+      "cost_per_user_month": 19259.26,
+      "monthly_platform_cost": 2888888.89
+    },
+    "weighted_users": {
+      "agent_gpu_share": 0.365854,
+      "annual_development_cost": 0.0,
+      "annual_electricity_cost": 0.0,
+      "annual_fixed_overhead_cost": 0.0,
+      "annual_gpu_amortization": 7317073.17,
+      "annual_license_cost": 18000000.0,
+      "annual_platform_cost": 25317073.17,
+      "annual_shared_tools_cost": 0.0,
+      "annual_support_cost": 0.0,
+      "break_even_hours_per_user_month": 9.376694,
+      "break_even_hours_per_year": 16878.04878,
+      "break_even_minutes_per_user_workday": 28.130081,
+      "cost_per_user_month": 14065.04,
+      "monthly_platform_cost": 2109756.1
+    }
+  },
+  "potential": {
+    "base": {
+      "cost": 644915.12,
+      "labor_value": 273590.32,
+      "net_value": -371324.8,
+      "roi": -0.575773,
+      "roi_percent": -57.577313,
+      "saved_hours": 182.393445,
+      "saved_minutes": 10943.6067
+    },
+    "high": {
+      "cost": 429667.46,
+      "labor_value": 858902.1,
+      "net_value": 429234.64,
+      "roi": 0.998993,
+      "roi_percent": 99.899266,
+      "saved_hours": 572.601408,
+      "saved_minutes": 34356.0845
+    },
+    "low": {
+      "cost": 644915.12,
+      "labor_value": -121307.68,
+      "net_value": -766222.8,
+      "roi": -1.188099,
+      "roi_percent": -118.809868,
+      "saved_hours": -80.871583,
+      "saved_minutes": -4852.295
+    }
+  },
+  "proven_effective_cluster_share": 0.0,
+  "proven_ineffective_cluster_share": 0.0,
+  "run_status_counts": {
+    "cancelled": 16,
+    "completed": 752,
+    "failed": 16,
+    "partial": 16
+  },
+  "schema_version": "1.0",
+  "selected_platform_scenario": "conservative_full_gpu",
+  "token_allocation_is_proxy": true,
+  "token_economics": {
+    "allocated_cost_per_1k_tokens_rub": 55.15047,
+    "allocated_cost_per_million_tokens_rub": 55150.47,
+    "allocated_cost_per_token_rub": 0.05515,
+    "full_cost_per_1k_tokens_rub": 93.558854,
+    "full_cost_per_million_tokens_rub": 93558.85,
+    "full_cost_per_token_rub": 0.093559,
+    "input_tokens": 6893149,
+    "output_tokens": 0,
+    "total_tokens": 6893149
+  },
+  "top_value_leakage": [
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30117.98,
+      "run_id": "run_799",
+      "signals": [
+        "cancelled_run_cost",
+        "active_wait_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30053.95,
+      "run_id": "run_800",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30052.71,
+      "run_id": "run_797",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30038.33,
+      "run_id": "run_798",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29884.63,
+      "run_id": "run_796",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29884.48,
+      "run_id": "run_795",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29882.07,
+      "run_id": "run_794",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29868.43,
+      "run_id": "run_793",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1931.2,
+      "run_id": "run_791",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1930.28,
+      "run_id": "run_792",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    }
+  ],
+  "total_runs": 800,
+  "unallocated_idle_license_cost": 264754.71
+}

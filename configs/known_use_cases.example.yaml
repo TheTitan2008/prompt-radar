@@ -1,0 +1,14 @@
+schema_version: "1.0"
+draft: true
+use_cases:
+  - id: example_use_case
+    name: "Пример сценария"
+    description: "Конкретная повторяющаяся задача пользователя."
+    examples: ["Пример формулировки"]
+    systems: ["ExampleSystem"]
+    actions: ["read"]
+    expected_outcome: "Ожидаемый результат"
+    category_ids: ["example_category"]
+    source_reference: "user-provided scenario list"
+    draft: true
+

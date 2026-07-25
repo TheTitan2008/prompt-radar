@@ -1,0 +1,20 @@
+{"department": "Sales", "display_name": "Алексей Смирнов", "metadata": {"planned_run_count": 106, "synthetic": true}, "role": "synthetic_employee", "user_id": "aleksei_smirnov"}
+{"department": "Operations", "display_name": "Елена Петрова", "metadata": {"planned_run_count": 94, "synthetic": true}, "role": "synthetic_employee", "user_id": "elena_petrova"}
+{"department": "IT", "display_name": "Дмитрий Иванов", "metadata": {"planned_run_count": 82, "synthetic": true}, "role": "synthetic_employee", "user_id": "dmitry_ivanov"}
+{"department": "Finance", "display_name": "Марина Соколова", "metadata": {"planned_run_count": 70, "synthetic": true}, "role": "synthetic_employee", "user_id": "marina_sokolova"}
+{"department": "Project Management", "display_name": "Сергей Кузнецов", "metadata": {"planned_run_count": 58, "synthetic": true}, "role": "synthetic_employee", "user_id": "sergey_kuznetsov"}
+{"department": "HR", "display_name": "Ольга Морозова", "metadata": {"planned_run_count": 52, "synthetic": true}, "role": "synthetic_employee", "user_id": "olga_morozova"}
+{"department": "Procurement", "display_name": "Павел Волков", "metadata": {"planned_run_count": 48, "synthetic": true}, "role": "synthetic_employee", "user_id": "pavel_volkov"}
+{"department": "Legal", "display_name": "Наталья Лебедева", "metadata": {"planned_run_count": 44, "synthetic": true}, "role": "synthetic_employee", "user_id": "natalia_lebedeva"}
+{"department": "Marketing", "display_name": "Игорь Федоров", "metadata": {"planned_run_count": 40, "synthetic": true}, "role": "synthetic_employee", "user_id": "igor_fedorov"}
+{"department": "Administration", "display_name": "Анна Новикова", "metadata": {"planned_run_count": 36, "synthetic": true}, "role": "synthetic_employee", "user_id": "anna_novikova"}
+{"department": "Sales", "display_name": "Роман Егоров", "metadata": {"planned_run_count": 32, "synthetic": true}, "role": "synthetic_employee", "user_id": "roman_egorov"}
+{"department": "Finance", "display_name": "Екатерина Орлова", "metadata": {"planned_run_count": 28, "synthetic": true}, "role": "synthetic_employee", "user_id": "ekaterina_orlova"}
+{"department": "IT", "display_name": "Михаил Попов", "metadata": {"planned_run_count": 24, "synthetic": true}, "role": "synthetic_employee", "user_id": "mikhail_popov"}
+{"department": "Operations", "display_name": "Ирина Васильева", "metadata": {"planned_run_count": 20, "synthetic": true}, "role": "synthetic_employee", "user_id": "irina_vasilieva"}
+{"department": "Administration", "display_name": "Татьяна Белякова", "metadata": {"planned_run_count": 20, "synthetic": true}, "role": "synthetic_employee", "user_id": "tatiana_belyakova"}
+{"department": "Project Management", "display_name": "Виктор Зайцев", "metadata": {"planned_run_count": 16, "synthetic": true}, "role": "synthetic_employee", "user_id": "viktor_zaitsev"}
+{"department": "HR", "display_name": "Светлана Крылова", "metadata": {"planned_run_count": 12, "synthetic": true}, "role": "synthetic_employee", "user_id": "svetlana_krylova"}
+{"department": "Procurement", "display_name": "Борис Максимов", "metadata": {"planned_run_count": 8, "synthetic": true}, "role": "synthetic_employee", "user_id": "boris_maksimov"}
+{"department": "Marketing", "display_name": "Юлия Белова", "metadata": {"planned_run_count": 6, "synthetic": true}, "role": "synthetic_employee", "user_id": "yulia_belova"}
+{"department": "Legal", "display_name": "Никита Андреев", "metadata": {"planned_run_count": 4, "synthetic": true}, "role": "synthetic_employee", "user_id": "nikita_andreev"}

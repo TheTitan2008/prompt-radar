@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-07-25T00:00:00Z",
+  "dataset_id": "prompt_radar_generated_800",
+  "generator": "scripts/generate_dataset_800.py",
+  "generator_version": "1.0.0",
+  "schema_version": "1.0",
+  "seed": 20260725,
+  "source_taxonomy_version": "configs/known_use_cases.yaml:1.0",
+  "synthetic": true,
+  "tokenizer_model": "WhitespaceTokenizer",
+  "tokenizer_revision": "whitespace-v1"
+}

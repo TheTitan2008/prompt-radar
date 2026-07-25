@@ -1,0 +1,690 @@
+[
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "e36493241b36a2dcf6bdbd8cc334467941ac30fc584bbb497f828457b56a2891",
+    "cluster_id": 0,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1250.0,
+        "high": 2500.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 16,
+    "member_run_ids_hash": "ac5eadc5d4567a78c485b62e36a80da840388005b426037f80731e514a3267e4",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.1,
+        "high": 0.4,
+        "low": 0.0
+      },
+      "assumptions": [
+        "оценивается один типовой офисный сценарий",
+        "характеристики помещений доступны"
+      ],
+      "cluster_name": "Анализ применения офисных IoT-датчиков",
+      "human_followup_minutes": {
+        "base": 12,
+        "high": 30,
+        "low": 5
+      },
+      "manual_minutes": {
+        "base": 50,
+        "high": 100,
+        "low": 25
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 15,
+          "step": "Собрать требования к помещениям и датчикам"
+        },
+        {
+          "minutes_base": 20,
+          "step": "Сопоставить варианты оборудования и риски"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить рекомендации и план проверки"
+        }
+      ],
+      "manual_time_confidence": 0.6
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "745e04a976981c08d1bc807b07c1d98e7fd6d0442bcbcecdd276142ef7d94c95",
+    "cluster_id": 1,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 375.0,
+        "high": 875.0,
+        "low": 200.0
+      },
+      "manual_work_value_rub": {
+        "base": 1500.0,
+        "high": 3000.0,
+        "low": 750.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 16,
+    "member_run_ids_hash": "1ae22d248fd7f4e45c32024ef17eb823c49095464fc69f7fa41209f602956cf5",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.1,
+        "high": 0.35,
+        "low": 0.0
+      },
+      "assumptions": [
+        "рассматривается один тип ассистента",
+        "правила доступа уже определены"
+      ],
+      "cluster_name": "Онбординг внутренних AI-ассистентов",
+      "human_followup_minutes": {
+        "base": 15,
+        "high": 35,
+        "low": 8
+      },
+      "manual_minutes": {
+        "base": 60,
+        "high": 120,
+        "low": 30
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 20,
+          "step": "Собрать требования и ограничения использования"
+        },
+        {
+          "minutes_base": 25,
+          "step": "Подготовить инструкцию и примеры работы"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Сформировать контрольный список и риски"
+        }
+      ],
+      "manual_time_confidence": 0.62
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "7a2b6d9f700861d1fdcd5a1177d121edc2772afdaab4cfec819fbc23069efc29",
+    "cluster_id": 2,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1250.0,
+        "high": 2500.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 15,
+    "member_run_ids_hash": "cf016c61cd16da2473dda0f1d6f93a77a60085b79238e97c8f7d3e905915d3af",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.08,
+        "high": 0.35,
+        "low": 0.0
+      },
+      "assumptions": [
+        "обрабатывается небольшой пакет заявок",
+        "критерии публикации определены"
+      ],
+      "cluster_name": "Обработка заявок в библиотеку промптов",
+      "human_followup_minutes": {
+        "base": 12,
+        "high": 30,
+        "low": 5
+      },
+      "manual_minutes": {
+        "base": 50,
+        "high": 100,
+        "low": 25
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 15,
+          "step": "Собрать и проверить содержание заявок"
+        },
+        {
+          "minutes_base": 20,
+          "step": "Классифицировать запросы и выявить дубли"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить решение и список рисков"
+        }
+      ],
+      "manual_time_confidence": 0.64
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "0f4a51dd87d4acd8ec4e73560853c690c6ada272605b115c67ed600d00b80ae8",
+    "cluster_id": 3,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 175.0,
+        "high": 450.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 1500.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 12,
+    "member_run_ids_hash": "913600fa8f183045ca3a59c940545053a571d3b195537dddda6cec508f2ae291",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.05,
+        "high": 0.25,
+        "low": 0.0
+      },
+      "assumptions": [
+        "вопрос относится к одному сервису",
+        "официальная информация доступна"
+      ],
+      "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+      "human_followup_minutes": {
+        "base": 7,
+        "high": 18,
+        "low": 3
+      },
+      "manual_minutes": {
+        "base": 30,
+        "high": 60,
+        "low": 15
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 10,
+          "step": "Уточнить вопрос и найти актуальные правила"
+        },
+        {
+          "minutes_base": 12,
+          "step": "Проверить контакты и последовательность действий"
+        },
+        {
+          "minutes_base": 8,
+          "step": "Подготовить понятный ответ студенту"
+        }
+      ],
+      "manual_time_confidence": 0.7
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "0f4f6aaa02f3184ced18d0b8e39fb7d6dc154e466b7d1f2212e318a6e2932c4f",
+    "cluster_id": 4,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 150.0
+      },
+      "manual_work_value_rub": {
+        "base": 1375.0,
+        "high": 2750.0,
+        "low": 750.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 11,
+    "member_run_ids_hash": "966cb75ffd4d37f6d46c03b78c941553a106afb526fc7e19766af3bbdb22b678",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.1,
+        "high": 0.4,
+        "low": 0.0
+      },
+      "assumptions": [
+        "сверяется ограниченный набор витрин",
+        "данные доступны в машиночитаемом виде"
+      ],
+      "cluster_name": "Сверка витрин учебных материалов",
+      "human_followup_minutes": {
+        "base": 12,
+        "high": 30,
+        "low": 6
+      },
+      "manual_minutes": {
+        "base": 55,
+        "high": 110,
+        "low": 30
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 15,
+          "step": "Получить перечни материалов из сравниваемых витрин"
+        },
+        {
+          "minutes_base": 25,
+          "step": "Сопоставить записи и выявить расхождения"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить список исправлений и рисков"
+        }
+      ],
+      "manual_time_confidence": 0.65
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "9c5fc6d87fcbd3c91e4f42f7571ddc23a1dfc2b7d40e3c403ea3d28898a33339",
+    "cluster_id": 5,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 100.0
+      },
+      "manual_work_value_rub": {
+        "base": 875.0,
+        "high": 1750.0,
+        "low": 450.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 10,
+    "member_run_ids_hash": "a007f407840cba123622322f21af875200ef2019277fd47f650c82e32d45d56f",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.05,
+        "high": 0.25,
+        "low": 0.0
+      },
+      "assumptions": [
+        "готовится одно объявление",
+        "фактические данные предоставлены заказчиком"
+      ],
+      "cluster_name": "Подготовка черновиков внутренних объявлений",
+      "human_followup_minutes": {
+        "base": 8,
+        "high": 20,
+        "low": 4
+      },
+      "manual_minutes": {
+        "base": 35,
+        "high": 70,
+        "low": 18
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 10,
+          "step": "Собрать факты и требования к объявлению"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить структурированный черновик"
+        },
+        {
+          "minutes_base": 10,
+          "step": "Проверить формулировки и риски публикации"
+        }
+      ],
+      "manual_time_confidence": 0.7
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Кластер объединяет две разные бизнес-задачи: проверку качества витрин и микроопросы сотрудников; общий baseline некорректен.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "3b720529fe577dee894a0088d85851ba19021a9bc72ea14028142fac3cf0ac3f",
+    "cluster_id": 6,
+    "local_economics": null,
+    "member_count": 20,
+    "member_run_ids_hash": "5a700d76b03caf213c81a7b9c77f300cf8cc8420a6e8b5200a896504a193f310",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Кластер состоит из известных сценариев, не прошедших повышенный порог; создавать новый экономический паспорт нельзя.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "4bbf2f178daa76f45e11271209212ce17c4a11d3e0ad99c59fa6fee7e844031f",
+    "cluster_id": 7,
+    "local_economics": null,
+    "member_count": 8,
+    "member_run_ids_hash": "6d2db7717f992cebc80c53bd089b94a594775089ee494d7a282005f5992ce330",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Кластер смешивает известные задачи и бессодержательные запросы; единая тема и ручной baseline отсутствуют.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "ef929cde84c69d4c87c1ede855119db14b99ad87292aacce89b42317c2c08739",
+    "cluster_id": 8,
+    "local_economics": null,
+    "member_count": 24,
+    "member_run_ids_hash": "ca61136c068f365b06e1f60c60f1425b3c31f2d1dc2bd3d14d66dc4078e0d005",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Кластер содержит известные use cases, которые следует вернуть в каталог после калибровки, а не оценивать как новую тему.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "f38fc4e18f4a2f3113e1b4e0b5a1854082a33ad1a13ff523a3580453026ec9af",
+    "cluster_id": 9,
+    "local_economics": null,
+    "member_count": 17,
+    "member_run_ids_hash": "dfd71cfc20b75b181a06e7de15aa2d9610a9d5dbc156aab1aa19a0a6a1400b9a",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "175e48e660c00cdc0784597c0d33d9ab3639cb1bc68ddb03e15e350ad0277e00",
+    "cluster_id": 10,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 250.0,
+        "high": 625.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1000.0,
+        "high": 2000.0,
+        "low": 500.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 8,
+    "member_run_ids_hash": "04a1d9ca6ced2bf10b381f1974bc96d7ee8167a793e9bd8e5707c8a0fc2aa20f",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.08,
+        "high": 0.3,
+        "low": 0.0
+      },
+      "assumptions": [
+        "проверяется один локальный справочник",
+        "правила качества данных известны"
+      ],
+      "cluster_name": "Контроль локальных справочников оборудования",
+      "human_followup_minutes": {
+        "base": 10,
+        "high": 25,
+        "low": 5
+      },
+      "manual_minutes": {
+        "base": 40,
+        "high": 80,
+        "low": 20
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 10,
+          "step": "Получить справочник и правила заполнения"
+        },
+        {
+          "minutes_base": 20,
+          "step": "Проверить записи, дубли и обязательные поля"
+        },
+        {
+          "minutes_base": 10,
+          "step": "Подготовить перечень исправлений"
+        }
+      ],
+      "manual_time_confidence": 0.66
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": null,
+    "action": "enrich",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "3254733515f4fd9c0a2fad6d7b3e9b7e6b1fe3e52b7a9842f51a2d37c38d5892",
+    "cluster_id": 11,
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 175.0,
+        "high": 450.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1250.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 5,
+    "member_run_ids_hash": "d25952b6ec5897fde9593ba10df9a9d1825c9ba4f07b134919f4d7dfd09e9681",
+    "provider_protocol": "local_precomputed",
+    "result": {
+      "active_wait_ratio": {
+        "base": 0.05,
+        "high": 0.25,
+        "low": 0.0
+      },
+      "assumptions": [
+        "список небольшой",
+        "цены и обязательные поля доступны"
+      ],
+      "cluster_name": "Проверка небольших списков закупок",
+      "human_followup_minutes": {
+        "base": 7,
+        "high": 18,
+        "low": 3
+      },
+      "manual_minutes": {
+        "base": 25,
+        "high": 50,
+        "low": 12
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 8,
+          "step": "Получить список и критерии проверки"
+        },
+        {
+          "minutes_base": 12,
+          "step": "Проверить позиции и возможные расхождения"
+        },
+        {
+          "minutes_base": 5,
+          "step": "Оформить замечания и рекомендации"
+        }
+      ],
+      "manual_time_confidence": 0.68
+    },
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Кластер сформирован общей синтетической ctx-обвязкой, а не одной бизнес-целью; экономический паспорт был бы ложным.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "c90ec9ce68439e55749888b6ed6b64c63218a74e404af29861e3f2f0eb1aaccb",
+    "cluster_id": 12,
+    "local_economics": null,
+    "member_count": 15,
+    "member_run_ids_hash": "442b2d7de82cfca9c902f6017f6d8a2996dd87cd736e9c4ad6616690d64bf9d9",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Участники относятся к нескольким темам и включают случайный шум; единый экономический сценарий отсутствует.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "26958b837d7d885ae5340b2b030ae4661dd7ca82f69015388ac4cffe1531075b",
+    "cluster_id": 13,
+    "local_economics": null,
+    "member_count": 17,
+    "member_run_ids_hash": "60540ad37039e5850f2d96d4c7511cb84c5a02376b859db2e3b772a38c4e8541",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Кластер почти целиком состоит из known-запросов и одного шумового примера; новый паспорт создавал бы ложную бизнес-тему.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "9f9c6677e88abd39f165f84911bc138adccbe18c432bc050f292428c9a053184",
+    "cluster_id": 14,
+    "local_economics": null,
+    "member_count": 9,
+    "member_run_ids_hash": "84ac0f9c6b7ba754522e79406067eb26a43c2e3cca801e480914b2e1096d110c",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "abstention_reason": "Все участники принадлежат к известным сценариям и должны решаться калибровкой классификации, а не новым экономическим паспортом.",
+    "action": "abstain",
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "cluster_fingerprint": "a7ad6e3232a0a362e7ca477c1870dcc0367b938f5cd95029b63d339f022a6948",
+    "cluster_id": 15,
+    "local_economics": null,
+    "member_count": 6,
+    "member_run_ids_hash": "2d0f0588949ced031fb49134b6e7a48552a979a63d4e3837cfc1869e3bd402be",
+    "provider_protocol": "local_precomputed",
+    "result": null,
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  }
+]

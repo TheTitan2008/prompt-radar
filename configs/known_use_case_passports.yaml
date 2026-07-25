@@ -1,0 +1,443 @@
+schema_version: "1.0"
+draft: true
+employee_cost_per_hour: 1500
+source_note: "Черновые экспертные оценки без производственной телеметрии; требуют проверки владельцами процессов."
+passports:
+  - use_case_id: daily_email_digest
+    cluster_name: "Подготовка ежедневной сводки почты"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Отобрать письма за нужный период", minutes_base: 10}
+      - {step: "Прочитать и приоритизировать письма", minutes_base: 25}
+      - {step: "Подготовить структурированную сводку", minutes_base: 10}
+    manual_minutes: {low: 25, base: 45, high: 90}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.7
+    assumptions: ["до 50 писем за период", "критерии важности заранее известны"]
+
+  - use_case_id: client_company_group_lookup
+    cluster_name: "Сбор данных по группе компаний клиента"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Найти карточку клиента и связанные компании", minutes_base: 25}
+      - {step: "Проверить структуру и руководителей", minutes_base: 35}
+      - {step: "Собрать сведения о сделках", minutes_base: 40}
+      - {step: "Оформить итоговую карточку", minutes_base: 20}
+    manual_minutes: {low: 60, base: 120, high: 240}
+    human_followup_minutes: {low: 10, base: 25, high: 60}
+    active_wait_ratio: {low: 0.05, base: 0.2, high: 0.7}
+    manual_time_confidence: 0.55
+    assumptions: ["связи компаний отражены в CRM", "не требуется юридическая проверка бенефициаров"]
+
+  - use_case_id: unanswered_price_request_monitoring
+    cluster_name: "Контроль неотвеченных запросов цены"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Отобрать письма с запросами цены", minutes_base: 8}
+      - {step: "Проверить наличие ответа и срок SLA", minutes_base: 10}
+      - {step: "Сформировать список просрочек", minutes_base: 7}
+    manual_minutes: {low: 15, base: 25, high: 45}
+    human_followup_minutes: {low: 2, base: 5, high: 12}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.72
+    assumptions: ["проверяется один почтовый ящик", "правила SLA однозначны"]
+
+  - use_case_id: weekly_won_tenders_notification
+    cluster_name: "Рассылка сводки выигранных тендеров"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Получить список тендеров за период", minutes_base: 10}
+      - {step: "Проверить статусы и состав данных", minutes_base: 20}
+      - {step: "Подготовить сводку", minutes_base: 10}
+      - {step: "Отправить отчёт группе", minutes_base: 5}
+    manual_minutes: {low: 25, base: 45, high: 90}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.7
+    assumptions: ["статусы тендеров актуальны в CRM", "список получателей стабилен"]
+
+  - use_case_id: project_team_vendor_owner
+    cluster_name: "Поиск команды проекта и владельца вендора"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Найти проект и его участников", minutes_base: 15}
+      - {step: "Определить ответственное направление", minutes_base: 15}
+      - {step: "Проверить и оформить ответ", minutes_base: 10}
+    manual_minutes: {low: 20, base: 40, high: 90}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.5}
+    manual_time_confidence: 0.65
+    assumptions: ["проект и вендор заведены в CRM", "ответственные указаны актуально"]
+
+  - use_case_id: open_source_company_brief
+    cluster_name: "Подготовка справки о компании"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Определить источники и критерии поиска", minutes_base: 40}
+      - {step: "Собрать сведения из открытых источников", minutes_base: 60}
+      - {step: "Сопоставить и проверить факты", minutes_base: 30}
+      - {step: "Подготовить аналитическую справку", minutes_base: 20}
+    manual_minutes: {low: 75, base: 150, high: 300}
+    human_followup_minutes: {low: 15, base: 35, high: 90}
+    active_wait_ratio: {low: 0.05, base: 0.2, high: 0.7}
+    manual_time_confidence: 0.5
+    assumptions: ["требуется обзор, а не due diligence", "источники доступны без платной подписки"]
+
+  - use_case_id: crm_client_excel_report
+    cluster_name: "Формирование Excel-отчёта по клиенту"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Определить необходимые поля клиента", minutes_base: 15}
+      - {step: "Собрать данные из CRM", minutes_base: 20}
+      - {step: "Сформировать и оформить Excel", minutes_base: 15}
+      - {step: "Проверить выгрузку", minutes_base: 5}
+    manual_minutes: {low: 30, base: 55, high: 120}
+    human_followup_minutes: {low: 5, base: 15, high: 30}
+    active_wait_ratio: {low: 0.0, base: 0.15, high: 0.5}
+    manual_time_confidence: 0.65
+    assumptions: ["данные клиента хранятся в одной CRM", "шаблон Excel не требует сложных формул"]
+
+  - use_case_id: manager_feedback_after_review
+    cluster_name: "Оформление отзыва руководителя"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Изучить тезисы и контекст мониторинга", minutes_base: 10}
+      - {step: "Сформулировать структурированную обратную связь", minutes_base: 20}
+      - {step: "Проверить и сохранить отзыв", minutes_base: 10}
+    manual_minutes: {low: 20, base: 40, high: 75}
+    human_followup_minutes: {low: 5, base: 12, high: 25}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.68
+    assumptions: ["тезисы руководителя уже подготовлены", "не требуется согласование с HR"]
+
+  - use_case_id: pre_review_employee_note
+    cluster_name: "Подготовка заметки о сотруднике"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Собрать исходные наблюдения", minutes_base: 5}
+      - {step: "Сформулировать заметку", minutes_base: 7}
+      - {step: "Сохранить заметку в анкете", minutes_base: 3}
+    manual_minutes: {low: 8, base: 15, high: 35}
+    human_followup_minutes: {low: 2, base: 5, high: 10}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.3}
+    manual_time_confidence: 0.75
+    assumptions: ["заметка относится к одному сотруднику", "исходные наблюдения доступны"]
+
+  - use_case_id: isup_ticket_create_edit
+    cluster_name: "Создание и обновление тикета ИСУП"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Уточнить содержание и найти связанный тикет", minutes_base: 5}
+      - {step: "Заполнить или обновить поля тикета", minutes_base: 15}
+      - {step: "Проверить и сохранить изменения", minutes_base: 5}
+    manual_minutes: {low: 12, base: 25, high: 60}
+    human_followup_minutes: {low: 3, base: 8, high: 15}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.5}
+    manual_time_confidence: 0.7
+    assumptions: ["структура тикета стандартная", "не требуется согласование постановки"]
+
+  - use_case_id: weekly_tender_sales_report
+    cluster_name: "Подготовка отчёта по выигранным тендерам"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Получить данные по тендерам", minutes_base: 15}
+      - {step: "Проверить и агрегировать показатели", minutes_base: 25}
+      - {step: "Сформировать отчёт", minutes_base: 15}
+      - {step: "Проверить итоговые значения", minutes_base: 5}
+    manual_minutes: {low: 30, base: 60, high: 120}
+    human_followup_minutes: {low: 5, base: 15, high: 35}
+    active_wait_ratio: {low: 0.0, base: 0.15, high: 0.5}
+    manual_time_confidence: 0.65
+    assumptions: ["данные за неделю полны", "метрики отчёта заранее определены"]
+
+  - use_case_id: jira_assigned_tasks
+    cluster_name: "Получение списка назначенных задач Jira"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Открыть Jira и применить фильтр исполнителя", minutes_base: 4}
+      - {step: "Просмотреть найденные задачи", minutes_base: 5}
+      - {step: "Сформировать список", minutes_base: 3}
+    manual_minutes: {low: 5, base: 12, high: 25}
+    human_followup_minutes: {low: 1, base: 3, high: 7}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.25}
+    manual_time_confidence: 0.8
+    assumptions: ["задачи находятся в одном экземпляре Jira", "права доступа настроены"]
+
+  - use_case_id: jira_priority_tasks
+    cluster_name: "Приоритизация назначенных задач Jira"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Получить список назначенных задач", minutes_base: 5}
+      - {step: "Проверить приоритеты и сроки", minutes_base: 10}
+      - {step: "Сформировать отсортированный список", minutes_base: 5}
+    manual_minutes: {low: 10, base: 20, high: 45}
+    human_followup_minutes: {low: 2, base: 5, high: 12}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.3}
+    manual_time_confidence: 0.76
+    assumptions: ["приоритет и срок заполнены в задачах", "не требуется управленческая переприоритизация"]
+
+  - use_case_id: manager_employee_observations
+    cluster_name: "Фиксация наблюдений о сотруднике"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Собрать контекст наблюдения", minutes_base: 5}
+      - {step: "Сформулировать и структурировать запись", minutes_base: 15}
+      - {step: "Сохранить наблюдение и статус прогресса", minutes_base: 5}
+    manual_minutes: {low: 12, base: 25, high: 50}
+    human_followup_minutes: {low: 3, base: 8, high: 15}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.3}
+    manual_time_confidence: 0.72
+    assumptions: ["обрабатывается одно наблюдение", "критерии оценки уже определены"]
+
+  - use_case_id: analysis_results_excel_export
+    cluster_name: "Экспорт аналитических результатов в Excel"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Подготовить набор результатов к выгрузке", minutes_base: 5}
+      - {step: "Выгрузить и оформить Excel-файл", minutes_base: 15}
+      - {step: "Проверить структуру и значения", minutes_base: 5}
+    manual_minutes: {low: 12, base: 25, high: 60}
+    human_followup_minutes: {low: 3, base: 8, high: 18}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.72
+    assumptions: ["объём данных умеренный", "не требуется сложное форматирование книги"]
+
+  - use_case_id: generic_excel_data_export
+    cluster_name: "Выгрузка выбранных данных в Excel"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Определить состав выгрузки", minutes_base: 5}
+      - {step: "Экспортировать данные в Excel", minutes_base: 10}
+      - {step: "Проверить файл", minutes_base: 5}
+    manual_minutes: {low: 10, base: 20, high: 45}
+    human_followup_minutes: {low: 2, base: 6, high: 15}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.7
+    assumptions: ["выгрузка выполняется из одной системы", "поля доступны пользователю"]
+
+  - use_case_id: supplier_blog_search
+    cluster_name: "Поиск публикаций о поставщике"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Сформировать критерии поиска", minutes_base: 10}
+      - {step: "Найти и прочитать релевантные публикации", minutes_base: 20}
+      - {step: "Подготовить список результатов", minutes_base: 5}
+    manual_minutes: {low: 15, base: 35, high: 75}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.65
+    assumptions: ["корпоративный блог индексируется", "название поставщика однозначно"]
+
+  - use_case_id: confluence_process_search
+    cluster_name: "Поиск корпоративного процесса в Confluence"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Уточнить формулировку процесса", minutes_base: 10}
+      - {step: "Найти и проверить документы Confluence", minutes_base: 15}
+      - {step: "Подготовить ссылку и выдержку", minutes_base: 5}
+    manual_minutes: {low: 12, base: 30, high: 75}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.62
+    assumptions: ["процесс документирован", "пользователь имеет доступ к нужному пространству"]
+
+  - use_case_id: executive_calendar_slot
+    cluster_name: "Поиск слота руководителя и создание встречи"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Проверить требования к встрече", minutes_base: 8}
+      - {step: "Найти свободный слот руководителя", minutes_base: 10}
+      - {step: "Создать и проверить встречу", minutes_base: 7}
+    manual_minutes: {low: 12, base: 25, high: 50}
+    human_followup_minutes: {low: 2, base: 6, high: 15}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.72
+    assumptions: ["доступ к календарю предоставлен", "не требуется длительное согласование участников"]
+
+  - use_case_id: task_completion_approval
+    cluster_name: "Проверка и подтверждение выполнения задач"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Получить список заявленных выполненными задач", minutes_base: 10}
+      - {step: "Проверить результаты и критерии выполнения", minutes_base: 15}
+      - {step: "Подтвердить и закрыть задачи", minutes_base: 5}
+    manual_minutes: {low: 15, base: 30, high: 90}
+    human_followup_minutes: {low: 5, base: 12, high: 30}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.3}
+    manual_time_confidence: 0.55
+    assumptions: ["проверяется небольшой пакет задач", "результаты выполнения приложены"]
+
+  - use_case_id: personal_task_history
+    cluster_name: "Ведение истории личных задач"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Открыть историю задач", minutes_base: 5}
+      - {step: "Добавить или обновить задачу", minutes_base: 5}
+      - {step: "Отметить состояние выполнения", minutes_base: 5}
+    manual_minutes: {low: 7, base: 15, high: 30}
+    human_followup_minutes: {low: 1, base: 4, high: 8}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.25}
+    manual_time_confidence: 0.78
+    assumptions: ["обрабатывается одна задача", "история ведётся в одной системе"]
+
+  - use_case_id: meeting_room_search
+    cluster_name: "Поиск и бронирование переговорной"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Уточнить время и вместимость", minutes_base: 5}
+      - {step: "Проверить доступные переговорные", minutes_base: 10}
+      - {step: "Забронировать и проверить комнату", minutes_base: 5}
+    manual_minutes: {low: 10, base: 20, high: 45}
+    human_followup_minutes: {low: 2, base: 5, high: 12}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.75
+    assumptions: ["каталог комнат содержит вместимость", "бронирование доступно через календарь"]
+
+  - use_case_id: client_thread_reply
+    cluster_name: "Подготовка ответа клиенту по переписке"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Прочитать историю переписки", minutes_base: 15}
+      - {step: "Подготовить содержательный ответ", minutes_base: 20}
+      - {step: "Проверить факты, тон и отправку", minutes_base: 15}
+    manual_minutes: {low: 25, base: 50, high: 120}
+    human_followup_minutes: {low: 5, base: 15, high: 40}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.5}
+    manual_time_confidence: 0.58
+    assumptions: ["переписка средней длины", "ответ не требует юридического согласования"]
+
+  - use_case_id: discussion_notes
+    cluster_name: "Оформление итогов обсуждения"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Собрать записи и контекст обсуждения", minutes_base: 10}
+      - {step: "Выделить решения и договорённости", minutes_base: 15}
+      - {step: "Оформить и сохранить заметку", minutes_base: 5}
+    manual_minutes: {low: 15, base: 30, high: 75}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.3}
+    manual_time_confidence: 0.65
+    assumptions: ["обсуждение продолжалось до одного часа", "исходные заметки доступны"]
+
+  - use_case_id: client_contacts_by_company
+    cluster_name: "Поиск контактных лиц клиента"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Найти компанию в CRM", minutes_base: 10}
+      - {step: "Проверить связанные контакты", minutes_base: 10}
+      - {step: "Сформировать список контактов", minutes_base: 5}
+    manual_minutes: {low: 10, base: 25, high: 60}
+    human_followup_minutes: {low: 2, base: 6, high: 15}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.68
+    assumptions: ["название компании однозначно", "контакты актуальны в CRM"]
+
+  - use_case_id: group_common_slot
+    cluster_name: "Поиск общего календарного слота группы"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Собрать требования и список участников", minutes_base: 15}
+      - {step: "Сопоставить календари и выбрать варианты", minutes_base: 20}
+      - {step: "Создать и проверить встречу", minutes_base: 10}
+    manual_minutes: {low: 20, base: 45, high: 120}
+    human_followup_minutes: {low: 5, base: 12, high: 35}
+    active_wait_ratio: {low: 0.0, base: 0.15, high: 0.6}
+    manual_time_confidence: 0.6
+    assumptions: ["до 20 участников", "календари участников доступны"]
+
+  - use_case_id: meeting_body_information
+    cluster_name: "Извлечение сведений из описания встречи"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Найти нужную встречу", minutes_base: 3}
+      - {step: "Прочитать и извлечь сведения из описания", minutes_base: 6}
+      - {step: "Подготовить ответ", minutes_base: 3}
+    manual_minutes: {low: 5, base: 12, high: 30}
+    human_followup_minutes: {low: 1, base: 3, high: 8}
+    active_wait_ratio: {low: 0.0, base: 0.05, high: 0.25}
+    manual_time_confidence: 0.8
+    assumptions: ["встреча однозначно определена", "информация находится в текстовом описании"]
+
+  - use_case_id: followup_reminders
+    cluster_name: "Создание напоминаний по договорённостям"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Просмотреть итоги встречи", minutes_base: 10}
+      - {step: "Выделить и сгруппировать договорённости", minutes_base: 15}
+      - {step: "Создать и проверить напоминания", minutes_base: 10}
+    manual_minutes: {low: 18, base: 35, high: 90}
+    human_followup_minutes: {low: 4, base: 10, high: 25}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.63
+    assumptions: ["есть текстовые итоги встречи", "сроки и ответственные указаны или выводимы"]
+
+  - use_case_id: next_day_meetings
+    cluster_name: "Подготовка плана встреч на следующий день"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Получить список завтрашних встреч", minutes_base: 5}
+      - {step: "Проверить описания и материалы", minutes_base: 10}
+      - {step: "Сформировать план подготовки", minutes_base: 5}
+    manual_minutes: {low: 10, base: 20, high: 50}
+    human_followup_minutes: {low: 2, base: 6, high: 15}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.4}
+    manual_time_confidence: 0.7
+    assumptions: ["в календаре до десяти встреч", "материалы прикреплены или доступны по ссылкам"]
+
+  - use_case_id: email_to_project_ticket
+    cluster_name: "Создание проектного тикета из письма"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Прочитать письмо и выделить задачу", minutes_base: 5}
+      - {step: "Создать или найти проектный тикет", minutes_base: 15}
+      - {step: "Заполнить поля и проверить связи", minutes_base: 10}
+    manual_minutes: {low: 15, base: 30, high: 75}
+    human_followup_minutes: {low: 3, base: 10, high: 25}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.5}
+    manual_time_confidence: 0.65
+    assumptions: ["письмо относится к одной задаче", "проект и правила заполнения известны"]
+
+  - use_case_id: isup_project_status_monitoring
+    cluster_name: "Контроль изменений статусов проектов ИСУП"
+    estimation_source: "expert_seed_without_production_telemetry"
+    draft: true
+    manual_steps:
+      - {step: "Получить текущие статусы проектов", minutes_base: 10}
+      - {step: "Сравнить статусы с предыдущей проверкой", minutes_base: 10}
+      - {step: "Подготовить уведомления об изменениях", minutes_base: 10}
+    manual_minutes: {low: 15, base: 30, high: 75}
+    human_followup_minutes: {low: 3, base: 8, high: 20}
+    active_wait_ratio: {low: 0.0, base: 0.1, high: 0.5}
+    manual_time_confidence: 0.65
+    assumptions: ["проверяется ограниченный список проектов", "предыдущие статусы сохранены"]

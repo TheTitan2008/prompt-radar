@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0",
+  "datasets": [
+    {
+      "dataset_id": "prompt_radar_generated_200",
+      "dataset_filename": "dataset.zip",
+      "archive_sha256": "de9fdb1aeadf648e502eaae5ddebc998f0c588ecbf172cf651ec7fc8a1c0b703",
+      "analysis_hash": "210f68123c9fa3a110f86ce55f2e483ae8281af2d348bac6d21f17abe0cf9668",
+      "clusters": [
+        {
+          "cluster_fingerprint": "9b34fa5326d0f169aa04a575044d174abeefa3a90908346af718a75f6e98bba8",
+          "member_run_ids_hash": "152c9ef8da6f5de1116bd128f97d480b128981128317022604b775b1b04af030",
+          "action": "abstain",
+          "cluster_name": "Смешанные новые и шумовые запросы",
+          "abstention_reason": "Кластер объединяет запросы МИФИ, четыре разные emerging-темы и шум; единый ручной baseline экономически некорректен.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v1",
+          "result": null
+        }
+      ]
+    },
+    {
+      "dataset_id": "prompt_radar_generated_800",
+      "dataset_filename": "dataset.zip",
+      "archive_sha256": "2e2c5d6ec80b66ca0caeb8d89e4debe571f29718a8df9a3031c2b605488f0f78",
+      "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+      "clusters": [
+        {
+          "cluster_fingerprint": "e36493241b36a2dcf6bdbd8cc334467941ac30fc584bbb497f828457b56a2891",
+          "member_run_ids_hash": "ac5eadc5d4567a78c485b62e36a80da840388005b426037f80731e514a3267e4",
+          "action": "enrich",
+          "cluster_name": "Анализ применения офисных IoT-датчиков",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Анализ применения офисных IoT-датчиков",
+            "manual_steps": [
+              {"step": "Собрать требования к помещениям и датчикам", "minutes_base": 15},
+              {"step": "Сопоставить варианты оборудования и риски", "minutes_base": 20},
+              {"step": "Подготовить рекомендации и план проверки", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 25, "base": 50, "high": 100},
+            "human_followup_minutes": {"low": 5, "base": 12, "high": 30},
+            "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.4},
+            "manual_time_confidence": 0.6,
+            "assumptions": ["оценивается один типовой офисный сценарий", "характеристики помещений доступны"]
+          }
+        },
+        {
+          "cluster_fingerprint": "9c5fc6d87fcbd3c91e4f42f7571ddc23a1dfc2b7d40e3c403ea3d28898a33339",
+          "member_run_ids_hash": "a007f407840cba123622322f21af875200ef2019277fd47f650c82e32d45d56f",
+          "action": "enrich",
+          "cluster_name": "Подготовка черновиков внутренних объявлений",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Подготовка черновиков внутренних объявлений",
+            "manual_steps": [
+              {"step": "Собрать факты и требования к объявлению", "minutes_base": 10},
+              {"step": "Подготовить структурированный черновик", "minutes_base": 15},
+              {"step": "Проверить формулировки и риски публикации", "minutes_base": 10}
+            ],
+            "manual_minutes": {"low": 18, "base": 35, "high": 70},
+            "human_followup_minutes": {"low": 4, "base": 8, "high": 20},
+            "active_wait_ratio": {"low": 0.0, "base": 0.05, "high": 0.25},
+            "manual_time_confidence": 0.7,
+            "assumptions": ["готовится одно объявление", "фактические данные предоставлены заказчиком"]
+          }
+        },
+        {
+          "cluster_fingerprint": "745e04a976981c08d1bc807b07c1d98e7fd6d0442bcbcecdd276142ef7d94c95",
+          "member_run_ids_hash": "1ae22d248fd7f4e45c32024ef17eb823c49095464fc69f7fa41209f602956cf5",
+          "action": "enrich",
+          "cluster_name": "Онбординг внутренних AI-ассистентов",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Онбординг внутренних AI-ассистентов",
+            "manual_steps": [
+              {"step": "Собрать требования и ограничения использования", "minutes_base": 20},
+              {"step": "Подготовить инструкцию и примеры работы", "minutes_base": 25},
+              {"step": "Сформировать контрольный список и риски", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 30, "base": 60, "high": 120},
+            "human_followup_minutes": {"low": 8, "base": 15, "high": 35},
+            "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.35},
+            "manual_time_confidence": 0.62,
+            "assumptions": ["рассматривается один тип ассистента", "правила доступа уже определены"]
+          }
+        },
+        {
+          "cluster_fingerprint": "4bbf2f178daa76f45e11271209212ce17c4a11d3e0ad99c59fa6fee7e844031f",
+          "member_run_ids_hash": "6d2db7717f992cebc80c53bd089b94a594775089ee494d7a282005f5992ce330",
+          "action": "abstain",
+          "cluster_name": "Ошибочно нераспознанные известные сценарии",
+          "abstention_reason": "Кластер состоит из известных сценариев, не прошедших повышенный порог; создавать новый экономический паспорт нельзя.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "ef929cde84c69d4c87c1ede855119db14b99ad87292aacce89b42317c2c08739",
+          "member_run_ids_hash": "ca61136c068f365b06e1f60c60f1425b3c31f2d1dc2bd3d14d66dc4078e0d005",
+          "action": "abstain",
+          "cluster_name": "Смешанные известные и мусорные запросы",
+          "abstention_reason": "Кластер смешивает известные задачи и бессодержательные запросы; единая тема и ручной baseline отсутствуют.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "0f4f6aaa02f3184ced18d0b8e39fb7d6dc154e466b7d1f2212e318a6e2932c4f",
+          "member_run_ids_hash": "966cb75ffd4d37f6d46c03b78c941553a106afb526fc7e19766af3bbdb22b678",
+          "action": "enrich",
+          "cluster_name": "Сверка витрин учебных материалов",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Сверка витрин учебных материалов",
+            "manual_steps": [
+              {"step": "Получить перечни материалов из сравниваемых витрин", "minutes_base": 15},
+              {"step": "Сопоставить записи и выявить расхождения", "minutes_base": 25},
+              {"step": "Подготовить список исправлений и рисков", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 30, "base": 55, "high": 110},
+            "human_followup_minutes": {"low": 6, "base": 12, "high": 30},
+            "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.4},
+            "manual_time_confidence": 0.65,
+            "assumptions": ["сверяется ограниченный набор витрин", "данные доступны в машиночитаемом виде"]
+          }
+        },
+        {
+          "cluster_fingerprint": "7a2b6d9f700861d1fdcd5a1177d121edc2772afdaab4cfec819fbc23069efc29",
+          "member_run_ids_hash": "cf016c61cd16da2473dda0f1d6f93a77a60085b79238e97c8f7d3e905915d3af",
+          "action": "enrich",
+          "cluster_name": "Обработка заявок в библиотеку промптов",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Обработка заявок в библиотеку промптов",
+            "manual_steps": [
+              {"step": "Собрать и проверить содержание заявок", "minutes_base": 15},
+              {"step": "Классифицировать запросы и выявить дубли", "minutes_base": 20},
+              {"step": "Подготовить решение и список рисков", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 25, "base": 50, "high": 100},
+            "human_followup_minutes": {"low": 5, "base": 12, "high": 30},
+            "active_wait_ratio": {"low": 0.0, "base": 0.08, "high": 0.35},
+            "manual_time_confidence": 0.64,
+            "assumptions": ["обрабатывается небольшой пакет заявок", "критерии публикации определены"]
+          }
+        },
+        {
+          "cluster_fingerprint": "0f4a51dd87d4acd8ec4e73560853c690c6ada272605b115c67ed600d00b80ae8",
+          "member_run_ids_hash": "913600fa8f183045ca3a59c940545053a571d3b195537dddda6cec508f2ae291",
+          "action": "enrich",
+          "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+            "manual_steps": [
+              {"step": "Уточнить вопрос и найти актуальные правила", "minutes_base": 10},
+              {"step": "Проверить контакты и последовательность действий", "minutes_base": 12},
+              {"step": "Подготовить понятный ответ студенту", "minutes_base": 8}
+            ],
+            "manual_minutes": {"low": 15, "base": 30, "high": 60},
+            "human_followup_minutes": {"low": 3, "base": 7, "high": 18},
+            "active_wait_ratio": {"low": 0.0, "base": 0.05, "high": 0.25},
+            "manual_time_confidence": 0.7,
+            "assumptions": ["вопрос относится к одному сервису", "официальная информация доступна"]
+          }
+        },
+        {
+          "cluster_fingerprint": "f38fc4e18f4a2f3113e1b4e0b5a1854082a33ad1a13ff523a3580453026ec9af",
+          "member_run_ids_hash": "dfd71cfc20b75b181a06e7de15aa2d9610a9d5dbc156aab1aa19a0a6a1400b9a",
+          "action": "abstain",
+          "cluster_name": "Ошибочно нераспознанные известные задачи",
+          "abstention_reason": "Кластер содержит известные use cases, которые следует вернуть в каталог после калибровки, а не оценивать как новую тему.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "3b720529fe577dee894a0088d85851ba19021a9bc72ea14028142fac3cf0ac3f",
+          "member_run_ids_hash": "5a700d76b03caf213c81a7b9c77f300cf8cc8420a6e8b5200a896504a193f310",
+          "action": "abstain",
+          "cluster_name": "Смешанные проверки данных и микроопросы",
+          "abstention_reason": "Кластер объединяет две разные бизнес-задачи: проверку качества витрин и микроопросы сотрудников; общий baseline некорректен.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "e4c502b23896cfdea92ae6818fa0f90c8cc06862354c6b93b479a313a500aed8",
+          "member_run_ids_hash": "cd43978059b8e31cbb17069b1760439bd3c58d60c56a12820d56043154151dc5",
+          "action": "abstain",
+          "cluster_name": "Смешанные CRM-задачи и шум",
+          "abstention_reason": "Большинство участников — известные CRM-сценарии, присутствует шум; это не новый устойчивый use case.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "175e48e660c00cdc0784597c0d33d9ab3639cb1bc68ddb03e15e350ad0277e00",
+          "member_run_ids_hash": "04a1d9ca6ced2bf10b381f1974bc96d7ee8167a793e9bd8e5707c8a0fc2aa20f",
+          "action": "enrich",
+          "cluster_name": "Контроль локальных справочников оборудования",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Контроль локальных справочников оборудования",
+            "manual_steps": [
+              {"step": "Получить справочник и правила заполнения", "minutes_base": 10},
+              {"step": "Проверить записи, дубли и обязательные поля", "minutes_base": 20},
+              {"step": "Подготовить перечень исправлений", "minutes_base": 10}
+            ],
+            "manual_minutes": {"low": 20, "base": 40, "high": 80},
+            "human_followup_minutes": {"low": 5, "base": 10, "high": 25},
+            "active_wait_ratio": {"low": 0.0, "base": 0.08, "high": 0.3},
+            "manual_time_confidence": 0.66,
+            "assumptions": ["проверяется один локальный справочник", "правила качества данных известны"]
+          }
+        },
+        {
+          "cluster_fingerprint": "3254733515f4fd9c0a2fad6d7b3e9b7e6b1fe3e52b7a9842f51a2d37c38d5892",
+          "member_run_ids_hash": "d25952b6ec5897fde9593ba10df9a9d1825c9ba4f07b134919f4d7dfd09e9681",
+          "action": "enrich",
+          "cluster_name": "Проверка небольших списков закупок",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Проверка небольших списков закупок",
+            "manual_steps": [
+              {"step": "Получить список и критерии проверки", "minutes_base": 8},
+              {"step": "Проверить позиции и возможные расхождения", "minutes_base": 12},
+              {"step": "Оформить замечания и рекомендации", "minutes_base": 5}
+            ],
+            "manual_minutes": {"low": 12, "base": 25, "high": 50},
+            "human_followup_minutes": {"low": 3, "base": 7, "high": 18},
+            "active_wait_ratio": {"low": 0.0, "base": 0.05, "high": 0.25},
+            "manual_time_confidence": 0.68,
+            "assumptions": ["список небольшой", "цены и обязательные поля доступны"]
+          }
+        },
+        {
+          "cluster_fingerprint": "26958b837d7d885ae5340b2b030ae4661dd7ca82f69015388ac4cffe1531075b",
+          "member_run_ids_hash": "60540ad37039e5850f2d96d4c7511cb84c5a02376b859db2e3b772a38c4e8541",
+          "action": "abstain",
+          "cluster_name": "Смешанные long-context и случайные запросы",
+          "abstention_reason": "Участники относятся к нескольким темам и включают случайный шум; единый экономический сценарий отсутствует.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "c90ec9ce68439e55749888b6ed6b64c63218a74e404af29861e3f2f0eb1aaccb",
+          "member_run_ids_hash": "442b2d7de82cfca9c902f6017f6d8a2996dd87cd736e9c4ad6616690d64bf9d9",
+          "action": "abstain",
+          "cluster_name": "Смешанные long-context запросы",
+          "abstention_reason": "Кластер сформирован общей синтетической ctx-обвязкой, а не одной бизнес-целью; экономический паспорт был бы ложным.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        }
+      ]
+    },
+    {
+      "dataset_id": "prompt_radar_generated_800",
+      "dataset_filename": "dataset.zip",
+      "archive_sha256": "0f6770410200ae0ced25a168f67e3409271df901f5ead950b807bce8f75cb9f5",
+      "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+      "clusters": [
+        {
+          "cluster_fingerprint": "e36493241b36a2dcf6bdbd8cc334467941ac30fc584bbb497f828457b56a2891",
+          "member_run_ids_hash": "ac5eadc5d4567a78c485b62e36a80da840388005b426037f80731e514a3267e4",
+          "action": "enrich",
+          "cluster_name": "Анализ применения офисных IoT-датчиков",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Анализ применения офисных IoT-датчиков",
+            "manual_steps": [
+              {"step": "Собрать требования к помещениям и датчикам", "minutes_base": 15},
+              {"step": "Сопоставить варианты оборудования и риски", "minutes_base": 20},
+              {"step": "Подготовить рекомендации и план проверки", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 25, "base": 50, "high": 100},
+            "human_followup_minutes": {"low": 5, "base": 12, "high": 30},
+            "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.4},
+            "manual_time_confidence": 0.6,
+            "assumptions": ["оценивается один типовой офисный сценарий", "характеристики помещений доступны"]
+          }
+        },
+        {
+          "cluster_fingerprint": "745e04a976981c08d1bc807b07c1d98e7fd6d0442bcbcecdd276142ef7d94c95",
+          "member_run_ids_hash": "1ae22d248fd7f4e45c32024ef17eb823c49095464fc69f7fa41209f602956cf5",
+          "action": "enrich",
+          "cluster_name": "Онбординг внутренних AI-ассистентов",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Онбординг внутренних AI-ассистентов",
+            "manual_steps": [
+              {"step": "Собрать требования и ограничения использования", "minutes_base": 20},
+              {"step": "Подготовить инструкцию и примеры работы", "minutes_base": 25},
+              {"step": "Сформировать контрольный список и риски", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 30, "base": 60, "high": 120},
+            "human_followup_minutes": {"low": 8, "base": 15, "high": 35},
+            "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.35},
+            "manual_time_confidence": 0.62,
+            "assumptions": ["рассматривается один тип ассистента", "правила доступа уже определены"]
+          }
+        },
+        {
+          "cluster_fingerprint": "7a2b6d9f700861d1fdcd5a1177d121edc2772afdaab4cfec819fbc23069efc29",
+          "member_run_ids_hash": "cf016c61cd16da2473dda0f1d6f93a77a60085b79238e97c8f7d3e905915d3af",
+          "action": "enrich",
+          "cluster_name": "Обработка заявок в библиотеку промптов",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Обработка заявок в библиотеку промптов",
+            "manual_steps": [
+              {"step": "Собрать и проверить содержание заявок", "minutes_base": 15},
+              {"step": "Классифицировать запросы и выявить дубли", "minutes_base": 20},
+              {"step": "Подготовить решение и список рисков", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 25, "base": 50, "high": 100},
+            "human_followup_minutes": {"low": 5, "base": 12, "high": 30},
+            "active_wait_ratio": {"low": 0.0, "base": 0.08, "high": 0.35},
+            "manual_time_confidence": 0.64,
+            "assumptions": ["обрабатывается небольшой пакет заявок", "критерии публикации определены"]
+          }
+        },
+        {
+          "cluster_fingerprint": "0f4a51dd87d4acd8ec4e73560853c690c6ada272605b115c67ed600d00b80ae8",
+          "member_run_ids_hash": "913600fa8f183045ca3a59c940545053a571d3b195537dddda6cec508f2ae291",
+          "action": "enrich",
+          "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+            "manual_steps": [
+              {"step": "Уточнить вопрос и найти актуальные правила", "minutes_base": 10},
+              {"step": "Проверить контакты и последовательность действий", "minutes_base": 12},
+              {"step": "Подготовить понятный ответ студенту", "minutes_base": 8}
+            ],
+            "manual_minutes": {"low": 15, "base": 30, "high": 60},
+            "human_followup_minutes": {"low": 3, "base": 7, "high": 18},
+            "active_wait_ratio": {"low": 0.0, "base": 0.05, "high": 0.25},
+            "manual_time_confidence": 0.7,
+            "assumptions": ["вопрос относится к одному сервису", "официальная информация доступна"]
+          }
+        },
+        {
+          "cluster_fingerprint": "0f4f6aaa02f3184ced18d0b8e39fb7d6dc154e466b7d1f2212e318a6e2932c4f",
+          "member_run_ids_hash": "966cb75ffd4d37f6d46c03b78c941553a106afb526fc7e19766af3bbdb22b678",
+          "action": "enrich",
+          "cluster_name": "Сверка витрин учебных материалов",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Сверка витрин учебных материалов",
+            "manual_steps": [
+              {"step": "Получить перечни материалов из сравниваемых витрин", "minutes_base": 15},
+              {"step": "Сопоставить записи и выявить расхождения", "minutes_base": 25},
+              {"step": "Подготовить список исправлений и рисков", "minutes_base": 15}
+            ],
+            "manual_minutes": {"low": 30, "base": 55, "high": 110},
+            "human_followup_minutes": {"low": 6, "base": 12, "high": 30},
+            "active_wait_ratio": {"low": 0.0, "base": 0.1, "high": 0.4},
+            "manual_time_confidence": 0.65,
+            "assumptions": ["сверяется ограниченный набор витрин", "данные доступны в машиночитаемом виде"]
+          }
+        },
+        {
+          "cluster_fingerprint": "9c5fc6d87fcbd3c91e4f42f7571ddc23a1dfc2b7d40e3c403ea3d28898a33339",
+          "member_run_ids_hash": "a007f407840cba123622322f21af875200ef2019277fd47f650c82e32d45d56f",
+          "action": "enrich",
+          "cluster_name": "Подготовка черновиков внутренних объявлений",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Подготовка черновиков внутренних объявлений",
+            "manual_steps": [
+              {"step": "Собрать факты и требования к объявлению", "minutes_base": 10},
+              {"step": "Подготовить структурированный черновик", "minutes_base": 15},
+              {"step": "Проверить формулировки и риски публикации", "minutes_base": 10}
+            ],
+            "manual_minutes": {"low": 18, "base": 35, "high": 70},
+            "human_followup_minutes": {"low": 4, "base": 8, "high": 20},
+            "active_wait_ratio": {"low": 0.0, "base": 0.05, "high": 0.25},
+            "manual_time_confidence": 0.7,
+            "assumptions": ["готовится одно объявление", "фактические данные предоставлены заказчиком"]
+          }
+        },
+        {
+          "cluster_fingerprint": "3b720529fe577dee894a0088d85851ba19021a9bc72ea14028142fac3cf0ac3f",
+          "member_run_ids_hash": "5a700d76b03caf213c81a7b9c77f300cf8cc8420a6e8b5200a896504a193f310",
+          "action": "abstain",
+          "cluster_name": "Смешанные проверки данных и микроопросы",
+          "abstention_reason": "Кластер объединяет две разные бизнес-задачи: проверку качества витрин и микроопросы сотрудников; общий baseline некорректен.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "4bbf2f178daa76f45e11271209212ce17c4a11d3e0ad99c59fa6fee7e844031f",
+          "member_run_ids_hash": "6d2db7717f992cebc80c53bd089b94a594775089ee494d7a282005f5992ce330",
+          "action": "abstain",
+          "cluster_name": "Ошибочно нераспознанные известные сценарии",
+          "abstention_reason": "Кластер состоит из известных сценариев, не прошедших повышенный порог; создавать новый экономический паспорт нельзя.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "ef929cde84c69d4c87c1ede855119db14b99ad87292aacce89b42317c2c08739",
+          "member_run_ids_hash": "ca61136c068f365b06e1f60c60f1425b3c31f2d1dc2bd3d14d66dc4078e0d005",
+          "action": "abstain",
+          "cluster_name": "Смешанные известные и мусорные запросы",
+          "abstention_reason": "Кластер смешивает известные задачи и бессодержательные запросы; единая тема и ручной baseline отсутствуют.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "f38fc4e18f4a2f3113e1b4e0b5a1854082a33ad1a13ff523a3580453026ec9af",
+          "member_run_ids_hash": "dfd71cfc20b75b181a06e7de15aa2d9610a9d5dbc156aab1aa19a0a6a1400b9a",
+          "action": "abstain",
+          "cluster_name": "Ошибочно нераспознанные известные задачи",
+          "abstention_reason": "Кластер содержит известные use cases, которые следует вернуть в каталог после калибровки, а не оценивать как новую тему.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "175e48e660c00cdc0784597c0d33d9ab3639cb1bc68ddb03e15e350ad0277e00",
+          "member_run_ids_hash": "04a1d9ca6ced2bf10b381f1974bc96d7ee8167a793e9bd8e5707c8a0fc2aa20f",
+          "action": "enrich",
+          "cluster_name": "Контроль локальных справочников оборудования",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Контроль локальных справочников оборудования",
+            "manual_steps": [
+              {"step": "Получить справочник и правила заполнения", "minutes_base": 10},
+              {"step": "Проверить записи, дубли и обязательные поля", "minutes_base": 20},
+              {"step": "Подготовить перечень исправлений", "minutes_base": 10}
+            ],
+            "manual_minutes": {"low": 20, "base": 40, "high": 80},
+            "human_followup_minutes": {"low": 5, "base": 10, "high": 25},
+            "active_wait_ratio": {"low": 0.0, "base": 0.08, "high": 0.3},
+            "manual_time_confidence": 0.66,
+            "assumptions": ["проверяется один локальный справочник", "правила качества данных известны"]
+          }
+        },
+        {
+          "cluster_fingerprint": "3254733515f4fd9c0a2fad6d7b3e9b7e6b1fe3e52b7a9842f51a2d37c38d5892",
+          "member_run_ids_hash": "d25952b6ec5897fde9593ba10df9a9d1825c9ba4f07b134919f4d7dfd09e9681",
+          "action": "enrich",
+          "cluster_name": "Проверка небольших списков закупок",
+          "abstention_reason": null,
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": {
+            "cluster_name": "Проверка небольших списков закупок",
+            "manual_steps": [
+              {"step": "Получить список и критерии проверки", "minutes_base": 8},
+              {"step": "Проверить позиции и возможные расхождения", "minutes_base": 12},
+              {"step": "Оформить замечания и рекомендации", "minutes_base": 5}
+            ],
+            "manual_minutes": {"low": 12, "base": 25, "high": 50},
+            "human_followup_minutes": {"low": 3, "base": 7, "high": 18},
+            "active_wait_ratio": {"low": 0.0, "base": 0.05, "high": 0.25},
+            "manual_time_confidence": 0.68,
+            "assumptions": ["список небольшой", "цены и обязательные поля доступны"]
+          }
+        },
+        {
+          "cluster_fingerprint": "c90ec9ce68439e55749888b6ed6b64c63218a74e404af29861e3f2f0eb1aaccb",
+          "member_run_ids_hash": "442b2d7de82cfca9c902f6017f6d8a2996dd87cd736e9c4ad6616690d64bf9d9",
+          "action": "abstain",
+          "cluster_name": "Смешанные long-context запросы",
+          "abstention_reason": "Кластер сформирован общей синтетической ctx-обвязкой, а не одной бизнес-целью; экономический паспорт был бы ложным.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "26958b837d7d885ae5340b2b030ae4661dd7ca82f69015388ac4cffe1531075b",
+          "member_run_ids_hash": "60540ad37039e5850f2d96d4c7511cb84c5a02376b859db2e3b772a38c4e8541",
+          "action": "abstain",
+          "cluster_name": "Смешанные long-context и случайные запросы",
+          "abstention_reason": "Участники относятся к нескольким темам и включают случайный шум; единый экономический сценарий отсутствует.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "9f9c6677e88abd39f165f84911bc138adccbe18c432bc050f292428c9a053184",
+          "member_run_ids_hash": "84ac0f9c6b7ba754522e79406067eb26a43c2e3cca801e480914b2e1096d110c",
+          "action": "abstain",
+          "cluster_name": "Почти полностью известные сценарии с шумовым хвостом",
+          "abstention_reason": "Кластер почти целиком состоит из known-запросов и одного шумового примера; новый паспорт создавал бы ложную бизнес-тему.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        },
+        {
+          "cluster_fingerprint": "a7ad6e3232a0a362e7ca477c1870dcc0367b938f5cd95029b63d339f022a6948",
+          "member_run_ids_hash": "2d0f0588949ced031fb49134b6e7a48552a979a63d4e3837cfc1869e3bd402be",
+          "action": "abstain",
+          "cluster_name": "Небольшая группа ошибочно нераспознанных known-запросов",
+          "abstention_reason": "Все участники принадлежат к известным сценариям и должны решаться калибровкой классификации, а не новым экономическим паспортом.",
+          "source_model": "codex_precomputed_review",
+          "source_model_revision": "2026-07-25",
+          "source_prompt_version": "precomputed-cluster-review-v2",
+          "result": null
+        }
+      ]
+    }
+  ]
+}

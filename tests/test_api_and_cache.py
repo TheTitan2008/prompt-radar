@@ -1,0 +1,43 @@
+from __future__ import annotations
+
+import socket
+
+import pytest
+
+from prompt_radar.embeddings.cache import embedding_cache_key
+from prompt_radar.errors import ExternalApiDisabledError
+from prompt_radar.naming.base import ClusterNamingRequest
+from prompt_radar.naming.disabled import DisabledClusterNamingProvider
+from prompt_radar.naming.qwen_api_stub import QwenApiClusterNamingProvider
+
+
+def test_disabled_api_never_uses_network(monkeypatch: pytest.MonkeyPatch) -> None:
+    def forbidden(*args: object, **kwargs: object) -> None:
+        raise AssertionError("network attempted")
+
+    monkeypatch.setattr(socket, "create_connection", forbidden)
+    request = ClusterNamingRequest(1, ["Почта"], ["ответь"], ["письмо"])
+    with pytest.raises(ExternalApiDisabledError):
+        DisabledClusterNamingProvider().name_cluster(request)
+    with pytest.raises(ExternalApiDisabledError):
+        QwenApiClusterNamingProvider().name_cluster(request)
+
+
+def test_cache_key_includes_model_and_preprocessing_versions() -> None:
+    base = dict(
+        model_id="model",
+        tokenizer_version="tok",
+        encoding_mode="query",
+        text="hello",
+    )
+    first = embedding_cache_key(
+        **base, model_revision="a", preprocessing_version="1"
+    )
+    second = embedding_cache_key(
+        **base, model_revision="b", preprocessing_version="1"
+    )
+    third = embedding_cache_key(
+        **base, model_revision="a", preprocessing_version="2"
+    )
+    assert len({first, second, third}) == 3
+

@@ -1,0 +1,15 @@
+{
+  "dataset_id": "prompt_radar_generated_800",
+  "issues": [],
+  "record_counts": {
+    "attachments": 60,
+    "conversations": 140,
+    "events": 480,
+    "messages": 934,
+    "runs": 800,
+    "users": 20
+  },
+  "schema_version": "1.0",
+  "skipped_records": 0,
+  "valid": true
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Sales",
+    "display_name": "Алексей Смирнов",
+    "role": "synthetic_employee",
+    "user_id": "aleksei_smirnov"
+  },
+  {
+    "department": "Administration",
+    "display_name": "Анна Новикова",
+    "role": "synthetic_employee",
+    "user_id": "anna_novikova"
+  },
+  {
+    "department": "Procurement",
+    "display_name": "Борис Максимов",
+    "role": "synthetic_employee",
+    "user_id": "boris_maksimov"
+  },
+  {
+    "department": "IT",
+    "display_name": "Дмитрий Иванов",
+    "role": "synthetic_employee",
+    "user_id": "dmitry_ivanov"
+  },
+  {
+    "department": "Finance",
+    "display_name": "Екатерина Орлова",
+    "role": "synthetic_employee",
+    "user_id": "ekaterina_orlova"
+  },
+  {
+    "department": "Operations",
+    "display_name": "Елена Петрова",
+    "role": "synthetic_employee",
+    "user_id": "elena_petrova"
+  },
+  {
+    "department": "Marketing",
+    "display_name": "Игорь Федоров",
+    "role": "synthetic_employee",
+    "user_id": "igor_fedorov"
+  },
+  {
+    "department": "Operations",
+    "display_name": "Ирина Васильева",
+    "role": "synthetic_employee",
+    "user_id": "irina_vasilieva"
+  },
+  {
+    "department": "Finance",
+    "display_name": "Марина Соколова",
+    "role": "synthetic_employee",
+    "user_id": "marina_sokolova"
+  },
+  {
+    "department": "IT",
+    "display_name": "Михаил Попов",
+    "role": "synthetic_employee",
+    "user_id": "mikhail_popov"
+  },
+  {
+    "department": "Legal",
+    "display_name": "Наталья Лебедева",
+    "role": "synthetic_employee",
+    "user_id": "natalia_lebedeva"
+  },
+  {
+    "department": "Legal",
+    "display_name": "Никита Андреев",
+    "role": "synthetic_employee",
+    "user_id": "nikita_andreev"
+  },
+  {
+    "department": "HR",
+    "display_name": "Ольга Морозова",
+    "role": "synthetic_employee",
+    "user_id": "olga_morozova"
+  },
+  {
+    "department": "Procurement",
+    "display_name": "Павел Волков",
+    "role": "synthetic_employee",
+    "user_id": "pavel_volkov"
+  },
+  {
+    "department": "Sales",
+    "display_name": "Роман Егоров",
+    "role": "synthetic_employee",
+    "user_id": "roman_egorov"
+  },
+  {
+    "department": "Project Management",
+    "display_name": "Сергей Кузнецов",
+    "role": "synthetic_employee",
+    "user_id": "sergey_kuznetsov"
+  },
+  {
+    "department": "HR",
+    "display_name": "Светлана Крылова",
+    "role": "synthetic_employee",
+    "user_id": "svetlana_krylova"
+  },
+  {
+    "department": "Administration",
+    "display_name": "Татьяна Белякова",
+    "role": "synthetic_employee",
+    "user_id": "tatiana_belyakova"
+  },
+  {
+    "department": "Project Management",
+    "display_name": "Виктор Зайцев",
+    "role": "synthetic_employee",
+    "user_id": "viktor_zaitsev"
+  },
+  {
+    "department": "Marketing",
+    "display_name": "Юлия Белова",
+    "role": "synthetic_employee",
+    "user_id": "yulia_belova"
+  }
+]

@@ -1,0 +1,7 @@
+schema_version: "1.0"
+draft: true
+categories:
+  - id: example_category
+    name: "Пример широкой категории"
+    description: "Короткое семантическое описание направления."
+

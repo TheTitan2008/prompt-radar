@@ -1,0 +1,215 @@
+{
+  "ai_processing_interval_mismatch_count": 0,
+  "ai_processing_minutes_by_complexity": {
+    "12_25": 99,
+    "25_60": 12,
+    "2_5": 203,
+    "5_12": 484,
+    "60_plus": 2
+  },
+  "ai_processing_minutes_max": 64.38,
+  "ai_processing_minutes_mean": 8.15,
+  "ai_processing_minutes_median": 6.04,
+  "ai_processing_minutes_min": 2.98,
+  "attachments": 60,
+  "attachments_by_type": {
+    "application/json": 4,
+    "application/pdf": 12,
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 16,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 8,
+    "image/jpeg": 1,
+    "image/png": 7,
+    "text/csv": 8,
+    "text/markdown": 4
+  },
+  "conversation_count": 140,
+  "conversations": 140,
+  "emerging_group_count": 10,
+  "emerging_group_names": {
+    "emerging_group_01": "Заявки на внутреннюю библиотеку промптов",
+    "emerging_group_02": "Проверка качества данных в витринах",
+    "emerging_group_03": "Офисные IoT и датчики помещений",
+    "emerging_group_04": "Онбординг внутренних AI-ассистентов",
+    "emerging_mephi": "Запросы о НИЯУ МИФИ",
+    "minor_group_01": "Микроопросы удовлетворенности сотрудников",
+    "minor_group_02": "Сверка витрин учебных материалов",
+    "minor_group_03": "Контроль локальных справочников оборудования",
+    "minor_group_04": "Черновики внутренних объявлений",
+    "minor_group_05": "Проверка маленьких списков закупок"
+  },
+  "emerging_runs": 80,
+  "events": 480,
+  "exact_100k_run_ids": [
+    "run_793",
+    "run_794",
+    "run_795",
+    "run_796",
+    "run_797",
+    "run_798",
+    "run_799",
+    "run_800"
+  ],
+  "exact_100k_token_runs": 8,
+  "known_distribution": {
+    "analysis_results_excel_export": 20,
+    "client_company_group_lookup": 20,
+    "client_contacts_by_company": 20,
+    "client_thread_reply": 20,
+    "confluence_process_search": 20,
+    "crm_client_excel_report": 20,
+    "daily_email_digest": 20,
+    "discussion_notes": 20,
+    "email_to_project_ticket": 16,
+    "executive_calendar_slot": 20,
+    "followup_reminders": 16,
+    "generic_excel_data_export": 20,
+    "group_common_slot": 20,
+    "isup_project_status_monitoring": 16,
+    "isup_ticket_create_edit": 20,
+    "jira_assigned_tasks": 20,
+    "jira_priority_tasks": 20,
+    "manager_employee_observations": 20,
+    "manager_feedback_after_review": 20,
+    "meeting_body_information": 16,
+    "meeting_room_search": 20,
+    "next_day_meetings": 16,
+    "open_source_company_brief": 20,
+    "personal_task_history": 20,
+    "pre_review_employee_note": 20,
+    "project_team_vendor_owner": 20,
+    "supplier_blog_search": 20,
+    "task_completion_approval": 20,
+    "unanswered_price_request_monitoring": 20,
+    "weekly_tender_sales_report": 20,
+    "weekly_won_tenders_notification": 20
+  },
+  "known_runs": 600,
+  "known_use_case_count": 31,
+  "large_source_file_handling": [
+    {
+      "filename": "Темы для генерации датасета.xlsx",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\Темы для генерации датасета.xlsx",
+      "size_bytes": 55059
+    },
+    {
+      "filename": "17 (2).txt",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\17 (2).txt",
+      "size_bytes": 32341
+    },
+    {
+      "filename": "27_B__abzyn.txt",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\27_B__abzyn.txt",
+      "size_bytes": 250420
+    },
+    {
+      "filename": "вариант 1.1 new 2024.docx",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\вариант 1.1 new 2024.docx",
+      "size_bytes": 74056
+    },
+    {
+      "filename": "Демодень_ДЗ (1).ipynb",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\Демодень_ДЗ (1).ipynb",
+      "size_bytes": 283731
+    },
+    {
+      "filename": "ДЗ_демодень_Кирилин_Александр_ipynb_.ipynb",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\Downloads\\ДЗ_демодень_Кирилин_Александр_ipynb_.ipynb",
+      "size_bytes": 283759
+    },
+    {
+      "filename": "Menschen_A1_2_AB.pdf",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\Menschen_A1_2_AB.pdf",
+      "size_bytes": 46770901
+    },
+    {
+      "filename": "Menschen_A1_2_KB.pdf",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\Menschen_A1_2_KB.pdf",
+      "size_bytes": 56564223
+    },
+    {
+      "filename": "DEMO_24 (1).txt",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\DEMO_24 (1).txt",
+      "size_bytes": 10000000
+    },
+    {
+      "filename": "DEMO_24 (2).txt",
+      "handling": "metadata_only",
+      "path": "C:\\Users\\aleks\\Downloads\\DEMO_24 (2).txt",
+      "size_bytes": 10000000
+    },
+    {
+      "filename": "image-1.jpg",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\.codex\\attachments\\732e0bb4-3010-45a6-ab86-724561fde496\\image-1.jpg",
+      "size_bytes": 400354
+    },
+    {
+      "filename": "image-2.png",
+      "handling": "sampled_or_referenced",
+      "path": "C:\\Users\\aleks\\.codex\\attachments\\732e0bb4-3010-45a6-ab86-724561fde496\\image-2.png",
+      "size_bytes": 185464
+    }
+  ],
+  "length_distribution": {
+    "101_500": 200,
+    "1_20": 160,
+    "21_100": 320,
+    "3001_10000": 32,
+    "501_3000": 80,
+    "exact_100000": 8
+  },
+  "major_emerging_group_count": 4,
+  "max_runs_per_user": 106,
+  "mean_runs_per_user": 40,
+  "median_runs_per_user": 34.0,
+  "mephi_runs": 20,
+  "mephi_runs_owned_by_tatiana_belyakova": 20,
+  "message_count": 934,
+  "messages": 934,
+  "min_runs_per_user": 4,
+  "minor_emerging_group_count": 5,
+  "minor_emerging_runs": 60,
+  "noise_block_runs": 100,
+  "noise_runs": 40,
+  "run_count": 800,
+  "runs_by_user": {
+    "Алексей Смирнов": 106,
+    "Анна Новикова": 36,
+    "Борис Максимов": 8,
+    "Виктор Зайцев": 16,
+    "Дмитрий Иванов": 82,
+    "Екатерина Орлова": 28,
+    "Елена Петрова": 94,
+    "Игорь Федоров": 40,
+    "Ирина Васильева": 20,
+    "Марина Соколова": 70,
+    "Михаил Попов": 24,
+    "Наталья Лебедева": 44,
+    "Никита Андреев": 4,
+    "Ольга Морозова": 52,
+    "Павел Волков": 48,
+    "Роман Егоров": 32,
+    "Светлана Крылова": 12,
+    "Сергей Кузнецов": 58,
+    "Татьяна Белякова": 20,
+    "Юлия Белова": 6
+  },
+  "runs_with_attachments": 60,
+  "runs_without_attachments": 740,
+  "total_attachment_files": 60,
+  "total_runs": 800,
+  "unique_named_users": 20,
+  "user_count": 20,
+  "user_message_count": 800,
+  "users": 20,
+  "validation_passed": true
+}

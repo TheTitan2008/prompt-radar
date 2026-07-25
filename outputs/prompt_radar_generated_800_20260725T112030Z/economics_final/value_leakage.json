@@ -1,0 +1,4197 @@
+{
+  "confirmed_wasted_cost": 0.0,
+  "items": [
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.7,
+      "run_id": "run_019",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.85,
+      "run_id": "run_037",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.18,
+      "run_id": "run_055",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.55,
+      "run_id": "run_073",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.85,
+      "run_id": "run_002",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.45,
+      "run_id": "run_020",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.22,
+      "run_id": "run_038",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.78,
+      "run_id": "run_056",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.28,
+      "run_id": "run_074",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.68,
+      "run_id": "run_092",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.08,
+      "run_id": "run_003",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.73,
+      "run_id": "run_039",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 9.93,
+      "run_id": "run_057",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.53,
+      "run_id": "run_075",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.93,
+      "run_id": "run_093",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.75,
+      "run_id": "run_004",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.98,
+      "run_id": "run_022",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.78,
+      "run_id": "run_040",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.0,
+      "run_id": "run_058",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.93,
+      "run_id": "run_076",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.18,
+      "run_id": "run_094",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.13,
+      "run_id": "run_005",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.75,
+      "run_id": "run_023",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.13,
+      "run_id": "run_059",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.1,
+      "run_id": "run_077",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.47,
+      "run_id": "run_095",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.88,
+      "run_id": "run_006",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.0,
+      "run_id": "run_024",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.75,
+      "run_id": "run_042",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.45,
+      "run_id": "run_060",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.15,
+      "run_id": "run_078",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.3,
+      "run_id": "run_096",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.43,
+      "run_id": "run_007",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.6,
+      "run_id": "run_025",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.35,
+      "run_id": "run_043",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.08,
+      "run_id": "run_061",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.18,
+      "run_id": "run_079",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.88,
+      "run_id": "run_097",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.08,
+      "run_id": "run_008",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.1,
+      "run_id": "run_026",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.63,
+      "run_id": "run_044",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.95,
+      "run_id": "run_062",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.98,
+      "run_id": "run_080",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.13,
+      "run_id": "run_098",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.13,
+      "run_id": "run_009",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.25,
+      "run_id": "run_027",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.0,
+      "run_id": "run_045",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.63,
+      "run_id": "run_063",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.5,
+      "run_id": "run_099",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.42,
+      "run_id": "run_010",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.95,
+      "run_id": "run_028",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.73,
+      "run_id": "run_046",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.4,
+      "run_id": "run_064",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.45,
+      "run_id": "run_082",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.48,
+      "run_id": "run_100",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.22,
+      "run_id": "run_029",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.53,
+      "run_id": "run_047",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.4,
+      "run_id": "run_065",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.55,
+      "run_id": "run_083",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.4,
+      "run_id": "run_012",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.1,
+      "run_id": "run_030",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.55,
+      "run_id": "run_048",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.15,
+      "run_id": "run_066",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.55,
+      "run_id": "run_084",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.03,
+      "run_id": "run_013",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 17.15,
+      "run_id": "run_031",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.98,
+      "run_id": "run_049",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.13,
+      "run_id": "run_067",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.83,
+      "run_id": "run_085",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.78,
+      "run_id": "run_014",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.03,
+      "run_id": "run_032",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.13,
+      "run_id": "run_050",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.45,
+      "run_id": "run_068",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.7,
+      "run_id": "run_086",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.45,
+      "run_id": "run_015",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.38,
+      "run_id": "run_033",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.58,
+      "run_id": "run_069",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.23,
+      "run_id": "run_087",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.33,
+      "run_id": "run_016",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.48,
+      "run_id": "run_034",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.38,
+      "run_id": "run_052",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.15,
+      "run_id": "run_070",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.78,
+      "run_id": "run_088",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 9.7,
+      "run_id": "run_017",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.6,
+      "run_id": "run_035",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.4,
+      "run_id": "run_053",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.4,
+      "run_id": "run_071",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.88,
+      "run_id": "run_089",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.25,
+      "run_id": "run_018",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.73,
+      "run_id": "run_036",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.15,
+      "run_id": "run_054",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.65,
+      "run_id": "run_072",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 9.95,
+      "run_id": "run_090",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.72,
+      "run_id": "run_595",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.9,
+      "run_id": "run_627",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.74,
+      "run_id": "run_633",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.58,
+      "run_id": "run_596",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.48,
+      "run_id": "run_622",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.5,
+      "run_id": "run_628",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 17.24,
+      "run_id": "run_634",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.18,
+      "run_id": "run_640",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.73,
+      "run_id": "run_597",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.0,
+      "run_id": "run_623",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.14,
+      "run_id": "run_635",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.15,
+      "run_id": "run_598",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.5,
+      "run_id": "run_624",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.26,
+      "run_id": "run_630",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.18,
+      "run_id": "run_636",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.73,
+      "run_id": "run_599",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.3,
+      "run_id": "run_637",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.35,
+      "run_id": "run_600",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.84,
+      "run_id": "run_626",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.76,
+      "run_id": "run_632",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.4,
+      "run_id": "run_638",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1827.49,
+      "run_id": "run_783",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1844.48,
+      "run_id": "run_785",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1844.04,
+      "run_id": "run_787",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1844.04,
+      "run_id": "run_789",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1841.92,
+      "run_id": "run_784",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1845.86,
+      "run_id": "run_786",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1843.84,
+      "run_id": "run_788",
+      "signals": [
+        "cancelled_run_cost",
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1846.61,
+      "run_id": "run_790",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 4.48,
+      "run_id": "run_272",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.55,
+      "run_id": "run_262",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.56,
+      "run_id": "run_277",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 8.91,
+      "run_id": "run_251",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.08,
+      "run_id": "run_267",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.6,
+      "run_id": "run_281",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.33,
+      "run_id": "run_268",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.88,
+      "run_id": "run_282",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 8.54,
+      "run_id": "run_241",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 39.1,
+      "run_id": "run_683",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 36.58,
+      "run_id": "run_688",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30.35,
+      "run_id": "run_693",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 33.85,
+      "run_id": "run_698",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29.45,
+      "run_id": "run_684",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 32.48,
+      "run_id": "run_689",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 34.1,
+      "run_id": "run_694",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 34.45,
+      "run_id": "run_690",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29.28,
+      "run_id": "run_695",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 39.9,
+      "run_id": "run_700",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 37.18,
+      "run_id": "run_686",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 39.68,
+      "run_id": "run_696",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 40.45,
+      "run_id": "run_687",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30.78,
+      "run_id": "run_692",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 37.22,
+      "run_id": "run_697",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.51,
+      "run_id": "run_123",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.44,
+      "run_id": "run_139",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.66,
+      "run_id": "run_171",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.43,
+      "run_id": "run_187",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.09,
+      "run_id": "run_124",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.84,
+      "run_id": "run_140",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.03,
+      "run_id": "run_172",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.15,
+      "run_id": "run_188",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.84,
+      "run_id": "run_125",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.06,
+      "run_id": "run_173",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.95,
+      "run_id": "run_189",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.75,
+      "run_id": "run_126",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.2,
+      "run_id": "run_174",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.42,
+      "run_id": "run_190",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.79,
+      "run_id": "run_127",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.93,
+      "run_id": "run_175",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.53,
+      "run_id": "run_191",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.29,
+      "run_id": "run_128",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.18,
+      "run_id": "run_176",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.43,
+      "run_id": "run_192",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.05,
+      "run_id": "run_129",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.95,
+      "run_id": "run_161",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.81,
+      "run_id": "run_177",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.65,
+      "run_id": "run_193",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.41,
+      "run_id": "run_130",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.44,
+      "run_id": "run_162",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.41,
+      "run_id": "run_178",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.4,
+      "run_id": "run_194",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 35.77,
+      "run_id": "run_131",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.41,
+      "run_id": "run_163",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.0,
+      "run_id": "run_179",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.08,
+      "run_id": "run_195",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.11,
+      "run_id": "run_132",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.6,
+      "run_id": "run_164",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.18,
+      "run_id": "run_180",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.25,
+      "run_id": "run_196",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.24,
+      "run_id": "run_133",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.74,
+      "run_id": "run_165",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.85,
+      "run_id": "run_181",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.05,
+      "run_id": "run_197",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.46,
+      "run_id": "run_134",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.2,
+      "run_id": "run_166",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.98,
+      "run_id": "run_182",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.75,
+      "run_id": "run_198",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.01,
+      "run_id": "run_135",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.34,
+      "run_id": "run_167",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.85,
+      "run_id": "run_183",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.83,
+      "run_id": "run_199",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.46,
+      "run_id": "run_136",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.24,
+      "run_id": "run_168",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.15,
+      "run_id": "run_184",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.83,
+      "run_id": "run_200",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 37.31,
+      "run_id": "run_121",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.23,
+      "run_id": "run_137",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.18,
+      "run_id": "run_169",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.55,
+      "run_id": "run_185",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.4,
+      "run_id": "run_122",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.84,
+      "run_id": "run_138",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.64,
+      "run_id": "run_170",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.35,
+      "run_id": "run_186",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.18,
+      "run_id": "run_569",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.5,
+      "run_id": "run_576",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.0,
+      "run_id": "run_583",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.68,
+      "run_id": "run_590",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.53,
+      "run_id": "run_570",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.18,
+      "run_id": "run_577",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.88,
+      "run_id": "run_584",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.85,
+      "run_id": "run_578",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.85,
+      "run_id": "run_585",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.55,
+      "run_id": "run_592",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.68,
+      "run_id": "run_572",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.22,
+      "run_id": "run_579",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.95,
+      "run_id": "run_586",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.15,
+      "run_id": "run_593",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.43,
+      "run_id": "run_573",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.68,
+      "run_id": "run_580",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.73,
+      "run_id": "run_587",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.53,
+      "run_id": "run_594",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.1,
+      "run_id": "run_574",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.0,
+      "run_id": "run_588",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 47.66,
+      "run_id": "run_561",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.53,
+      "run_id": "run_575",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.28,
+      "run_id": "run_582",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.13,
+      "run_id": "run_589",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.7,
+      "run_id": "run_743",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 18.76,
+      "run_id": "run_747",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30.44,
+      "run_id": "run_736",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.26,
+      "run_id": "run_740",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 17.54,
+      "run_id": "run_744",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 17.89,
+      "run_id": "run_748",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 17.14,
+      "run_id": "run_752",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.54,
+      "run_id": "run_737",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.98,
+      "run_id": "run_745",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 490.88,
+      "run_id": "run_753",
+      "signals": [
+        "failed_run_cost",
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.01,
+      "run_id": "run_738",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.5,
+      "run_id": "run_742",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.99,
+      "run_id": "run_746",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 495.12,
+      "run_id": "run_754",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.25,
+      "run_id": "run_283",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.65,
+      "run_id": "run_295",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.78,
+      "run_id": "run_307",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.1,
+      "run_id": "run_319",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.55,
+      "run_id": "run_331",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.53,
+      "run_id": "run_343",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.78,
+      "run_id": "run_284",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.75,
+      "run_id": "run_296",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.98,
+      "run_id": "run_308",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.83,
+      "run_id": "run_320",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 9.15,
+      "run_id": "run_332",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.33,
+      "run_id": "run_344",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.05,
+      "run_id": "run_285",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.88,
+      "run_id": "run_297",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.95,
+      "run_id": "run_309",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.68,
+      "run_id": "run_321",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.5,
+      "run_id": "run_333",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.05,
+      "run_id": "run_345",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.13,
+      "run_id": "run_286",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.33,
+      "run_id": "run_298",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.8,
+      "run_id": "run_310",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.55,
+      "run_id": "run_322",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.0,
+      "run_id": "run_334",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.23,
+      "run_id": "run_346",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.78,
+      "run_id": "run_287",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.55,
+      "run_id": "run_299",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.43,
+      "run_id": "run_311",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.0,
+      "run_id": "run_323",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.15,
+      "run_id": "run_335",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.4,
+      "run_id": "run_347",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.88,
+      "run_id": "run_288",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.7,
+      "run_id": "run_300",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.2,
+      "run_id": "run_312",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.8,
+      "run_id": "run_324",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.2,
+      "run_id": "run_336",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.6,
+      "run_id": "run_348",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.25,
+      "run_id": "run_289",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.88,
+      "run_id": "run_301",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.43,
+      "run_id": "run_313",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.4,
+      "run_id": "run_325",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.28,
+      "run_id": "run_337",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.68,
+      "run_id": "run_349",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.6,
+      "run_id": "run_290",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.7,
+      "run_id": "run_302",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.83,
+      "run_id": "run_314",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.1,
+      "run_id": "run_326",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.05,
+      "run_id": "run_338",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.05,
+      "run_id": "run_350",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.15,
+      "run_id": "run_291",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.83,
+      "run_id": "run_303",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.33,
+      "run_id": "run_315",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.35,
+      "run_id": "run_327",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.1,
+      "run_id": "run_339",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.13,
+      "run_id": "run_351",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.25,
+      "run_id": "run_292",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.7,
+      "run_id": "run_304",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.7,
+      "run_id": "run_316",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.55,
+      "run_id": "run_328",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.55,
+      "run_id": "run_340",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.35,
+      "run_id": "run_352",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.4,
+      "run_id": "run_293",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.93,
+      "run_id": "run_305",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.13,
+      "run_id": "run_317",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.35,
+      "run_id": "run_329",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.1,
+      "run_id": "run_341",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.23,
+      "run_id": "run_294",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.88,
+      "run_id": "run_306",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.4,
+      "run_id": "run_318",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 28.9,
+      "run_id": "run_330",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.63,
+      "run_id": "run_342",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29.35,
+      "run_id": "run_715",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 32.28,
+      "run_id": "run_723",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.14,
+      "run_id": "run_727",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 35.5,
+      "run_id": "run_716",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 32.63,
+      "run_id": "run_720",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 37.5,
+      "run_id": "run_724",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.74,
+      "run_id": "run_728",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.12,
+      "run_id": "run_732",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 36.23,
+      "run_id": "run_713",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 28.68,
+      "run_id": "run_717",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 40.53,
+      "run_id": "run_721",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.16,
+      "run_id": "run_733",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 36.68,
+      "run_id": "run_714",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 39.45,
+      "run_id": "run_718",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30.15,
+      "run_id": "run_722",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.52,
+      "run_id": "run_726",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.16,
+      "run_id": "run_730",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 26.52,
+      "run_id": "run_734",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 57.86,
+      "run_id": "run_511",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.76,
+      "run_id": "run_527",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.0,
+      "run_id": "run_543",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 54.0,
+      "run_id": "run_551",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.23,
+      "run_id": "run_528",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 17.8,
+      "run_id": "run_552",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 60.15,
+      "run_id": "run_521",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.2,
+      "run_id": "run_537",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.71,
+      "run_id": "run_522",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.63,
+      "run_id": "run_538",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.16,
+      "run_id": "run_523",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 56.4,
+      "run_id": "run_531",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.68,
+      "run_id": "run_547",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.08,
+      "run_id": "run_532",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.85,
+      "run_id": "run_548",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.73,
+      "run_id": "run_533",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 54.71,
+      "run_id": "run_541",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.0,
+      "run_id": "run_542",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30052.71,
+      "run_id": "run_797",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30038.33,
+      "run_id": "run_798",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30117.98,
+      "run_id": "run_799",
+      "signals": [
+        "cancelled_run_cost",
+        "active_wait_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 30053.95,
+      "run_id": "run_800",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.51,
+      "run_id": "run_411",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.58,
+      "run_id": "run_420",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.85,
+      "run_id": "run_447",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.68,
+      "run_id": "run_456",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.14,
+      "run_id": "run_412",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.25,
+      "run_id": "run_421",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.7,
+      "run_id": "run_448",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.95,
+      "run_id": "run_457",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.74,
+      "run_id": "run_413",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.35,
+      "run_id": "run_431",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.78,
+      "run_id": "run_449",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.83,
+      "run_id": "run_458",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.38,
+      "run_id": "run_414",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29.25,
+      "run_id": "run_441",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.25,
+      "run_id": "run_450",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.8,
+      "run_id": "run_459",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.29,
+      "run_id": "run_415",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.25,
+      "run_id": "run_442",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.5,
+      "run_id": "run_451",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.63,
+      "run_id": "run_460",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.58,
+      "run_id": "run_416",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.45,
+      "run_id": "run_443",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.13,
+      "run_id": "run_452",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.01,
+      "run_id": "run_417",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.8,
+      "run_id": "run_444",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.58,
+      "run_id": "run_453",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.83,
+      "run_id": "run_462",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.28,
+      "run_id": "run_418",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.68,
+      "run_id": "run_445",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.35,
+      "run_id": "run_454",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.93,
+      "run_id": "run_419",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.48,
+      "run_id": "run_446",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.13,
+      "run_id": "run_455",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.33,
+      "run_id": "run_487",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.38,
+      "run_id": "run_495",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.94,
+      "run_id": "run_472",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.43,
+      "run_id": "run_488",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.15,
+      "run_id": "run_496",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 53.92,
+      "run_id": "run_481",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.98,
+      "run_id": "run_489",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.38,
+      "run_id": "run_497",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.18,
+      "run_id": "run_482",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.1,
+      "run_id": "run_490",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.75,
+      "run_id": "run_498",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.23,
+      "run_id": "run_467",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.53,
+      "run_id": "run_483",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 51.71,
+      "run_id": "run_491",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.15,
+      "run_id": "run_499",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.55,
+      "run_id": "run_484",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.13,
+      "run_id": "run_492",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.65,
+      "run_id": "run_500",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.9,
+      "run_id": "run_477",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 20.18,
+      "run_id": "run_485",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.7,
+      "run_id": "run_493",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 54.83,
+      "run_id": "run_501",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.66,
+      "run_id": "run_478",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.82,
+      "run_id": "run_486",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.53,
+      "run_id": "run_494",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.1,
+      "run_id": "run_663",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.38,
+      "run_id": "run_669",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.7,
+      "run_id": "run_675",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.0,
+      "run_id": "run_664",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.98,
+      "run_id": "run_670",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 19.2,
+      "run_id": "run_676",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 37.7,
+      "run_id": "run_682",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.03,
+      "run_id": "run_677",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 24.65,
+      "run_id": "run_666",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.8,
+      "run_id": "run_672",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.43,
+      "run_id": "run_678",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.65,
+      "run_id": "run_667",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.45,
+      "run_id": "run_673",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.05,
+      "run_id": "run_662",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.65,
+      "run_id": "run_668",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.53,
+      "run_id": "run_674",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 25.05,
+      "run_id": "run_680",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.1,
+      "run_id": "run_353",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.2,
+      "run_id": "run_363",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.98,
+      "run_id": "run_373",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.03,
+      "run_id": "run_403",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.28,
+      "run_id": "run_354",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.38,
+      "run_id": "run_364",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.35,
+      "run_id": "run_374",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.34,
+      "run_id": "run_404",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.2,
+      "run_id": "run_355",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.55,
+      "run_id": "run_365",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.2,
+      "run_id": "run_375",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.9,
+      "run_id": "run_405",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.95,
+      "run_id": "run_356",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.6,
+      "run_id": "run_366",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.13,
+      "run_id": "run_376",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.49,
+      "run_id": "run_406",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.48,
+      "run_id": "run_357",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.4,
+      "run_id": "run_367",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.63,
+      "run_id": "run_377",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.13,
+      "run_id": "run_387",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.21,
+      "run_id": "run_397",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.63,
+      "run_id": "run_407",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 15.58,
+      "run_id": "run_358",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.5,
+      "run_id": "run_368",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.7,
+      "run_id": "run_378",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.15,
+      "run_id": "run_388",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.25,
+      "run_id": "run_408",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.9,
+      "run_id": "run_359",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.9,
+      "run_id": "run_369",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.0,
+      "run_id": "run_379",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 7.08,
+      "run_id": "run_409",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 16.8,
+      "run_id": "run_360",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.75,
+      "run_id": "run_370",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 14.33,
+      "run_id": "run_380",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.65,
+      "run_id": "run_410",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.03,
+      "run_id": "run_361",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 27.05,
+      "run_id": "run_371",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 6.65,
+      "run_id": "run_401",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.28,
+      "run_id": "run_362",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 13.08,
+      "run_id": "run_372",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.3,
+      "run_id": "run_382",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.75,
+      "run_id": "run_392",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 5.24,
+      "run_id": "run_402",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1755.43,
+      "run_id": "run_771",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1739.78,
+      "run_id": "run_773",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1756.42,
+      "run_id": "run_775",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1755.04,
+      "run_id": "run_777",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1755.3,
+      "run_id": "run_779",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1758.89,
+      "run_id": "run_781",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1754.25,
+      "run_id": "run_772",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1754.74,
+      "run_id": "run_774",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1821.56,
+      "run_id": "run_776",
+      "signals": [
+        "partial_run_cost",
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1740.77,
+      "run_id": "run_778",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1758.35,
+      "run_id": "run_780",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1757.66,
+      "run_id": "run_782",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.46,
+      "run_id": "run_601",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.4,
+      "run_id": "run_605",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 9.95,
+      "run_id": "run_613",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 23.55,
+      "run_id": "run_617",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.43,
+      "run_id": "run_602",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.6,
+      "run_id": "run_606",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.63,
+      "run_id": "run_610",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.21,
+      "run_id": "run_618",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.66,
+      "run_id": "run_603",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 22.08,
+      "run_id": "run_607",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 12.41,
+      "run_id": "run_611",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.79,
+      "run_id": "run_615",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.53,
+      "run_id": "run_608",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 21.33,
+      "run_id": "run_612",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 11.55,
+      "run_id": "run_616",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 10.75,
+      "run_id": "run_620",
+      "signals": [
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 533.96,
+      "run_id": "run_755",
+      "signals": [
+        "failed_run_cost",
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 517.5,
+      "run_id": "run_758",
+      "signals": [
+        "failed_run_cost",
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1710.79,
+      "run_id": "run_761",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1709.03,
+      "run_id": "run_764",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1710.21,
+      "run_id": "run_767",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1712.67,
+      "run_id": "run_770",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 523.67,
+      "run_id": "run_756",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 522.0,
+      "run_id": "run_759",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1709.37,
+      "run_id": "run_762",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1711.19,
+      "run_id": "run_765",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1696.42,
+      "run_id": "run_768",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 530.89,
+      "run_id": "run_757",
+      "signals": [
+        "failed_run_cost",
+        "active_wait_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 524.66,
+      "run_id": "run_760",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1694.99,
+      "run_id": "run_763",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1711.44,
+      "run_id": "run_766",
+      "signals": [
+        "failed_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1710.7,
+      "run_id": "run_769",
+      "signals": [
+        "partial_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1931.2,
+      "run_id": "run_791",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 1930.28,
+      "run_id": "run_792",
+      "signals": [
+        "cancelled_run_cost"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29868.43,
+      "run_id": "run_793",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29882.07,
+      "run_id": "run_794",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29884.48,
+      "run_id": "run_795",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    },
+    {
+      "confirmed_wasted_cost": 0.0,
+      "optimization_opportunity_cost": 29884.63,
+      "run_id": "run_796",
+      "signals": [
+        "cancelled_run_cost",
+        "excessive_context_token_opportunity"
+      ]
+    }
+  ],
+  "optimization_opportunity_cost": 308882.81
+}

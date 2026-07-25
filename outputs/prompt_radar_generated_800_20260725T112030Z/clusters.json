@@ -1,0 +1,1553 @@
+[
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.06765425205230713,
+        "run_id": "run_677"
+      },
+      {
+        "distance_to_medoid": 0.02958202362060547,
+        "run_id": "run_669"
+      }
+    ],
+    "cluster_fingerprint": "e36493241b36a2dcf6bdbd8cc334467941ac30fc584bbb497f828457b56a2891",
+    "cluster_id": 0,
+    "cluster_name": "Анализ применения офисных IoT-датчиков",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.1,
+        "high": 0.4,
+        "low": 0.0
+      },
+      "assumptions": [
+        "оценивается один типовой офисный сценарий",
+        "характеристики помещений доступны"
+      ],
+      "cluster_name": "Анализ применения офисных IoT-датчиков",
+      "human_followup_minutes": {
+        "base": 12,
+        "high": 30,
+        "low": 5
+      },
+      "manual_minutes": {
+        "base": 50,
+        "high": 100,
+        "low": 25
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 15,
+          "step": "Собрать требования к помещениям и датчикам"
+        },
+        {
+          "minutes_base": 20,
+          "step": "Сопоставить варианты оборудования и риски"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить рекомендации и план проверки"
+        }
+      ],
+      "manual_time_confidence": 0.6
+    },
+    "keywords": [
+      "материалы",
+      "теме",
+      "офисные",
+      "iot",
+      "датчики"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1250.0,
+        "high": 2500.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 16,
+    "member_run_ids_hash": "ac5eadc5d4567a78c485b62e36a80da840388005b426037f80731e514a3267e4",
+    "provisional_label": "Общие и нерешённые задачи — материалы / теме / офисные",
+    "representative_examples": [
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_673",
+        "similarity_score": 0.4707101583480835,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Офисные IoT и датчики помещений. Нужен рабочий список действий и рисков, пример 13."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.0005081295967102051,
+        "run_id": "run_667",
+        "similarity_score": 0.4695236086845398,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Офисные IoT и датчики помещений. Нужен рабочий список действий и рисков, пример 7."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.006542980670928955,
+        "run_id": "run_676",
+        "similarity_score": 0.4652203321456909,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Офисные IoT и датчики помещений. Нужен рабочий список действий и рисков, пример 16."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.00659102201461792,
+        "run_id": "run_670",
+        "similarity_score": 0.46378055214881897,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Офисные IoT и датчики помещений. Нужен рабочий список действий и рисков, пример 10."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.010320782661437988,
+        "run_id": "run_680",
+        "similarity_score": 0.49075138568878174,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Офисные IoT и датчики помещений. Нужен рабочий список действий и рисков, пример 20."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.059999823570251465,
+        "run_id": "run_697"
+      },
+      {
+        "distance_to_medoid": 0.022925257682800293,
+        "run_id": "run_694"
+      }
+    ],
+    "cluster_fingerprint": "745e04a976981c08d1bc807b07c1d98e7fd6d0442bcbcecdd276142ef7d94c95",
+    "cluster_id": 1,
+    "cluster_name": "Онбординг внутренних AI-ассистентов",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.1,
+        "high": 0.35,
+        "low": 0.0
+      },
+      "assumptions": [
+        "рассматривается один тип ассистента",
+        "правила доступа уже определены"
+      ],
+      "cluster_name": "Онбординг внутренних AI-ассистентов",
+      "human_followup_minutes": {
+        "base": 15,
+        "high": 35,
+        "low": 8
+      },
+      "manual_minutes": {
+        "base": 60,
+        "high": 120,
+        "low": 30
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 20,
+          "step": "Собрать требования и ограничения использования"
+        },
+        {
+          "minutes_base": 25,
+          "step": "Подготовить инструкцию и примеры работы"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Сформировать контрольный список и риски"
+        }
+      ],
+      "manual_time_confidence": 0.62
+    },
+    "keywords": [
+      "материалы",
+      "теме",
+      "онбординг",
+      "внутренних",
+      "ассистентов"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 375.0,
+        "high": 875.0,
+        "low": 200.0
+      },
+      "manual_work_value_rub": {
+        "base": 1500.0,
+        "high": 3000.0,
+        "low": 750.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 16,
+    "member_run_ids_hash": "1ae22d248fd7f4e45c32024ef17eb823c49095464fc69f7fa41209f602956cf5",
+    "provisional_label": "Общие и нерешённые задачи — материалы / теме / онбординг",
+    "representative_examples": [
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": -1.1920928955078125e-07,
+        "run_id": "run_693",
+        "similarity_score": 0.5007429122924805,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Онбординг внутренних AI-ассистентов. Нужен рабочий список действий и рисков, пример 13."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.0005718469619750977,
+        "run_id": "run_687",
+        "similarity_score": 0.49712711572647095,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Онбординг внутренних AI-ассистентов. Нужен рабочий список действий и рисков, пример 7."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.007616698741912842,
+        "run_id": "run_690",
+        "similarity_score": 0.49856188893318176,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Онбординг внутренних AI-ассистентов. Нужен рабочий список действий и рисков, пример 10."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.007654070854187012,
+        "run_id": "run_696",
+        "similarity_score": 0.4983622431755066,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Онбординг внутренних AI-ассистентов. Нужен рабочий список действий и рисков, пример 16."
+      },
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": 0.012037396430969238,
+        "run_id": "run_700",
+        "similarity_score": 0.5024656057357788,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Онбординг внутренних AI-ассистентов. Нужен рабочий список действий и рисков, пример 20."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.07315999269485474,
+        "run_id": "run_637"
+      },
+      {
+        "distance_to_medoid": 0.026067495346069336,
+        "run_id": "run_634"
+      }
+    ],
+    "cluster_fingerprint": "7a2b6d9f700861d1fdcd5a1177d121edc2772afdaab4cfec819fbc23069efc29",
+    "cluster_id": 2,
+    "cluster_name": "Обработка заявок в библиотеку промптов",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.08,
+        "high": 0.35,
+        "low": 0.0
+      },
+      "assumptions": [
+        "обрабатывается небольшой пакет заявок",
+        "критерии публикации определены"
+      ],
+      "cluster_name": "Обработка заявок в библиотеку промптов",
+      "human_followup_minutes": {
+        "base": 12,
+        "high": 30,
+        "low": 5
+      },
+      "manual_minutes": {
+        "base": 50,
+        "high": 100,
+        "low": 25
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 15,
+          "step": "Собрать и проверить содержание заявок"
+        },
+        {
+          "minutes_base": 20,
+          "step": "Классифицировать запросы и выявить дубли"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить решение и список рисков"
+        }
+      ],
+      "manual_time_confidence": 0.64
+    },
+    "keywords": [
+      "материалы",
+      "теме",
+      "заявки",
+      "внутреннюю",
+      "библиотеку"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1250.0,
+        "high": 2500.0,
+        "low": 625.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 15,
+    "member_run_ids_hash": "cf016c61cd16da2473dda0f1d6f93a77a60085b79238e97c8f7d3e905915d3af",
+    "provisional_label": "Проекты и задачи — материалы / теме / заявки",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -1.1920928955078125e-07,
+        "run_id": "run_627",
+        "similarity_score": 0.5409382581710815,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Заявки на внутреннюю библиотеку промптов. Нужен рабочий список действий и рисков, пример 7."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0003275871276855469,
+        "run_id": "run_633",
+        "similarity_score": 0.5381048917770386,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Заявки на внутреннюю библиотеку промптов. Нужен рабочий список действий и рисков, пример 13."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.007968783378601074,
+        "run_id": "run_636",
+        "similarity_score": 0.5157967805862427,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Заявки на внутреннюю библиотеку промптов. Нужен рабочий список действий и рисков, пример 16."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.008083105087280273,
+        "run_id": "run_630",
+        "similarity_score": 0.5153531432151794,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Заявки на внутреннюю библиотеку промптов. Нужен рабочий список действий и рисков, пример 10."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.011729121208190918,
+        "run_id": "run_622",
+        "similarity_score": 0.5387517213821411,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Заявки на внутреннюю библиотеку промптов. Нужен рабочий список действий и рисков, пример 2."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.3161713480949402,
+        "run_id": "run_605"
+      },
+      {
+        "distance_to_medoid": 0.30320507287979126,
+        "run_id": "run_610"
+      }
+    ],
+    "cluster_fingerprint": "0f4a51dd87d4acd8ec4e73560853c690c6ada272605b115c67ed600d00b80ae8",
+    "cluster_id": 3,
+    "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.05,
+        "high": 0.25,
+        "low": 0.0
+      },
+      "assumptions": [
+        "вопрос относится к одному сервису",
+        "официальная информация доступна"
+      ],
+      "cluster_name": "Ответы студентам по сервисам НИЯУ МИФИ",
+      "human_followup_minutes": {
+        "base": 7,
+        "high": 18,
+        "low": 3
+      },
+      "manual_minutes": {
+        "base": 30,
+        "high": 60,
+        "low": 15
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 10,
+          "step": "Уточнить вопрос и найти актуальные правила"
+        },
+        {
+          "minutes_base": 12,
+          "step": "Проверить контакты и последовательность действий"
+        },
+        {
+          "minutes_base": 8,
+          "step": "Подготовить понятный ответ студенту"
+        }
+      ],
+      "manual_time_confidence": 0.7
+    },
+    "keywords": [
+      "версия",
+      "запроса",
+      "мифи",
+      "какие",
+      "правила"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 175.0,
+        "high": 450.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 750.0,
+        "high": 1500.0,
+        "low": 375.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 12,
+    "member_run_ids_hash": "913600fa8f183045ca3a59c940545053a571d3b195537dddda6cec508f2ae291",
+    "provisional_label": "Проекты и задачи — версия / запроса / мифи",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_613",
+        "similarity_score": 0.5564314723014832,
+        "task_passport_text": "Текущая цель: Подскажи, как студенту оформить общежитие МИФИ и какие контакты нужны. Версия запроса 13."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.00034302473068237305,
+        "run_id": "run_618",
+        "similarity_score": 0.557267427444458,
+        "task_passport_text": "Текущая цель: Подскажи, как студенту оформить общежитие МИФИ и какие контакты нужны. Версия запроса 18."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0014623403549194336,
+        "run_id": "run_608",
+        "similarity_score": 0.5508859753608704,
+        "task_passport_text": "Текущая цель: Подскажи, как студенту оформить общежитие МИФИ и какие контакты нужны. Версия запроса 8."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.009483695030212402,
+        "run_id": "run_603",
+        "similarity_score": 0.5463335514068604,
+        "task_passport_text": "Текущая цель: Подскажи, как студенту оформить общежитие МИФИ и какие контакты нужны. Версия запроса 3."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.2779422998428345,
+        "run_id": "run_616",
+        "similarity_score": 0.5604888200759888,
+        "task_passport_text": "Текущая цель: Найди правила подачи документов в НИЯУ МИФИ для магистратуры и кратко перечисли дедлайны. Версия запроса 16."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.11003845930099487,
+        "run_id": "run_723"
+      },
+      {
+        "distance_to_medoid": 0.10982406139373779,
+        "run_id": "run_717"
+      }
+    ],
+    "cluster_fingerprint": "0f4f6aaa02f3184ced18d0b8e39fb7d6dc154e466b7d1f2212e318a6e2932c4f",
+    "cluster_id": 4,
+    "cluster_name": "Сверка витрин учебных материалов",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.1,
+        "high": 0.4,
+        "low": 0.0
+      },
+      "assumptions": [
+        "сверяется ограниченный набор витрин",
+        "данные доступны в машиночитаемом виде"
+      ],
+      "cluster_name": "Сверка витрин учебных материалов",
+      "human_followup_minutes": {
+        "base": 12,
+        "high": 30,
+        "low": 6
+      },
+      "manual_minutes": {
+        "base": 55,
+        "high": 110,
+        "low": 30
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 15,
+          "step": "Получить перечни материалов из сравниваемых витрин"
+        },
+        {
+          "minutes_base": 25,
+          "step": "Сопоставить записи и выявить расхождения"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить список исправлений и рисков"
+        }
+      ],
+      "manual_time_confidence": 0.65
+    },
+    "keywords": [
+      "материалы",
+      "теме",
+      "сверка",
+      "витрин",
+      "учебных"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 300.0,
+        "high": 750.0,
+        "low": 150.0
+      },
+      "manual_work_value_rub": {
+        "base": 1375.0,
+        "high": 2750.0,
+        "low": 750.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 11,
+    "member_run_ids_hash": "966cb75ffd4d37f6d46c03b78c941553a106afb526fc7e19766af3bbdb22b678",
+    "provisional_label": "Проекты и задачи — материалы / теме / сверка",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 1.1920928955078125e-07,
+        "run_id": "run_713",
+        "similarity_score": 0.5267610549926758,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Сверка витрин учебных материалов. Нужен рабочий список действий и рисков, пример 1."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.01340407133102417,
+        "run_id": "run_722",
+        "similarity_score": 0.5027745366096497,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Сверка витрин учебных материалов. Нужен рабочий список действий и рисков, пример 10."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.013539552688598633,
+        "run_id": "run_716",
+        "similarity_score": 0.4974892735481262,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Сверка витрин учебных материалов. Нужен рабочий список действий и рисков, пример 4."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.027911722660064697,
+        "run_id": "run_720",
+        "similarity_score": 0.5213907957077026,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Сверка витрин учебных материалов. Нужен рабочий список действий и рисков, пример 8."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.029581308364868164,
+        "run_id": "run_721",
+        "similarity_score": 0.5317943692207336,
+        "task_passport_text": "Текущая цель: Сравни материалы по теме: Сверка витрин учебных материалов. Нужен рабочий список действий и рисков, пример 9."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.08563095331192017,
+        "run_id": "run_747"
+      },
+      {
+        "distance_to_medoid": 0.03147608041763306,
+        "run_id": "run_748"
+      }
+    ],
+    "cluster_fingerprint": "9c5fc6d87fcbd3c91e4f42f7571ddc23a1dfc2b7d40e3c403ea3d28898a33339",
+    "cluster_id": 5,
+    "cluster_name": "Подготовка черновиков внутренних объявлений",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.05,
+        "high": 0.25,
+        "low": 0.0
+      },
+      "assumptions": [
+        "готовится одно объявление",
+        "фактические данные предоставлены заказчиком"
+      ],
+      "cluster_name": "Подготовка черновиков внутренних объявлений",
+      "human_followup_minutes": {
+        "base": 8,
+        "high": 20,
+        "low": 4
+      },
+      "manual_minutes": {
+        "base": 35,
+        "high": 70,
+        "low": 18
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 10,
+          "step": "Собрать факты и требования к объявлению"
+        },
+        {
+          "minutes_base": 15,
+          "step": "Подготовить структурированный черновик"
+        },
+        {
+          "minutes_base": 10,
+          "step": "Проверить формулировки и риски публикации"
+        }
+      ],
+      "manual_time_confidence": 0.7
+    },
+    "keywords": [
+      "материалы",
+      "теме",
+      "черновики",
+      "внутренних",
+      "объявлений"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 200.0,
+        "high": 500.0,
+        "low": 100.0
+      },
+      "manual_work_value_rub": {
+        "base": 875.0,
+        "high": 1750.0,
+        "low": 450.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 10,
+    "member_run_ids_hash": "a007f407840cba123622322f21af875200ef2019277fd47f650c82e32d45d56f",
+    "provisional_label": "Общие и нерешённые задачи — материалы / теме / черновики",
+    "representative_examples": [
+      {
+        "category": "Общие и нерешённые задачи",
+        "distance_to_medoid": -1.1920928955078125e-07,
+        "run_id": "run_743",
+        "similarity_score": 0.5456918478012085,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Черновики внутренних объявлений. Нужен рабочий список действий и рисков, пример 7."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.001429438591003418,
+        "run_id": "run_737",
+        "similarity_score": 0.5523438453674316,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Черновики внутренних объявлений. Нужен рабочий список действий и рисков, пример 1."
+      },
+      {
+        "category": "Календарь и встречи",
+        "distance_to_medoid": 0.01437234878540039,
+        "run_id": "run_746",
+        "similarity_score": 0.516922652721405,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Черновики внутренних объявлений. Нужен рабочий список действий и рисков, пример 10."
+      },
+      {
+        "category": "Календарь и встречи",
+        "distance_to_medoid": 0.014765918254852295,
+        "run_id": "run_740",
+        "similarity_score": 0.5093045234680176,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Черновики внутренних объявлений. Нужен рабочий список действий и рисков, пример 4."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.015816569328308105,
+        "run_id": "run_738",
+        "similarity_score": 0.5431508421897888,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Черновики внутренних объявлений. Нужен рабочий список действий и рисков, пример 2."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.3340221643447876,
+        "run_id": "run_707"
+      },
+      {
+        "distance_to_medoid": 0.3333680033683777,
+        "run_id": "run_704"
+      }
+    ],
+    "cluster_fingerprint": "3b720529fe577dee894a0088d85851ba19021a9bc72ea14028142fac3cf0ac3f",
+    "cluster_id": 6,
+    "cluster_name": "Смешанные проверки данных и микроопросы",
+    "enrichment_abstention_reason": "Кластер объединяет две разные бизнес-задачи: проверку качества витрин и микроопросы сотрудников; общий baseline некорректен.",
+    "keywords": [
+      "материалы",
+      "теме",
+      "нужен",
+      "рабочий",
+      "список"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 20,
+    "member_run_ids_hash": "5a700d76b03caf213c81a7b9c77f300cf8cc8420a6e8b5200a896504a193f310",
+    "provisional_label": "Анализ данных и отчётность — материалы / теме / нужен",
+    "representative_examples": [
+      {
+        "category": "CRM и продажи",
+        "distance_to_medoid": -1.1920928955078125e-07,
+        "run_id": "run_660",
+        "similarity_score": 0.5030799508094788,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Проверка качества данных в витринах. Нужен рабочий список действий и рисков, пример 20."
+      },
+      {
+        "category": "CRM и продажи",
+        "distance_to_medoid": 0.0004949569702148438,
+        "run_id": "run_642",
+        "similarity_score": 0.4990229606628418,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Проверка качества данных в витринах. Нужен рабочий список действий и рисков, пример 2."
+      },
+      {
+        "category": "CRM и продажи",
+        "distance_to_medoid": 0.0014228224754333496,
+        "run_id": "run_648",
+        "similarity_score": 0.499485582113266,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Проверка качества данных в витринах. Нужен рабочий список действий и рисков, пример 8."
+      },
+      {
+        "category": "CRM и продажи",
+        "distance_to_medoid": 0.010107636451721191,
+        "run_id": "run_647",
+        "similarity_score": 0.5040876865386963,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Проверка качества данных в витринах. Нужен рабочий список действий и рисков, пример 7."
+      },
+      {
+        "category": "CRM и продажи",
+        "distance_to_medoid": 0.01014620065689087,
+        "run_id": "run_653",
+        "similarity_score": 0.5022119283676147,
+        "task_passport_text": "Текущая цель: Собери материалы по теме: Проверка качества данных в витринах. Нужен рабочий список действий и рисков, пример 13."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.0008811354637145996,
+        "run_id": "run_153"
+      },
+      {
+        "distance_to_medoid": 0.0008811354637145996,
+        "run_id": "run_105"
+      }
+    ],
+    "cluster_fingerprint": "4bbf2f178daa76f45e11271209212ce17c4a11d3e0ad99c59fa6fee7e844031f",
+    "cluster_id": 7,
+    "cluster_name": "Ошибочно нераспознанные известные сценарии",
+    "enrichment_abstention_reason": "Кластер состоит из известных сценариев, не прошедших повышенный порог; создавать новый экономический паспорт нельзя.",
+    "keywords": [
+      "ctx"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 8,
+    "member_run_ids_hash": "6d2db7717f992cebc80c53bd089b94a594775089ee494d7a282005f5992ce330",
+    "provisional_label": "Проекты и задачи — ctx",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_106",
+        "similarity_score": 0.5969946384429932,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_154",
+        "similarity_score": 0.5969946384429932,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_146",
+        "similarity_score": 0.5969946384429932,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_114",
+        "similarity_score": 0.5969946384429932,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0008811354637145996,
+        "run_id": "run_145",
+        "similarity_score": 0.5998321771621704,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.5431081056594849,
+        "run_id": "run_777"
+      },
+      {
+        "distance_to_medoid": 0.45245063304901123,
+        "run_id": "run_782"
+      }
+    ],
+    "cluster_fingerprint": "ef929cde84c69d4c87c1ede855119db14b99ad87292aacce89b42317c2c08739",
+    "cluster_id": 8,
+    "cluster_name": "Смешанные известные и мусорные запросы",
+    "enrichment_abstention_reason": "Кластер смешивает известные задачи и бессодержательные запросы; единая тема и ручной baseline отсутствуют.",
+    "keywords": [
+      "ctx",
+      "test",
+      "слишком",
+      "общий",
+      "запрос"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 24,
+    "member_run_ids_hash": "ca61136c068f365b06e1f60c60f1425b3c31f2d1dc2bd3d14d66dc4078e0d005",
+    "provisional_label": "Проекты и задачи — ctx / test / слишком",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_156",
+        "similarity_score": 0.5921840071678162,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_108",
+        "similarity_score": 0.5921840071678162,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_148",
+        "similarity_score": 0.5921840071678162,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_116",
+        "similarity_score": 0.5921840071678162,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0008488893508911133,
+        "run_id": "run_149",
+        "similarity_score": 0.5968634486198425,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.001955747604370117,
+        "run_id": "run_390"
+      },
+      {
+        "distance_to_medoid": 0.0018597841262817383,
+        "run_id": "run_385"
+      }
+    ],
+    "cluster_fingerprint": "f38fc4e18f4a2f3113e1b4e0b5a1854082a33ad1a13ff523a3580453026ec9af",
+    "cluster_id": 9,
+    "cluster_name": "Ошибочно нераспознанные известные задачи",
+    "enrichment_abstention_reason": "Кластер содержит известные use cases, которые следует вернуть в каталог после калибровки, а не оценивать как новую тему.",
+    "keywords": [
+      "ctx"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 17,
+    "member_run_ids_hash": "dfd71cfc20b75b181a06e7de15aa2d9610a9d5dbc156aab1aa19a0a6a1400b9a",
+    "provisional_label": "Проекты и задачи — ctx",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": -2.384185791015625e-07,
+        "run_id": "run_473",
+        "similarity_score": 0.5841947197914124,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052 ctx00053 ctx00054 ctx00055 ctx00056 ctx00057 ctx00058 ctx00059"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0003294944763183594,
+        "run_id": "run_263",
+        "similarity_score": 0.5851854085922241,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052 ctx00053 ctx00054 ctx00055 ctx00056 ctx00057 ctx00058"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005335211753845215,
+        "run_id": "run_265",
+        "similarity_score": 0.5888108611106873,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052 ctx00053 ctx00054 ctx00055 ctx00056 ctx00057 ctx00058 ctx00059 ctx00060"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005335211753845215,
+        "run_id": "run_383",
+        "similarity_score": 0.5888108611106873,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052 ctx00053 ctx00054 ctx00055 ctx00056 ctx00057 ctx00058 ctx00059 ctx00060"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005975961685180664,
+        "run_id": "run_389",
+        "similarity_score": 0.5858559608459473,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052 ctx00053 ctx00054 ctx00055 ctx00056 ctx00057"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.04936659336090088,
+        "run_id": "run_730"
+      },
+      {
+        "distance_to_medoid": 0.04705613851547241,
+        "run_id": "run_736"
+      }
+    ],
+    "cluster_fingerprint": "175e48e660c00cdc0784597c0d33d9ab3639cb1bc68ddb03e15e350ad0277e00",
+    "cluster_id": 10,
+    "cluster_name": "Контроль локальных справочников оборудования",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.08,
+        "high": 0.3,
+        "low": 0.0
+      },
+      "assumptions": [
+        "проверяется один локальный справочник",
+        "правила качества данных известны"
+      ],
+      "cluster_name": "Контроль локальных справочников оборудования",
+      "human_followup_minutes": {
+        "base": 10,
+        "high": 25,
+        "low": 5
+      },
+      "manual_minutes": {
+        "base": 40,
+        "high": 80,
+        "low": 20
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 10,
+          "step": "Получить справочник и правила заполнения"
+        },
+        {
+          "minutes_base": 20,
+          "step": "Проверить записи, дубли и обязательные поля"
+        },
+        {
+          "minutes_base": 10,
+          "step": "Подготовить перечень исправлений"
+        }
+      ],
+      "manual_time_confidence": 0.66
+    },
+    "keywords": [
+      "материалы",
+      "теме",
+      "контроль",
+      "локальных",
+      "справочников"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 250.0,
+        "high": 625.0,
+        "low": 125.0
+      },
+      "manual_work_value_rub": {
+        "base": 1000.0,
+        "high": 2000.0,
+        "low": 500.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 8,
+    "member_run_ids_hash": "04a1d9ca6ced2bf10b381f1974bc96d7ee8167a793e9bd8e5707c8a0fc2aa20f",
+    "provisional_label": "Проекты и задачи — материалы / теме / контроль",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0,
+        "run_id": "run_726",
+        "similarity_score": 0.5288099050521851,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Контроль локальных справочников оборудования. Нужен рабочий список действий и рисков, пример 2."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0013566017150878906,
+        "run_id": "run_732",
+        "similarity_score": 0.5252374410629272,
+        "task_passport_text": "Текущая цель: Проверь материалы по теме: Контроль локальных справочников оборудования. Нужен рабочий список действий и рисков, пример 8."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.02305227518081665,
+        "run_id": "run_728",
+        "similarity_score": 0.5255056619644165,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Контроль локальных справочников оборудования. Нужен рабочий список действий и рисков, пример 4."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.027948498725891113,
+        "run_id": "run_734",
+        "similarity_score": 0.5695136785507202,
+        "task_passport_text": "Текущая цель: Need help: Подготовь материалы по теме: Контроль локальных справочников оборудования. Нужен рабочий список действий и рисков, пример 10.. Please keep result structured."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.02810192108154297,
+        "run_id": "run_733",
+        "similarity_score": 0.5474988222122192,
+        "task_passport_text": "Текущая цель: Сравни материалы по теме: Контроль локальных справочников оборудования. Нужен рабочий список действий и рисков, пример 9."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_success",
+    "boundary_examples": [],
+    "cluster_fingerprint": "3254733515f4fd9c0a2fad6d7b3e9b7e6b1fe3e52b7a9842f51a2d37c38d5892",
+    "cluster_id": 11,
+    "cluster_name": "Проверка небольших списков закупок",
+    "economic_passport": {
+      "active_wait_ratio": {
+        "base": 0.05,
+        "high": 0.25,
+        "low": 0.0
+      },
+      "assumptions": [
+        "список небольшой",
+        "цены и обязательные поля доступны"
+      ],
+      "cluster_name": "Проверка небольших списков закупок",
+      "human_followup_minutes": {
+        "base": 7,
+        "high": 18,
+        "low": 3
+      },
+      "manual_minutes": {
+        "base": 25,
+        "high": 50,
+        "low": 12
+      },
+      "manual_steps": [
+        {
+          "minutes_base": 8,
+          "step": "Получить список и критерии проверки"
+        },
+        {
+          "minutes_base": 12,
+          "step": "Проверить позиции и возможные расхождения"
+        },
+        {
+          "minutes_base": 5,
+          "step": "Оформить замечания и рекомендации"
+        }
+      ],
+      "manual_time_confidence": 0.68
+    },
+    "keywords": [
+      "ctx",
+      "материалы",
+      "теме",
+      "проверка",
+      "маленьких"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "local_economics": {
+      "actual_saved_minutes_available": false,
+      "employee_cost_per_hour": 1500,
+      "employee_cost_per_minute": 25.0,
+      "human_followup_cost_rub": {
+        "base": 175.0,
+        "high": 450.0,
+        "low": 75.0
+      },
+      "manual_work_value_rub": {
+        "base": 625.0,
+        "high": 1250.0,
+        "low": 300.0
+      },
+      "note": "Фактическая экономия и ROI не заявляются без телеметрии времени ИИ и проверки качества результата.",
+      "saved_time_value_formula": "saved_minutes / 60 * employee_cost_per_hour"
+    },
+    "member_count": 5,
+    "member_run_ids_hash": "d25952b6ec5897fde9593ba10df9a9d1825c9ba4f07b134919f4d7dfd09e9681",
+    "provisional_label": "Проекты и задачи — ctx / материалы / теме",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 2.384185791015625e-07,
+        "run_id": "run_758",
+        "similarity_score": 0.5607266426086426,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Проверка маленьких списков закупок. Нужен рабочий список действий и рисков, пример 10."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0006023645401000977,
+        "run_id": "run_752",
+        "similarity_score": 0.5550483465194702,
+        "task_passport_text": "Текущая цель: Подготовь материалы по теме: Проверка маленьких списков закупок. Нужен рабочий список действий и рисков, пример 4."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.026885986328125,
+        "run_id": "run_757",
+        "similarity_score": 0.564915657043457,
+        "task_passport_text": "Текущая цель: Сравни материалы по теме: Проверка маленьких списков закупок. Нужен рабочий список действий и рисков, пример 9."
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.06072115898132324,
+        "run_id": "run_755",
+        "similarity_score": 0.5840710997581482,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n22 ctx01323 ctx01324 ctx01325 ctx01326 ctx01327 ctx01328 ctx01329 ctx01330 ctx01331 ctx01332 ctx01333\nДоказательные фрагменты:\n- [prompt:0 0:3000] Собери материалы по теме: Проверка маленьких списков закупок. Нужен рабочий список действий и рисков, пример 7.\n\nctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052 ctx00053 ctx00054 ctx00055 ctx00056 ctx00057 ctx00058 ctx00059 ctx00060 ctx00061 ctx00062 ctx00063 ctx00064 ctx00065 ctx00066 ctx00067 ctx00068 ctx00069 ctx00070 ctx00071 ctx00072 ctx00073 ctx00074 ctx00075 ctx00076 ctx00077 ctx00078 ctx00079 ctx00080 ctx00081 ctx00082 ctx00083 ctx00084 ctx00085 ctx00086 ctx00087 ctx00088 ctx00089 ctx00090 ctx00091 ctx00092 ctx00093 ctx00094 ctx00095 ctx00096 ctx00097 ctx00098 ctx00099 ctx00100 ctx00101 ctx00102 ctx00103 ctx00104 ctx00105 ctx00106 ctx00107 ctx00108 ctx00109 ctx00110 ctx00111 ctx00112 ctx00113 ctx00114 ctx00115 ctx00116 ctx00117 ctx00118 ctx00119 ctx0012\n- [prompt:1 2744:5744] 50 ctx00451 ctx00452 ctx00453 ctx00454 ctx00455 ctx00456 ctx00457 ctx00458 ctx00459 ctx00460 ctx00461 ctx00462 ctx00463 ctx00464 ctx00465 ctx00466 ctx00467 ctx00468 ctx00469 ctx00470 ctx00471 ctx00472 ctx00473 ctx00474 ctx00475 ctx00476 ctx00477 ctx00478 ctx00479 ctx00480 ctx00481 ctx00482 ctx00483 ctx00484 ctx00485 ctx00486 ctx00487 ctx00488 ctx00489 ctx00490 ctx00491 ctx00492 ctx00493 ctx00494 ctx00495 ctx00496 ctx00497 ctx00498 ctx00499 ctx00500 ctx00501 ctx00502 ctx00503 ctx00504 ctx00505 ctx00506 ctx00507 ctx00508 ctx00509 ctx00510 ctx00511 ctx00512 ctx00513 ctx00514 ctx00515 ctx00516 ctx00517 ctx00518 ctx00519 ctx00520 ctx00521 ctx00522 ctx00523 ctx00524 ctx00525 ctx00526 ctx00527 ctx00528 ctx00529 ctx00530 ctx00531 ctx00532 ctx00533 ctx00534 ctx00535 ctx00536 ctx00537 ctx00538 ctx00539 ctx00540 ctx00541 ctx00542 ctx00543 ctx00544 ctx00545 ctx00546 ctx00547 ctx00548 ctx00549 ctx00550 ctx00551 ctx00552 ctx00553 ctx00554 ctx00555 ctx00556 ctx00557 ctx00558 ctx00559 ctx00560 ctx00561 ctx00562 ctx00563 ctx00564 ctx00565 ctx00566 ctx00567 ctx00568 ctx00569 ctx00570 ctx00571 ctx00572 ctx00573 ctx00574 ctx00575 ctx00576 ctx00577 ctx00578 ctx00579 ctx00580 ctx00581 ctx00582 ctx00583 \n- [prompt:2 5488:8044]  ctx00908 ctx00909 ctx00910 ctx00911 ctx00912 ctx00913 ctx00914 ctx00915 ctx00916 ctx00917 ctx00918 ctx00919 ctx00920 ctx00921 ctx00922 ctx00923 ctx00924 ctx00925 ctx00926 ctx00927 ctx00928 ctx00929 ctx00930 ctx00931 ctx00932 ctx00933 ctx00934 ctx00935 ctx00936 ctx00937 ctx00938 ctx00939 ctx00940 ctx00941 ctx00942 ctx00943 ctx00944 ctx00945 ctx00946 ctx00947 ctx00948 ctx00949 ctx00950 ctx00951 ctx00952 ctx00953 ctx00954 ctx00955 ctx00956 ctx00957 ctx00958 ctx00959 ctx00960 ctx00961 ctx00962 ctx00963 ctx00964 ctx00965 ctx00966 ctx00967 ctx00968 ctx00969 ctx00970 ctx00971 ctx00972 ctx00973 ctx00974 ctx00975 ctx00976 ctx00977 ctx00978 ctx00979 ctx00980 ctx00981 ctx00982 ctx00983 ctx00984 ctx00985 ctx00986 ctx00987 ctx00988 ctx00989 ctx00990 ctx00991 ctx00992 ctx00993 ctx00994 ctx00995 ctx00996 ctx00997 ctx00998 ctx00999 ctx01000 ctx01001 ctx01002 ctx01003 ctx01004 ctx01005 ctx01006 ctx01007 ctx01008 ctx01009 ctx01010 ctx01011 ctx01012 ctx01013 ctx01014 ctx01015 ctx01016 ctx01017 ctx01018 ctx01019 ctx01020 ctx01021 ctx01022 ctx01023 ctx01024 ctx01025 ctx01026 ctx01027 ctx01028 ctx01029 ctx01030 ctx01031 ctx01032 ctx01033 ctx01034 ctx01035 ctx01036 ctx01037 ctx01038 ctx01039 ctx01040 ct"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.06248307228088379,
+        "run_id": "run_753",
+        "similarity_score": 0.5827858448028564,
+        "task_passport_text": "Текущая цель: Разложи по приоритетам материалы по теме: Проверка маленьких списков закупок. Нужен рабочий список действий и рисков, пример 5."
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.17038917541503906,
+        "run_id": "run_784"
+      },
+      {
+        "distance_to_medoid": 0.11610710620880127,
+        "run_id": "run_770"
+      }
+    ],
+    "cluster_fingerprint": "c90ec9ce68439e55749888b6ed6b64c63218a74e404af29861e3f2f0eb1aaccb",
+    "cluster_id": 12,
+    "cluster_name": "Смешанные long-context запросы",
+    "enrichment_abstention_reason": "Кластер сформирован общей синтетической ctx-обвязкой, а не одной бизнес-целью; экономический паспорт был бы ложным.",
+    "keywords": [
+      "ctx",
+      "prompt",
+      "доказательные",
+      "фрагменты",
+      "need"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 15,
+    "member_run_ids_hash": "442b2d7de82cfca9c902f6017f6d8a2996dd87cd736e9c4ad6616690d64bf9d9",
+    "provisional_label": "Проекты и задачи — ctx / prompt / доказательные",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 1.7881393432617188e-07,
+        "run_id": "run_665",
+        "similarity_score": 0.5929902791976929,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx00256 ctx00257 ctx00258 ctx00259 ctx00260 ctx00261 ctx00262 ctx00263 ctx00264 ctx00265 ctx00266 ctx00267 ctx00268 ctx00269 ctx00270"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005702376365661621,
+        "run_id": "run_661",
+        "similarity_score": 0.5962929725646973,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx00256 ctx00257 ctx00258 ctx00259 ctx00260 ctx00261 ctx00262 ctx00263 ctx00264 ctx00265 ctx00266 ctx00267 ctx00268"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0012933015823364258,
+        "run_id": "run_671",
+        "similarity_score": 0.5866960287094116,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx00256 ctx00257 ctx00258 ctx00259 ctx00260 ctx00261 ctx00262 ctx00263 ctx00264 ctx00265 ctx00266 ctx00267 ctx00268 ctx00269 ctx00270 ctx00271 ctx00272 ctx00273 ctx00274 ctx00275 ctx00276"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0014625191688537598,
+        "run_id": "run_679",
+        "similarity_score": 0.5859500169754028,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx00256 ctx00257 ctx00258 ctx00259 ctx00260 ctx00261 ctx00262 ctx00263 ctx00264 ctx00265 ctx00266 ctx00267 ctx00268 ctx00269 ctx00270 ctx00271 ctx00272 ctx00273 ctx00274 ctx00275 ctx00276 ctx00277"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0033338069915771484,
+        "run_id": "run_639",
+        "similarity_score": 0.5856772661209106,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n0213 ctx00214 ctx00215 ctx00216 ctx00217 ctx00218 ctx00219 ctx00220 ctx00221 ctx00222 ctx00223 ctx00224 ctx00225 ctx00226 ctx00227 ctx00228 ctx00229 ctx00230 ctx00231 ctx00232 ctx00233 ctx00234 ctx00235 ctx00236 ctx00237"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.3104139566421509,
+        "run_id": "run_778"
+      },
+      {
+        "distance_to_medoid": 0.006555080413818359,
+        "run_id": "run_691"
+      }
+    ],
+    "cluster_fingerprint": "26958b837d7d885ae5340b2b030ae4661dd7ca82f69015388ac4cffe1531075b",
+    "cluster_id": 13,
+    "cluster_name": "Смешанные long-context и случайные запросы",
+    "enrichment_abstention_reason": "Участники относятся к нескольким темам и включают случайный шум; единый экономический сценарий отсутствует.",
+    "keywords": [
+      "ctx",
+      "random",
+      "unique",
+      "topic",
+      "about"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 17,
+    "member_run_ids_hash": "60540ad37039e5850f2d96d4c7511cb84c5a02376b859db2e3b772a38c4e8541",
+    "provisional_label": "Проекты и задачи — ctx / random / unique",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0,
+        "run_id": "run_725",
+        "similarity_score": 0.5871638059616089,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx01280 ctx01281 ctx01282 ctx01283 ctx01284 ctx01285 ctx01286 ctx01287 ctx01288 ctx01289 ctx01290 ctx01291 ctx01292 ctx01293 ctx01294 ctx01295 ctx01296 ctx01297 ctx01298 ctx01299 ctx01300 ctx01301 ctx01302 ctx01303"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0013914704322814941,
+        "run_id": "run_729",
+        "similarity_score": 0.5969226360321045,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx01280 ctx01281 ctx01282 ctx01283 ctx01284 ctx01285 ctx01286 ctx01287 ctx01288 ctx01289 ctx01290 ctx01291 ctx01292 ctx01293 ctx01294 ctx01295 ctx01296"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0014882683753967285,
+        "run_id": "run_731",
+        "similarity_score": 0.5914322137832642,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx01280 ctx01281 ctx01282 ctx01283 ctx01284 ctx01285 ctx01286 ctx01287 ctx01288 ctx01289 ctx01290 ctx01291 ctx01292 ctx01293 ctx01294 ctx01295 ctx01296 ctx01297 ctx01298 ctx01299 ctx01300 ctx01301 ctx01302 ctx01303 ctx01304 ctx01305 ctx01306 ctx01307 ctx01308 ctx01309"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0018593072891235352,
+        "run_id": "run_735",
+        "similarity_score": 0.5954081416130066,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx01280 ctx01281 ctx01282 ctx01283 ctx01284 ctx01285 ctx01286 ctx01287 ctx01288 ctx01289 ctx01290 ctx01291 ctx01292 ctx01293 ctx01294 ctx01295 ctx01296 ctx01297 ctx01298 ctx01299 ctx01300 ctx01301 ctx01302 ctx01303 ctx01304 ctx01305 ctx01306 ctx01307 ctx01308 ctx01309 ctx01310 ctx01311"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0025415420532226562,
+        "run_id": "run_749",
+        "similarity_score": 0.5978419780731201,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx000\n[…]\n ctx01280 ctx01281 ctx01282 ctx01283 ctx01284 ctx01285 ctx01286 ctx01287 ctx01288 ctx01289 ctx01290 ctx01291 ctx01292 ctx01293 ctx01294 ctx01295 ctx01296 ctx01297 ctx01298 ctx01299 ctx01300 ctx01301 ctx01302 ctx01303 ctx01304 ctx01305 ctx01306 ctx01307 ctx01308 ctx01309 ctx01310 ctx01311 ctx01312 ctx01313 ctx01314 ctx01315 ctx01316 ctx01317 ctx01318"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.29295188188552856,
+        "run_id": "run_461"
+      },
+      {
+        "distance_to_medoid": 0.1979755163192749,
+        "run_id": "run_791"
+      }
+    ],
+    "cluster_fingerprint": "9f9c6677e88abd39f165f84911bc138adccbe18c432bc050f292428c9a053184",
+    "cluster_id": 14,
+    "cluster_name": "Почти полностью известные сценарии с шумовым хвостом",
+    "enrichment_abstention_reason": "Кластер почти целиком состоит из known-запросов и одного шумового примера; новый паспорт создавал бы ложную бизнес-тему.",
+    "keywords": [
+      "ctx",
+      "клиент",
+      "active",
+      "prompt",
+      "risk"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 9,
+    "member_run_ids_hash": "84ac0f9c6b7ba754522e79406067eb26a43c2e3cca801e480914b2e1096d110c",
+    "provisional_label": "Проекты и задачи — ctx / клиент / active",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0,
+        "run_id": "run_280",
+        "similarity_score": 0.5961056351661682,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0,
+        "run_id": "run_398",
+        "similarity_score": 0.5961056351661682,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005888938903808594,
+        "run_id": "run_469",
+        "similarity_score": 0.5938639640808105,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0008858442306518555,
+        "run_id": "run_278",
+        "similarity_score": 0.5925819873809814,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0008858442306518555,
+        "run_id": "run_396",
+        "similarity_score": 0.5925819873809814,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  },
+  {
+    "analysis_configuration_hash": "6198d6039ae8e1cfea067b405ea963ee4e720d4f968f226f80ca198030a41616",
+    "analysis_dataset_id": "prompt_radar_generated_800",
+    "analysis_hash": "3b6daa5dddcbb8ae330eee10225caa03016ffd0ebaebd87daae86f63527bcb27",
+    "api_enrichment_status": "precomputed_abstained",
+    "boundary_examples": [
+      {
+        "distance_to_medoid": 0.0012475252151489258,
+        "run_id": "run_264"
+      }
+    ],
+    "cluster_fingerprint": "a7ad6e3232a0a362e7ca477c1870dcc0367b938f5cd95029b63d339f022a6948",
+    "cluster_id": 15,
+    "cluster_name": "Небольшая группа ошибочно нераспознанных known-запросов",
+    "enrichment_abstention_reason": "Все участники принадлежат к известным сценариям и должны решаться калибровкой классификации, а не новым экономическим паспортом.",
+    "keywords": [
+      "ctx"
+    ],
+    "label_is_final": true,
+    "label_source": "local_precomputed",
+    "member_count": 6,
+    "member_run_ids_hash": "2d0f0588949ced031fb49134b6e7a48552a979a63d4e3837cfc1869e3bd402be",
+    "provisional_label": "Проекты и задачи — ctx",
+    "representative_examples": [
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0,
+        "run_id": "run_466",
+        "similarity_score": 0.5878279805183411,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0,
+        "run_id": "run_384",
+        "similarity_score": 0.5878279805183411,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051 ctx00052"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005700588226318359,
+        "run_id": "run_474",
+        "similarity_score": 0.5879917144775391,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.0005700588226318359,
+        "run_id": "run_465",
+        "similarity_score": 0.5879917144775391,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049 ctx00050 ctx00051"
+      },
+      {
+        "category": "Проекты и задачи",
+        "distance_to_medoid": 0.000744938850402832,
+        "run_id": "run_463",
+        "similarity_score": 0.5903481841087341,
+        "task_passport_text": "Текущая цель: ctx00000 ctx00001 ctx00002 ctx00003 ctx00004 ctx00005 ctx00006 ctx00007 ctx00008 ctx00009 ctx00010 ctx00011 ctx00012 ctx00013 ctx00014 ctx00015 ctx00016 ctx00017 ctx00018 ctx00019 ctx00020 ctx00021 ctx00022 ctx00023 ctx00024 ctx00025 ctx00026 ctx00027 ctx00028 ctx00029 ctx00030 ctx00031 ctx00032 ctx00033 ctx00034 ctx00035 ctx00036 ctx00037 ctx00038 ctx00039 ctx00040 ctx00041 ctx00042 ctx00043 ctx00044 ctx00045 ctx00046 ctx00047 ctx00048 ctx00049"
+      }
+    ],
+    "source_model": "codex_precomputed_review",
+    "source_model_revision": "2026-07-25",
+    "source_prompt_version": "precomputed-cluster-review-v2"
+  }
+]
