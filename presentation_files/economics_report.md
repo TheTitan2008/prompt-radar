@@ -6,23 +6,23 @@
 
 - Runs: 800
 - Analysis period: 0.203657407407407 months
-- Selected cost scenario: `weighted_users`
+- Selected cost scenario: `active_user_share`
 - GPU allocation: `token_proxy` (proxy)
-- Allocated fully loaded cost: 64976.33 RUB
+- Allocated fully loaded cost: 85988.60 RUB
 - Idle license cost: 0.08 RUB
 - Potential BASE saved minutes: 4087.9705
-- Potential BASE net value: 37222.65 RUB
-- Potential BASE ROI: 0.572864
+- Potential BASE net value: 16210.38 RUB
+- Potential BASE ROI: 0.188518
 - Insufficient evidence runs: 412
-- Insufficient evidence cost: 49021.31 RUB
+- Insufficient evidence cost: 67425.11 RUB
 - Insufficient evidence share: 0.515
 - Total tokens: 6893149
-- Full cost per 1k tokens: 9.42623 RUB
+- Full cost per 1k tokens: 12.474513 RUB
 - Saved FTE-months (BASE): 0.42583
 - FTE-month value (BASE): 170332.1 RUB
 - B > A by FTE view: True
 - Confirmed wasted cost: 0.00 RUB
-- Optimization opportunity: 37311.94 RUB
+- Optimization opportunity: 55272.72 RUB
 
 ## Data completeness
 
@@ -51,10 +51,11 @@ Manual baseline evidence sources:
 | `conservative_full_gpu` | 22400000.00 | 1866666.67 | 186.67 |
 | `platform_token_ratio` | 19066666.67 | 1588888.89 | 158.89 |
 | `weighted_users` | 3828571.43 | 319047.62 | 31.90 |
+| `active_user_share` | 5066666.67 | 422222.22 | 42.22 |
 
 ## Platform cost structure
 
-- Annual GPU amortization: 1428571.43 RUB
+- Annual GPU amortization: 2666666.67 RUB
 - Annual licenses: 2400000.0 RUB
 - Annual electricity: 0.0 RUB
 - Annual support: 0.0 RUB
@@ -65,31 +66,31 @@ Manual baseline evidence sources:
 
 | Target | Runs | Evaluated | Coverage | Potential ROI BASE | ROI interval | q break-even BASE | Passport | Status |
 |---|---:|---:|---:|---:|---:|---:|---|---|
-| Поиск контактных лиц клиента | 91 | 0 | 0.00% | -3.407943 | n/a … n/a | 0.422915 | `accepted` | `POTENTIALLY_INEFFECTIVE` |
-| Выгрузка выбранных данных в Excel | 36 | 0 | 0.00% | -2.983899 | n/a … n/a | 0.540766 | `accepted` | `POTENTIALLY_INEFFECTIVE` |
-| Создание и обновление тикета ИСУП | 29 | 0 | 0.00% | 6.241188 | n/a … n/a | 0.521111 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Подготовка ежедневной сводки почты | 26 | 0 | 0.00% | 20.439196 | n/a … n/a | 0.284868 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Формирование Excel-отчёта по клиенту | 22 | 0 | 0.00% | 25.714969 | n/a … n/a | 0.363006 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Поиск корпоративного процесса в Confluence | 21 | 0 | 0.00% | 9.88303 | n/a … n/a | 0.433566 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Ведение истории личных задач | 20 | 0 | 0.00% | 3.561727 | n/a … n/a | 0.585597 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Подготовка заметки о сотруднике | 20 | 0 | 0.00% | 3.092147 | n/a … n/a | 0.61101 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Подготовка ответа клиенту по переписке | 20 | 0 | 0.00% | 1.408679 | n/a … n/a | 0.404617 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Поиск слота руководителя и создание встречи | 20 | 0 | 0.00% | 1.015588 | n/a … n/a | 0.441308 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Сбор данных по группе компаний клиента | 16 | 0 | 0.00% | 37.022989 | n/a … n/a | 0.251577 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Создание напоминаний по договорённостям | 11 | 0 | 0.00% | 14.043814 | n/a … n/a | 0.292388 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Поиск общего календарного слота группы | 7 | 0 | 0.00% | 9.209408 | n/a … n/a | 0.42881 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Извлечение сведений из описания встречи | 6 | 0 | 0.00% | 1.63957 | n/a … n/a | 0.714157 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Контроль изменений статусов проектов ИСУП | 6 | 0 | 0.00% | 6.75826 | n/a … n/a | 0.474104 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Проверка и подтверждение выполнения задач | 6 | 0 | 0.00% | 1.384932 | n/a … n/a | 0.557242 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Создание проектного тикета из письма | 6 | 0 | 0.00% | 6.210337 | n/a … n/a | 0.535927 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Оформление итогов обсуждения | 5 | 0 | 0.00% | 9.953904 | n/a … n/a | 0.431645 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Фиксация наблюдений о сотруднике | 5 | 0 | 0.00% | 12.349891 | n/a … n/a | 0.490825 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Поиск публикаций о поставщике | 4 | 0 | 0.00% | 18.370632 | n/a … n/a | 0.3691 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Экспорт аналитических результатов в Excel | 4 | 0 | 0.00% | 10.521411 | n/a … n/a | 0.508614 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Поиск и бронирование переговорной | 2 | 0 | 0.00% | 6.05897 | n/a … n/a | 0.51298 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Поиск команды проекта и владельца вендора | 2 | 0 | 0.00% | 35.121901 | n/a … n/a | 0.31284 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Приоритизация назначенных задач Jira | 2 | 0 | 0.00% | 10.263534 | n/a … n/a | 0.46917 | `accepted` | `POTENTIALLY_EFFECTIVE` |
-| Получение списка назначенных задач Jira | 1 | 0 | 0.00% | -0.796467 | n/a … n/a | 3.781557 | `accepted` | `IMPOSSIBLE_TO_BREAK_EVEN` |
+| Поиск контактных лиц клиента | 91 | 0 | 0.00% | -3.300445 | n/a … n/a | 0.424796 | `accepted` | `POTENTIALLY_INEFFECTIVE` |
+| Выгрузка выбранных данных в Excel | 36 | 0 | 0.00% | -2.921284 | n/a … n/a | 0.542728 | `accepted` | `POTENTIALLY_INEFFECTIVE` |
+| Создание и обновление тикета ИСУП | 29 | 0 | 0.00% | 5.79017 | n/a … n/a | 0.524739 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Подготовка ежедневной сводки почты | 26 | 0 | 0.00% | 19.33779 | n/a … n/a | 0.286355 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Формирование Excel-отчёта по клиенту | 22 | 0 | 0.00% | 24.982726 | n/a … n/a | 0.363505 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Поиск корпоративного процесса в Confluence | 21 | 0 | 0.00% | 8.65663 | n/a … n/a | 0.440845 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Ведение истории личных задач | 20 | 0 | 0.00% | 3.438914 | n/a … n/a | 0.588428 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Подготовка заметки о сотруднике | 20 | 0 | 0.00% | 2.90743 | n/a … n/a | 0.613899 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Подготовка ответа клиенту по переписке | 20 | 0 | 0.00% | 1.352881 | n/a … n/a | 0.405381 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Поиск слота руководителя и создание встречи | 20 | 0 | 0.00% | 0.967992 | n/a … n/a | 0.442706 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Сбор данных по группе компаний клиента | 16 | 0 | 0.00% | 35.79703 | n/a … n/a | 0.251913 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Создание напоминаний по договорённостям | 11 | 0 | 0.00% | 13.08669 | n/a … n/a | 0.295811 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Поиск общего календарного слота группы | 7 | 0 | 0.00% | 8.296671 | n/a … n/a | 0.433377 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Извлечение сведений из описания встречи | 6 | 0 | 0.00% | 1.40011 | n/a … n/a | 0.731551 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Контроль изменений статусов проектов ИСУП | 6 | 0 | 0.00% | 6.166398 | n/a … n/a | 0.480531 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Проверка и подтверждение выполнения задач | 6 | 0 | 0.00% | 1.011557 | n/a … n/a | 0.577163 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Создание проектного тикета из письма | 6 | 0 | 0.00% | 5.68105 | n/a … n/a | 0.541847 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Оформление итогов обсуждения | 5 | 0 | 0.00% | 9.727452 | n/a … n/a | 0.432851 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Фиксация наблюдений о сотруднике | 5 | 0 | 0.00% | 11.946933 | n/a … n/a | 0.492108 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Поиск публикаций о поставщике | 4 | 0 | 0.00% | 17.853036 | n/a … n/a | 0.370043 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Экспорт аналитических результатов в Excel | 4 | 0 | 0.00% | 10.137015 | n/a … n/a | 0.510226 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Поиск и бронирование переговорной | 2 | 0 | 0.00% | 5.904356 | n/a … n/a | 0.51478 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Поиск команды проекта и владельца вендора | 2 | 0 | 0.00% | 34.576391 | n/a … n/a | 0.31314 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Приоритизация назначенных задач Jira | 2 | 0 | 0.00% | 9.888785 | n/a … n/a | 0.47095 | `accepted` | `POTENTIALLY_EFFECTIVE` |
+| Получение списка назначенных задач Jira | 1 | 0 | 0.00% | -0.880148 | n/a … n/a | 6.219943 | `accepted` | `IMPOSSIBLE_TO_BREAK_EVEN` |
 | Проекты и задачи — ctx / test / слишком | 24 | 0 | 0.00% | n/a | n/a … n/a | n/a | `insufficient_evidence` | `INSUFFICIENT_EVIDENCE` |
 | Анализ данных и отчётность — материалы / теме / нужен | 20 | 0 | 0.00% | n/a | n/a … n/a | n/a | `insufficient_evidence` | `INSUFFICIENT_EVIDENCE` |
 | Проекты и задачи — ctx | 17 | 0 | 0.00% | n/a | n/a … n/a | n/a | `insufficient_evidence` | `INSUFFICIENT_EVIDENCE` |

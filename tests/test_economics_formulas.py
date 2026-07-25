@@ -43,6 +43,21 @@ def test_fixed_labor_and_platform_control_values(financial_config) -> None:
     assert conservative["break_even_minutes_per_user_workday"] == pytest.approx(42.222222)
     assert scenarios["platform_token_ratio"]["agent_gpu_share"] == pytest.approx(5 / 6)
     assert scenarios["weighted_users"]["agent_gpu_share"] == pytest.approx(750 / 2050)
+    assert "active_user_share" not in scenarios
+
+
+def test_active_user_share_gpu_scenario(financial_config) -> None:
+    config = financial_config.model_copy(
+        update={
+            "licensed_agent_users": 20,
+            "gpu_total_platform_users": 150,
+            "default_gpu_allocation_scenario": "active_user_share",
+        }
+    )
+    scenarios = platform_scenarios(config)
+    assert scenarios["active_user_share"]["agent_gpu_share"] == pytest.approx(
+        20 / 150, abs=1e-6
+    )
 
 
 def test_invalid_wait_ratio_and_range_are_rejected() -> None:

@@ -68,6 +68,11 @@ def platform_scenarios(config: Any) -> dict[str, dict[str, float]]:
             + dec(config.web_users)
         ),
     }
+    total_platform_users = getattr(config, "gpu_total_platform_users", None)
+    if total_platform_users is not None:
+        shares["active_user_share"] = (
+            dec(config.licensed_agent_users) / dec(total_platform_users)
+        )
     result: dict[str, dict[str, float]] = {}
     for name, share in shares.items():
         annual_gpu = gpu_annual * share

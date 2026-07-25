@@ -60,12 +60,15 @@ annual_gpu_cost = gpu_purchase_cost / gpu_lifetime_years
 annual_license_cost = license_cost_per_user_month × licensed_agent_users × 12
 ```
 
-Поддерживаются три доли GPU:
+Поддерживаются четыре доли GPU:
 
 1. `conservative_full_gpu`: 100% GPU.
 2. `platform_token_ratio`: `multiplier / (multiplier + 1)`.
 3. `weighted_users`:
    `(agent_users × multiplier) / (agent_users × multiplier + web_users)`.
+4. `active_user_share`:
+   `licensed_agent_users / gpu_total_platform_users`. Для финального
+   `generated_800` это сценарий демо-охвата: `20 / 150 = 13.33%` GPU.
 
 Для 100 млн RUB, пяти лет и 150 лицензий по 10 000 RUB:
 

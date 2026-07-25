@@ -6,6 +6,7 @@
   "gpu_lifetime_years": 5,
   "license_cost_per_user_month": 10000,
   "licensed_agent_users": 20,
+  "gpu_total_platform_users": 150,
   "web_users": 1300,
   "agent_token_multiplier": 5,
   "working_days_per_month": 20,
@@ -15,7 +16,7 @@
   "support_cost_per_month": 0,
   "development_cost_per_month": 0,
   "shared_tools_cost_per_month": 0,
-  "default_gpu_allocation_scenario": "weighted_users",
+  "default_gpu_allocation_scenario": "active_user_share",
   "default_prompt_minutes": 3,
   "include_cost_components": {
     "gpu_amortization": true,

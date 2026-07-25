@@ -194,8 +194,12 @@ class FinancialConfig(StrictModel):
     development_cost_per_month: float = Field(default=0, ge=0)
     shared_tools_cost_per_month: float = Field(default=0, ge=0)
     default_gpu_allocation_scenario: Literal[
-        "conservative_full_gpu", "platform_token_ratio", "weighted_users"
+        "conservative_full_gpu",
+        "platform_token_ratio",
+        "weighted_users",
+        "active_user_share",
     ] = "conservative_full_gpu"
+    gpu_total_platform_users: int | None = Field(default=None, gt=0)
     default_prompt_minutes: float | None = Field(default=None, ge=0)
     include_cost_components: CostComponents
     analysis_period_months: float = Field(default=1, gt=0)

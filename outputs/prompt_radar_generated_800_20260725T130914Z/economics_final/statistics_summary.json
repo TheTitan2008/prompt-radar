@@ -54,7 +54,7 @@
       "name": "unresolved"
     }
   ],
-  "generated_at": "2026-07-25T13:40:49.439297+00:00",
+  "generated_at": "2026-07-25T13:59:33.731524+00:00",
   "processing_modes": [
     {
       "count": 693,
@@ -323,14 +323,14 @@
     "ai_processing_minutes": 6520.32,
     "b_gt_a": true,
     "conversations": 140,
-    "full_cost_per_1k_tokens_rub": 9.42623,
-    "fully_loaded_platform_period_cost": 64976.41,
-    "insufficient_evidence_cost": 49021.31,
+    "full_cost_per_1k_tokens_rub": 12.474513,
+    "fully_loaded_platform_period_cost": 85988.68,
+    "insufficient_evidence_cost": 67425.11,
     "insufficient_evidence_runs": 412,
     "insufficient_evidence_share": 0.515,
     "potential_gross_value": 102199.06,
-    "potential_net_value": 37222.65,
-    "potential_roi": 0.572864,
+    "potential_net_value": 16210.38,
+    "potential_roi": 0.188518,
     "potential_saved_minutes": 4087.9705,
     "request_types": 57,
     "runs": 800,
@@ -347,8 +347,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 525.07,
-      "allocated_cost_per_1k_tokens_rub": 232.782844,
-      "allocated_platform_cost": 2067.81,
+      "allocated_cost_per_1k_tokens_rub": 235.831363,
+      "allocated_platform_cost": 2094.89,
       "average_ai_processing_minutes": 4.9535,
       "average_tokens_per_run": 83.8,
       "conversation_count": 18,
@@ -357,7 +357,7 @@
       "potential_coverage": 0.877358,
       "potential_covered_runs": 93,
       "potential_gross_value": 8200.12,
-      "potential_net_value": 6132.31,
+      "potential_net_value": 6105.23,
       "potential_saved_minutes": 328.011,
       "request_types": [
         {
@@ -1687,8 +1687,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 463.05,
-      "allocated_cost_per_1k_tokens_rub": 119.792749,
-      "allocated_platform_cost": 2098.17,
+      "allocated_cost_per_1k_tokens_rub": 122.842135,
+      "allocated_platform_cost": 2151.58,
       "average_ai_processing_minutes": 4.9261,
       "average_tokens_per_run": 186.33,
       "conversation_count": 16,
@@ -1697,7 +1697,7 @@
       "potential_coverage": 0.638298,
       "potential_covered_runs": 60,
       "potential_gross_value": 18665.56,
-      "potential_net_value": 16567.39,
+      "potential_net_value": 16513.98,
       "potential_saved_minutes": 746.6215,
       "request_types": [
         {
@@ -2879,8 +2879,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 452.61,
-      "allocated_cost_per_1k_tokens_rub": 80.621664,
-      "allocated_platform_cost": 2129.46,
+      "allocated_cost_per_1k_tokens_rub": 83.669027,
+      "allocated_platform_cost": 2209.95,
       "average_ai_processing_minutes": 5.5196,
       "average_tokens_per_run": 322.11,
       "conversation_count": 14,
@@ -2889,7 +2889,7 @@
       "potential_coverage": 0.109756,
       "potential_covered_runs": 9,
       "potential_gross_value": 2890.08,
-      "potential_net_value": 760.62,
+      "potential_net_value": 680.13,
       "potential_saved_minutes": 115.6035,
       "request_types": [
         {
@@ -3939,8 +3939,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 411.12,
-      "allocated_cost_per_1k_tokens_rub": 93.37628,
-      "allocated_platform_cost": 2116.28,
+      "allocated_cost_per_1k_tokens_rub": 96.425168,
+      "allocated_platform_cost": 2185.38,
       "average_ai_processing_minutes": 5.8731,
       "average_tokens_per_run": 323.77,
       "conversation_count": 12,
@@ -3949,7 +3949,7 @@
       "potential_coverage": 1.0,
       "potential_covered_runs": 70,
       "potential_gross_value": 24851.4,
-      "potential_net_value": 22735.12,
+      "potential_net_value": 22666.02,
       "potential_saved_minutes": 994.057,
       "request_types": [
         {
@@ -4831,8 +4831,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 319.68,
-      "allocated_cost_per_1k_tokens_rub": 116.01613,
-      "allocated_platform_cost": 2100.24,
+      "allocated_cost_per_1k_tokens_rub": 119.065901,
+      "allocated_platform_cost": 2155.45,
       "average_ai_processing_minutes": 5.5117,
       "average_tokens_per_run": 312.12,
       "conversation_count": 10,
@@ -4841,7 +4841,7 @@
       "potential_coverage": 0.741379,
       "potential_covered_runs": 43,
       "potential_gross_value": 7419.89,
-      "potential_net_value": 5319.65,
+      "potential_net_value": 5264.44,
       "potential_saved_minutes": 296.798,
       "request_types": [
         {
@@ -5591,8 +5591,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 301.24,
-      "allocated_cost_per_1k_tokens_rub": 125.00179,
-      "allocated_platform_cost": 2095.53,
+      "allocated_cost_per_1k_tokens_rub": 128.049988,
+      "allocated_platform_cost": 2146.63,
       "average_ai_processing_minutes": 5.7931,
       "average_tokens_per_run": 322.38,
       "conversation_count": 9,
@@ -5601,7 +5601,7 @@
       "potential_coverage": 0.634615,
       "potential_covered_runs": 33,
       "potential_gross_value": 4538.12,
-      "potential_net_value": 2442.59,
+      "potential_net_value": 2391.49,
       "potential_saved_minutes": 181.5255,
       "request_types": [
         {
@@ -6271,8 +6271,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 377.71,
-      "allocated_cost_per_1k_tokens_rub": 40.286524,
-      "allocated_platform_cost": 2231.39,
+      "allocated_cost_per_1k_tokens_rub": 43.335018,
+      "allocated_platform_cost": 2400.24,
       "average_ai_processing_minutes": 7.869,
       "average_tokens_per_run": 1153.92,
       "conversation_count": 8,
@@ -6281,7 +6281,7 @@
       "potential_coverage": 0.520833,
       "potential_covered_runs": 25,
       "potential_gross_value": 4866.92,
-      "potential_net_value": 2635.53,
+      "potential_net_value": 2466.68,
       "potential_saved_minutes": 194.6775,
       "request_types": [
         {
@@ -6915,8 +6915,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 426.43,
-      "allocated_cost_per_1k_tokens_rub": 31.213333,
-      "allocated_platform_cost": 2295.21,
+      "allocated_cost_per_1k_tokens_rub": 34.261488,
+      "allocated_platform_cost": 2519.35,
       "average_ai_processing_minutes": 9.6916,
       "average_tokens_per_run": 1671.2,
       "conversation_count": 8,
@@ -6925,7 +6925,7 @@
       "potential_coverage": 0.409091,
       "potential_covered_runs": 18,
       "potential_gross_value": 12997.07,
-      "potential_net_value": 10701.86,
+      "potential_net_value": 10477.72,
       "potential_saved_minutes": 519.8825,
       "request_types": [
         {
@@ -7499,8 +7499,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 379.49,
-      "allocated_cost_per_1k_tokens_rub": 36.279983,
-      "allocated_platform_cost": 2255.2,
+      "allocated_cost_per_1k_tokens_rub": 39.328035,
+      "allocated_platform_cost": 2444.67,
       "average_ai_processing_minutes": 9.4872,
       "average_tokens_per_run": 1554.03,
       "conversation_count": 7,
@@ -7509,7 +7509,7 @@
       "potential_coverage": 0.6,
       "potential_covered_runs": 24,
       "potential_gross_value": 10944.81,
-      "potential_net_value": 8689.61,
+      "potential_net_value": 8500.14,
       "potential_saved_minutes": 437.7915,
       "request_types": [
         {
@@ -8047,8 +8047,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 324.98,
-      "allocated_cost_per_1k_tokens_rub": 38.388439,
-      "allocated_platform_cost": 2242.0,
+      "allocated_cost_per_1k_tokens_rub": 41.436399,
+      "allocated_platform_cost": 2420.01,
       "average_ai_processing_minutes": 9.0272,
       "average_tokens_per_run": 1622.31,
       "conversation_count": 6,
@@ -8057,7 +8057,7 @@
       "potential_coverage": 0.166667,
       "potential_covered_runs": 6,
       "potential_gross_value": 2208.77,
-      "potential_net_value": -33.23,
+      "potential_net_value": -211.24,
       "potential_saved_minutes": 88.35,
       "request_types": [
         {
@@ -8535,8 +8535,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 305.27,
-      "allocated_cost_per_1k_tokens_rub": 35.796206,
-      "allocated_platform_cost": 2258.49,
+      "allocated_cost_per_1k_tokens_rub": 38.844404,
+      "allocated_platform_cost": 2450.81,
       "average_ai_processing_minutes": 9.5397,
       "average_tokens_per_run": 1971.66,
       "conversation_count": 6,
@@ -8545,7 +8545,7 @@
       "potential_coverage": 0.0,
       "potential_covered_runs": 0,
       "potential_gross_value": 0.0,
-      "potential_net_value": -2258.49,
+      "potential_net_value": -2450.81,
       "potential_saved_minutes": 0.0,
       "request_types": [
         {
@@ -8971,8 +8971,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 385.68,
-      "allocated_cost_per_1k_tokens_rub": 13.081153,
-      "allocated_platform_cost": 2785.54,
+      "allocated_cost_per_1k_tokens_rub": 16.129434,
+      "allocated_platform_cost": 3434.65,
       "average_ai_processing_minutes": 13.7743,
       "average_tokens_per_run": 7605.11,
       "conversation_count": 5,
@@ -8981,7 +8981,7 @@
       "potential_coverage": 0.0,
       "potential_covered_runs": 0,
       "potential_gross_value": 0.0,
-      "potential_net_value": -2785.54,
+      "potential_net_value": -3434.65,
       "potential_saved_minutes": 0.0,
       "request_types": [
         {
@@ -9355,8 +9355,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 324.26,
-      "allocated_cost_per_1k_tokens_rub": 14.451203,
-      "allocated_platform_cost": 2691.71,
+      "allocated_cost_per_1k_tokens_rub": 17.499383,
+      "allocated_platform_cost": 3259.47,
       "average_ai_processing_minutes": 13.5108,
       "average_tokens_per_run": 7760.92,
       "conversation_count": 4,
@@ -9365,7 +9365,7 @@
       "potential_coverage": 0.0,
       "potential_covered_runs": 0,
       "potential_gross_value": 0.0,
-      "potential_net_value": -2691.71,
+      "potential_net_value": -3259.47,
       "potential_saved_minutes": 0.0,
       "request_types": [
         {
@@ -9691,8 +9691,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 268.14,
-      "allocated_cost_per_1k_tokens_rub": 16.409567,
-      "allocated_platform_cost": 2592.17,
+      "allocated_cost_per_1k_tokens_rub": 19.457988,
+      "allocated_platform_cost": 3073.72,
       "average_ai_processing_minutes": 13.407,
       "average_tokens_per_run": 7898.35,
       "conversation_count": 4,
@@ -9701,7 +9701,7 @@
       "potential_coverage": 0.0,
       "potential_covered_runs": 0,
       "potential_gross_value": 0.0,
-      "potential_net_value": -2592.17,
+      "potential_net_value": -3073.72,
       "potential_saved_minutes": 0.0,
       "request_types": [
         {
@@ -9992,8 +9992,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 185.31,
-      "allocated_cost_per_1k_tokens_rub": 59.090239,
-      "allocated_platform_cost": 2165.48,
+      "allocated_cost_per_1k_tokens_rub": 62.138238,
+      "allocated_platform_cost": 2277.18,
       "average_ai_processing_minutes": 9.2655,
       "average_tokens_per_run": 1832.35,
       "conversation_count": 4,
@@ -10002,7 +10002,7 @@
       "potential_coverage": 0.2,
       "potential_covered_runs": 4,
       "potential_gross_value": 2111.63,
-      "potential_net_value": -53.85,
+      "potential_net_value": -165.55,
       "potential_saved_minutes": 84.465,
       "request_types": [
         {
@@ -10280,8 +10280,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 242.7,
-      "allocated_cost_per_1k_tokens_rub": 9.03815,
-      "allocated_platform_cost": 3334.02,
+      "allocated_cost_per_1k_tokens_rub": 12.086407,
+      "allocated_platform_cost": 4458.47,
       "average_ai_processing_minutes": 15.1688,
       "average_tokens_per_run": 23055.19,
       "conversation_count": 3,
@@ -10290,7 +10290,7 @@
       "potential_coverage": 0.0,
       "potential_covered_runs": 0,
       "potential_gross_value": 0.0,
-      "potential_net_value": -3334.02,
+      "potential_net_value": -4458.47,
       "potential_saved_minutes": 0.0,
       "request_types": [
         {
@@ -10529,8 +10529,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 271.52,
-      "allocated_cost_per_1k_tokens_rub": 8.793368,
-      "allocated_platform_cost": 3394.24,
+      "allocated_cost_per_1k_tokens_rub": 11.841632,
+      "allocated_platform_cost": 4570.87,
       "average_ai_processing_minutes": 22.6267,
       "average_tokens_per_run": 32166.67,
       "conversation_count": 2,
@@ -10539,7 +10539,7 @@
       "potential_coverage": 0.083333,
       "potential_covered_runs": 1,
       "potential_gross_value": 1010.6,
-      "potential_net_value": -2383.64,
+      "potential_net_value": -3560.27,
       "potential_saved_minutes": 40.424,
       "request_types": [
         {
@@ -10733,8 +10733,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 121.55,
-      "allocated_cost_per_1k_tokens_rub": 11.421242,
-      "allocated_platform_cost": 2942.82,
+      "allocated_cost_per_1k_tokens_rub": 14.469576,
+      "allocated_platform_cost": 3728.26,
       "average_ai_processing_minutes": 15.1937,
       "average_tokens_per_run": 32207.75,
       "conversation_count": 2,
@@ -10743,7 +10743,7 @@
       "potential_coverage": 0.125,
       "potential_covered_runs": 1,
       "potential_gross_value": 960.98,
-      "potential_net_value": -1981.84,
+      "potential_net_value": -2767.28,
       "potential_saved_minutes": 38.439,
       "request_types": [
         {
@@ -10882,8 +10882,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 246.0,
-      "allocated_cost_per_1k_tokens_rub": 4.343687,
-      "allocated_platform_cost": 10704.03,
+      "allocated_cost_per_1k_tokens_rub": 7.391973,
+      "allocated_platform_cost": 18215.84,
       "average_ai_processing_minutes": 41.0,
       "average_tokens_per_run": 410712.17,
       "conversation_count": 1,
@@ -10892,7 +10892,7 @@
       "potential_coverage": 0.0,
       "potential_covered_runs": 0,
       "potential_gross_value": 0.0,
-      "potential_net_value": -10704.03,
+      "potential_net_value": -18215.84,
       "potential_saved_minutes": 0.0,
       "request_types": [
         {
@@ -10998,8 +10998,8 @@
       "actual_net_value": null,
       "actual_saved_minutes": 0.0,
       "ai_processing_minutes": 188.51,
-      "allocated_cost_per_1k_tokens_rub": 4.365967,
-      "allocated_platform_cost": 10476.54,
+      "allocated_cost_per_1k_tokens_rub": 7.414252,
+      "allocated_platform_cost": 17791.18,
       "average_ai_processing_minutes": 47.1275,
       "average_tokens_per_run": 599898.0,
       "conversation_count": 1,
@@ -11008,7 +11008,7 @@
       "potential_coverage": 0.25,
       "potential_covered_runs": 1,
       "potential_gross_value": 533.11,
-      "potential_net_value": -9943.43,
+      "potential_net_value": -17258.07,
       "potential_saved_minutes": 21.3245,
       "request_types": [
         {

@@ -174,7 +174,10 @@ are not sufficient to claim factual ROI.
 The dataset-level `cost_config.json` remains compatible with ingestion.
 Evidence-aware economics uses a separate strict financial configuration
 supplied to the `economics` command. It fixes the rate at 1500 RUB/hour and
-adds GPU, license, allocation-period and reproducibility settings.
+adds GPU, license, allocation-period and reproducibility settings. Demo
+configs may set `gpu_total_platform_users` and
+`default_gpu_allocation_scenario = active_user_share`; then the selected GPU
+share is `licensed_agent_users / gpu_total_platform_users`.
 
 ## Economics inputs
 

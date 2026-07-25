@@ -15,7 +15,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.94,
+    "fully_loaded_cost": 53.88,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -64,7 +64,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 237.1,
+    "fully_loaded_cost": 243.59,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -113,7 +113,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1109.08,
+    "fully_loaded_cost": 1187.77,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -162,7 +162,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1294.71,
+    "fully_loaded_cost": 1534.29,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -211,7 +211,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 723.15,
+    "fully_loaded_cost": 829.1,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -261,7 +261,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1579.73,
+    "fully_loaded_cost": 1948.16,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -310,7 +310,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 7803.0,
+    "fully_loaded_cost": 12245.68,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -362,7 +362,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 934.46,
+    "fully_loaded_cost": 1008.9,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -411,7 +411,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 620.98,
+    "fully_loaded_cost": 642.01,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -460,7 +460,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1960.83,
+    "fully_loaded_cost": 2400.02,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -510,7 +510,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 724.4,
+    "fully_loaded_cost": 844.76,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -560,7 +560,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1298.05,
+    "fully_loaded_cost": 1363.99,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -609,7 +609,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 170.28,
+    "fully_loaded_cost": 171.88,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -658,7 +658,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1231.94,
+    "fully_loaded_cost": 1490.66,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -707,7 +707,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1586.67,
+    "fully_loaded_cost": 1851.29,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -757,7 +757,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 1444.49,
+    "fully_loaded_cost": 1610.68,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -806,7 +806,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 915.32,
+    "fully_loaded_cost": 1105.52,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -850,7 +850,7 @@
       "MODEL_ESTIMATE": 4
     },
     "break_even_quality": {
-      "base": 0.508614,
+      "base": 0.510226,
       "high": 0.11946,
       "low": 2.080258
     },
@@ -863,7 +863,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 116.76,
+    "fully_loaded_cost": 120.79,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 18.0,
@@ -882,11 +882,11 @@
     "p90_ai_wall_minutes": 5.655,
     "potential": {
       "base": {
-        "cost": 116.76,
+        "cost": 120.79,
         "labor_value": 1345.24,
-        "net_value": 1228.48,
-        "roi": 10.521411,
-        "roi_percent": 1052.141144,
+        "net_value": 1224.45,
+        "roi": 10.137015,
+        "roi_percent": 1013.701465,
         "saved_hours": 0.896817,
         "saved_minutes": 53.809
       },
@@ -916,7 +916,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 10.521411,
+    "roi_base": 10.137015,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 4,
@@ -941,7 +941,7 @@
       "MODEL_ESTIMATE": 16
     },
     "break_even_quality": {
-      "base": 0.251577,
+      "base": 0.251913,
       "high": 0.060229,
       "low": 1.13734
     },
@@ -954,7 +954,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 484.14,
+    "fully_loaded_cost": 500.27,
     "human_followup_minutes": {
       "base": 25.0,
       "high": 60.0,
@@ -973,11 +973,11 @@
     "p90_ai_wall_minutes": 5.42,
     "potential": {
       "base": {
-        "cost": 484.14,
+        "cost": 500.27,
         "labor_value": 18408.45,
-        "net_value": 17924.31,
-        "roi": 37.022989,
-        "roi_percent": 3702.298922,
+        "net_value": 17908.18,
+        "roi": 35.79703,
+        "roi_percent": 3579.70296,
         "saved_hours": 12.2723,
         "saved_minutes": 736.338
       },
@@ -1007,7 +1007,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 37.022989,
+    "roi_base": 35.79703,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 16,
@@ -1032,7 +1032,7 @@
       "MODEL_ESTIMATE": 91
     },
     "break_even_quality": {
-      "base": 0.422915,
+      "base": 0.424796,
       "high": 0.100108,
       "low": 2.197754
     },
@@ -1045,7 +1045,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 2289.78,
+    "fully_loaded_cost": 2396.78,
     "human_followup_minutes": {
       "base": 6.0,
       "high": 15.0,
@@ -1064,11 +1064,11 @@
     "p90_ai_wall_minutes": 8.729999999999999,
     "potential": {
       "base": {
-        "cost": 2289.78,
+        "cost": 2396.78,
         "labor_value": -5513.66,
-        "net_value": -7803.44,
-        "roi": -3.407943,
-        "roi_percent": -340.794312,
+        "net_value": -7910.44,
+        "roi": -3.300445,
+        "roi_percent": -330.044476,
         "saved_hours": -3.675667,
         "saved_minutes": -220.54
       },
@@ -1098,7 +1098,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": -3.407943,
+    "roi_base": -3.300445,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 91,
@@ -1123,7 +1123,7 @@
       "MODEL_ESTIMATE": 20
     },
     "break_even_quality": {
-      "base": 0.404617,
+      "base": 0.405381,
       "high": 0.08009,
       "low": 1.931332
     },
@@ -1136,7 +1136,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 805.4,
+    "fully_loaded_cost": 824.5,
     "human_followup_minutes": {
       "base": 15.0,
       "high": 40.0,
@@ -1155,11 +1155,11 @@
     "p90_ai_wall_minutes": 7.112000000000006,
     "potential": {
       "base": {
-        "cost": 805.4,
+        "cost": 824.5,
         "labor_value": 1939.95,
-        "net_value": 1134.55,
-        "roi": 1.408679,
-        "roi_percent": 140.867892,
+        "net_value": 1115.45,
+        "roi": 1.352881,
+        "roi_percent": 135.288053,
         "saved_hours": 1.293317,
         "saved_minutes": 77.599
       },
@@ -1189,7 +1189,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 1.408679,
+    "roi_base": 1.352881,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 20,
@@ -1214,7 +1214,7 @@
       "MODEL_ESTIMATE": 21
     },
     "break_even_quality": {
-      "base": 0.433566,
+      "base": 0.440845,
       "high": 0.09999,
       "low": 2.492948
     },
@@ -1227,7 +1227,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 937.08,
+    "fully_loaded_cost": 1056.09,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 20.0,
@@ -1246,11 +1246,11 @@
     "p90_ai_wall_minutes": 10.44,
     "potential": {
       "base": {
-        "cost": 937.08,
+        "cost": 1056.09,
         "labor_value": 10198.27,
-        "net_value": 9261.19,
-        "roi": 9.88303,
-        "roi_percent": 988.303026,
+        "net_value": 9142.18,
+        "roi": 8.65663,
+        "roi_percent": 865.662964,
         "saved_hours": 6.79885,
         "saved_minutes": 407.931
       },
@@ -1280,7 +1280,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 9.88303,
+    "roi_base": 8.65663,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 21,
@@ -1306,7 +1306,7 @@
       "MODEL_ESTIMATE": 22
     },
     "break_even_quality": {
-      "base": 0.363006,
+      "base": 0.363505,
       "high": 0.07478,
       "low": 1.256367
     },
@@ -1319,7 +1319,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 535.45,
+    "fully_loaded_cost": 550.54,
     "human_followup_minutes": {
       "base": 15.0,
       "high": 30.0,
@@ -1338,11 +1338,11 @@
     "p90_ai_wall_minutes": 9.909,
     "potential": {
       "base": {
-        "cost": 535.45,
+        "cost": 550.54,
         "labor_value": 14304.53,
-        "net_value": 13769.08,
-        "roi": 25.714969,
-        "roi_percent": 2571.496872,
+        "net_value": 13753.99,
+        "roi": 24.982726,
+        "roi_percent": 2498.272605,
         "saved_hours": 9.53635,
         "saved_minutes": 572.181
       },
@@ -1372,7 +1372,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 25.714969,
+    "roi_base": 24.982726,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 22,
@@ -1397,7 +1397,7 @@
       "MODEL_ESTIMATE": 26
     },
     "break_even_quality": {
-      "base": 0.284868,
+      "base": 0.286355,
       "high": 0.080397,
       "low": 1.102884
     },
@@ -1410,7 +1410,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 803.24,
+    "fully_loaded_cost": 846.74,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 20.0,
@@ -1429,11 +1429,11 @@
     "p90_ai_wall_minutes": 9.805,
     "potential": {
       "base": {
-        "cost": 803.24,
+        "cost": 846.74,
         "labor_value": 17220.82,
-        "net_value": 16417.58,
-        "roi": 20.439196,
-        "roi_percent": 2043.919626,
+        "net_value": 16374.08,
+        "roi": 19.33779,
+        "roi_percent": 1933.778964,
         "saved_hours": 11.480567,
         "saved_minutes": 688.834
       },
@@ -1463,7 +1463,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 20.439196,
+    "roi_base": 19.33779,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 26,
@@ -1488,7 +1488,7 @@
       "MODEL_ESTIMATE": 5
     },
     "break_even_quality": {
-      "base": 0.431645,
+      "base": 0.432851,
       "high": 0.102839,
       "low": 1.77832
     },
@@ -1501,7 +1501,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 214.12,
+    "fully_loaded_cost": 218.64,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 20.0,
@@ -1520,11 +1520,11 @@
     "p90_ai_wall_minutes": 5.098,
     "potential": {
       "base": {
-        "cost": 214.12,
+        "cost": 218.64,
         "labor_value": 2345.45,
-        "net_value": 2131.33,
-        "roi": 9.953904,
-        "roi_percent": 995.390435,
+        "net_value": 2126.81,
+        "roi": 9.727452,
+        "roi_percent": 972.745152,
         "saved_hours": 1.563633,
         "saved_minutes": 93.818
       },
@@ -1554,7 +1554,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 9.953904,
+    "roi_base": 9.727452,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 5,
@@ -1579,7 +1579,7 @@
       "MODEL_ESTIMATE": 6
     },
     "break_even_quality": {
-      "base": 0.535927,
+      "base": 0.541847,
       "high": 0.109891,
       "low": 2.47256
     },
@@ -1592,7 +1592,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 336.27,
+    "fully_loaded_cost": 362.91,
     "human_followup_minutes": {
       "base": 10.0,
       "high": 25.0,
@@ -1611,11 +1611,11 @@
     "p90_ai_wall_minutes": 9.135,
     "potential": {
       "base": {
-        "cost": 336.27,
+        "cost": 362.91,
         "labor_value": 2424.62,
-        "net_value": 2088.35,
-        "roi": 6.210337,
-        "roi_percent": 621.033693,
+        "net_value": 2061.71,
+        "roi": 5.68105,
+        "roi_percent": 568.10504,
         "saved_hours": 1.6164,
         "saved_minutes": 96.984
       },
@@ -1645,7 +1645,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 6.210337,
+    "roi_base": 5.68105,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 6,
@@ -1670,7 +1670,7 @@
       "MODEL_ESTIMATE": 20
     },
     "break_even_quality": {
-      "base": 0.441308,
+      "base": 0.442706,
       "high": 0.128894,
       "low": 1.860038
     },
@@ -1683,7 +1683,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 722.35,
+    "fully_loaded_cost": 739.82,
     "human_followup_minutes": {
       "base": 6.0,
       "high": 15.0,
@@ -1702,11 +1702,11 @@
     "p90_ai_wall_minutes": 6.607000000000006,
     "potential": {
       "base": {
-        "cost": 722.35,
+        "cost": 739.82,
         "labor_value": 1455.96,
-        "net_value": 733.61,
-        "roi": 1.015588,
-        "roi_percent": 101.558801,
+        "net_value": 716.14,
+        "roi": 0.967992,
+        "roi_percent": 96.799221,
         "saved_hours": 0.970667,
         "saved_minutes": 58.24
       },
@@ -1736,7 +1736,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 1.015588,
+    "roi_base": 0.967992,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 20,
@@ -1761,7 +1761,7 @@
       "MODEL_ESTIMATE": 11
     },
     "break_even_quality": {
-      "base": 0.292388,
+      "base": 0.295811,
       "high": 0.067125,
       "low": 1.265268
     },
@@ -1774,7 +1774,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 793.58,
+    "fully_loaded_cost": 847.5,
     "human_followup_minutes": {
       "base": 10.0,
       "high": 25.0,
@@ -1793,11 +1793,11 @@
     "p90_ai_wall_minutes": 9.42,
     "potential": {
       "base": {
-        "cost": 793.58,
+        "cost": 847.5,
         "labor_value": 11938.47,
-        "net_value": 11144.89,
-        "roi": 14.043814,
-        "roi_percent": 1404.381411,
+        "net_value": 11090.97,
+        "roi": 13.08669,
+        "roi_percent": 1308.669027,
         "saved_hours": 7.958983,
         "saved_minutes": 477.539
       },
@@ -1827,7 +1827,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 14.043814,
+    "roi_base": 13.08669,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 11,
@@ -1852,7 +1852,7 @@
       "MODEL_ESTIMATE": 36
     },
     "break_even_quality": {
-      "base": 0.540766,
+      "base": 0.542728,
       "high": 0.137871,
       "low": 2.223764
     },
@@ -1865,7 +1865,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 1083.76,
+    "fully_loaded_cost": 1119.08,
     "human_followup_minutes": {
       "base": 6.0,
       "high": 15.0,
@@ -1884,11 +1884,11 @@
     "p90_ai_wall_minutes": 8.26,
     "potential": {
       "base": {
-        "cost": 1083.76,
+        "cost": 1119.08,
         "labor_value": -2150.07,
-        "net_value": -3233.83,
-        "roi": -2.983899,
-        "roi_percent": -298.389865,
+        "net_value": -3269.15,
+        "roi": -2.921284,
+        "roi_percent": -292.128355,
         "saved_hours": -1.43335,
         "saved_minutes": -86.001
       },
@@ -1918,7 +1918,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": -2.983899,
+    "roi_base": -2.921284,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 36,
@@ -1943,7 +1943,7 @@
       "MODEL_ESTIMATE": 7
     },
     "break_even_quality": {
-      "base": 0.42881,
+      "base": 0.433377,
       "high": 0.084108,
       "low": 2.599491
     },
@@ -1956,7 +1956,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 366.27,
+    "fully_loaded_cost": 402.23,
     "human_followup_minutes": {
       "base": 12.0,
       "high": 35.0,
@@ -1975,11 +1975,11 @@
     "p90_ai_wall_minutes": 15.674,
     "potential": {
       "base": {
-        "cost": 366.27,
+        "cost": 402.23,
         "labor_value": 3739.4,
-        "net_value": 3373.13,
-        "roi": 9.209408,
-        "roi_percent": 920.940836,
+        "net_value": 3337.17,
+        "roi": 8.296671,
+        "roi_percent": 829.667106,
         "saved_hours": 2.492925,
         "saved_minutes": 149.5755
       },
@@ -2009,7 +2009,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 9.209408,
+    "roi_base": 8.296671,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 7,
@@ -2034,7 +2034,7 @@
       "MODEL_ESTIMATE": 6
     },
     "break_even_quality": {
-      "base": 0.474104,
+      "base": 0.480531,
       "high": 0.111126,
       "low": 2.177947
     },
@@ -2047,7 +2047,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 350.17,
+    "fully_loaded_cost": 379.09,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 20.0,
@@ -2066,11 +2066,11 @@
     "p90_ai_wall_minutes": 10.375,
     "potential": {
       "base": {
-        "cost": 350.17,
+        "cost": 379.09,
         "labor_value": 2716.71,
-        "net_value": 2366.54,
-        "roi": 6.75826,
-        "roi_percent": 675.826027,
+        "net_value": 2337.62,
+        "roi": 6.166398,
+        "roi_percent": 616.639848,
         "saved_hours": 1.811133,
         "saved_minutes": 108.668
       },
@@ -2100,7 +2100,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 6.75826,
+    "roi_base": 6.166398,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 6,
@@ -2125,7 +2125,7 @@
       "MODEL_ESTIMATE": 29
     },
     "break_even_quality": {
-      "base": 0.521111,
+      "base": 0.524739,
       "high": 0.122763,
       "low": 2.003048
     },
@@ -2138,7 +2138,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 990.18,
+    "fully_loaded_cost": 1055.95,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 15.0,
@@ -2157,11 +2157,11 @@
     "p90_ai_wall_minutes": 9.953999999999999,
     "potential": {
       "base": {
-        "cost": 990.18,
+        "cost": 1055.95,
         "labor_value": 7170.08,
-        "net_value": 6179.9,
-        "roi": 6.241188,
-        "roi_percent": 624.118847,
+        "net_value": 6114.13,
+        "roi": 5.79017,
+        "roi_percent": 579.016999,
         "saved_hours": 4.780033,
         "saved_minutes": 286.802
       },
@@ -2191,7 +2191,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 6.241188,
+    "roi_base": 5.79017,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 29,
@@ -2216,7 +2216,7 @@
       "MODEL_ESTIMATE": 1
     },
     "break_even_quality": {
-      "base": 3.781557,
+      "base": 6.219943,
       "high": 1.740339,
       "low": 98.033688
     },
@@ -2229,7 +2229,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 2619.28,
+    "fully_loaded_cost": 4448.07,
     "human_followup_minutes": {
       "base": 3.0,
       "high": 7.0,
@@ -2248,11 +2248,11 @@
     "p90_ai_wall_minutes": 53.51,
     "potential": {
       "base": {
-        "cost": 2619.28,
+        "cost": 4448.07,
         "labor_value": 533.11,
-        "net_value": -2086.17,
-        "roi": -0.796467,
-        "roi_percent": -79.646697,
+        "net_value": -3914.96,
+        "roi": -0.880148,
+        "roi_percent": -88.014802,
         "saved_hours": 0.355408,
         "saved_minutes": 21.3245
       },
@@ -2282,7 +2282,7 @@
     "recommendations": [
       "Пересмотреть baseline, стоимость и границы сценария."
     ],
-    "roi_base": -0.796467,
+    "roi_base": -0.880148,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 1,
@@ -2307,7 +2307,7 @@
       "MODEL_ESTIMATE": 2
     },
     "break_even_quality": {
-      "base": 0.46917,
+      "base": 0.47095,
       "high": 0.134098,
       "low": 1.86598
     },
@@ -2320,7 +2320,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 51.72,
+    "fully_loaded_cost": 53.5,
     "human_followup_minutes": {
       "base": 5.0,
       "high": 12.0,
@@ -2339,11 +2339,11 @@
     "p90_ai_wall_minutes": 7.1,
     "potential": {
       "base": {
-        "cost": 51.72,
+        "cost": 53.5,
         "labor_value": 582.55,
-        "net_value": 530.83,
-        "roi": 10.263534,
-        "roi_percent": 1026.353442,
+        "net_value": 529.05,
+        "roi": 9.888785,
+        "roi_percent": 988.878505,
         "saved_hours": 0.388367,
         "saved_minutes": 23.302
       },
@@ -2373,7 +2373,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 10.263534,
+    "roi_base": 9.888785,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 2,
@@ -2398,7 +2398,7 @@
       "MODEL_ESTIMATE": 5
     },
     "break_even_quality": {
-      "base": 0.490825,
+      "base": 0.492108,
       "high": 0.140614,
       "low": 1.746043
     },
@@ -2411,7 +2411,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 128.84,
+    "fully_loaded_cost": 132.85,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 15.0,
@@ -2430,11 +2430,11 @@
     "p90_ai_wall_minutes": 5.492,
     "potential": {
       "base": {
-        "cost": 128.84,
+        "cost": 132.85,
         "labor_value": 1720.0,
-        "net_value": 1591.16,
-        "roi": 12.349891,
-        "roi_percent": 1234.989134,
+        "net_value": 1587.15,
+        "roi": 11.946933,
+        "roi_percent": 1194.693263,
         "saved_hours": 1.146675,
         "saved_minutes": 68.8005
       },
@@ -2464,7 +2464,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 12.349891,
+    "roi_base": 11.946933,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 5,
@@ -2489,7 +2489,7 @@
       "MODEL_ESTIMATE": 6
     },
     "break_even_quality": {
-      "base": 0.714157,
+      "base": 0.731551,
       "high": 0.203071,
       "low": 3.722363
     },
@@ -2502,7 +2502,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 313.82,
+    "fully_loaded_cost": 345.13,
     "human_followup_minutes": {
       "base": 3.0,
       "high": 8.0,
@@ -2521,11 +2521,11 @@
     "p90_ai_wall_minutes": 10.375,
     "potential": {
       "base": {
-        "cost": 313.82,
+        "cost": 345.13,
         "labor_value": 828.35,
-        "net_value": 514.53,
-        "roi": 1.63957,
-        "roi_percent": 163.957045,
+        "net_value": 483.22,
+        "roi": 1.40011,
+        "roi_percent": 140.01101,
         "saved_hours": 0.552225,
         "saved_minutes": 33.1335
       },
@@ -2555,7 +2555,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 1.63957,
+    "roi_base": 1.40011,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 6,
@@ -2580,7 +2580,7 @@
       "MODEL_ESTIMATE": 2
     },
     "break_even_quality": {
-      "base": 0.51298,
+      "base": 0.51478,
       "high": 0.146836,
       "low": 1.97524
     },
@@ -2593,7 +2593,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 80.38,
+    "fully_loaded_cost": 82.18,
     "human_followup_minutes": {
       "base": 5.0,
       "high": 12.0,
@@ -2612,11 +2612,11 @@
     "p90_ai_wall_minutes": 6.5360000000000005,
     "potential": {
       "base": {
-        "cost": 80.38,
+        "cost": 82.18,
         "labor_value": 567.4,
-        "net_value": 487.02,
-        "roi": 6.05897,
-        "roi_percent": 605.896989,
+        "net_value": 485.22,
+        "roi": 5.904356,
+        "roi_percent": 590.435629,
         "saved_hours": 0.378267,
         "saved_minutes": 22.696
       },
@@ -2646,7 +2646,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 6.05897,
+    "roi_base": 5.904356,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 2,
@@ -2671,7 +2671,7 @@
       "MODEL_ESTIMATE": 20
     },
     "break_even_quality": {
-      "base": 0.585597,
+      "base": 0.588428,
       "high": 0.184489,
       "low": 2.059806
     },
@@ -2684,7 +2684,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 767.33,
+    "fully_loaded_cost": 788.56,
     "human_followup_minutes": {
       "base": 4.0,
       "high": 8.0,
@@ -2703,11 +2703,11 @@
     "p90_ai_wall_minutes": 5.6240000000000006,
     "potential": {
       "base": {
-        "cost": 767.33,
+        "cost": 788.56,
         "labor_value": 3500.35,
-        "net_value": 2733.02,
-        "roi": 3.561727,
-        "roi_percent": 356.172703,
+        "net_value": 2711.79,
+        "roi": 3.438914,
+        "roi_percent": 343.891397,
         "saved_hours": 2.333567,
         "saved_minutes": 140.014
       },
@@ -2737,7 +2737,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 3.561727,
+    "roi_base": 3.438914,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 20,
@@ -2762,7 +2762,7 @@
       "MODEL_ESTIMATE": 20
     },
     "break_even_quality": {
-      "base": 0.61101,
+      "base": 0.613899,
       "high": 0.169051,
       "low": 2.0071
     },
@@ -2775,7 +2775,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 458.4,
+    "fully_loaded_cost": 480.07,
     "human_followup_minutes": {
       "base": 5.0,
       "high": 10.0,
@@ -2794,11 +2794,11 @@
     "p90_ai_wall_minutes": 5.5600000000000005,
     "potential": {
       "base": {
-        "cost": 458.4,
+        "cost": 480.07,
         "labor_value": 1875.84,
-        "net_value": 1417.44,
-        "roi": 3.092147,
-        "roi_percent": 309.21466,
+        "net_value": 1395.77,
+        "roi": 2.90743,
+        "roi_percent": 290.743017,
         "saved_hours": 1.25055,
         "saved_minutes": 75.033
       },
@@ -2828,7 +2828,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 3.092147,
+    "roi_base": 2.90743,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 20,
@@ -2853,7 +2853,7 @@
       "MODEL_ESTIMATE": 2
     },
     "break_even_quality": {
-      "base": 0.31284,
+      "base": 0.31314,
       "high": 0.075362,
       "low": 1.38102
     },
@@ -2866,7 +2866,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 39.13,
+    "fully_loaded_cost": 39.73,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 20.0,
@@ -2885,11 +2885,11 @@
     "p90_ai_wall_minutes": 7.670000000000001,
     "potential": {
       "base": {
-        "cost": 39.13,
+        "cost": 39.73,
         "labor_value": 1413.45,
-        "net_value": 1374.32,
-        "roi": 35.121901,
-        "roi_percent": 3512.190135,
+        "net_value": 1373.72,
+        "roi": 34.576391,
+        "roi_percent": 3457.639064,
         "saved_hours": 0.9423,
         "saved_minutes": 56.538
       },
@@ -2919,7 +2919,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 35.121901,
+    "roi_base": 34.576391,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 2,
@@ -2944,7 +2944,7 @@
       "MODEL_ESTIMATE": 4
     },
     "break_even_quality": {
-      "base": 0.3691,
+      "base": 0.370043,
       "high": 0.096027,
       "low": 1.83754
     },
@@ -2957,7 +2957,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 120.2,
+    "fully_loaded_cost": 123.5,
     "human_followup_minutes": {
       "base": 8.0,
       "high": 20.0,
@@ -2976,11 +2976,11 @@
     "p90_ai_wall_minutes": 9.995000000000001,
     "potential": {
       "base": {
-        "cost": 120.2,
+        "cost": 123.5,
         "labor_value": 2328.35,
-        "net_value": 2208.15,
-        "roi": 18.370632,
-        "roi_percent": 1837.063228,
+        "net_value": 2204.85,
+        "roi": 17.853036,
+        "roi_percent": 1785.303644,
         "saved_hours": 1.552233,
         "saved_minutes": 93.134
       },
@@ -3010,7 +3010,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 18.370632,
+    "roi_base": 17.853036,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 4,
@@ -3035,7 +3035,7 @@
       "MODEL_ESTIMATE": 6
     },
     "break_even_quality": {
-      "base": 0.557242,
+      "base": 0.577163,
       "high": 0.114207,
       "low": 2.858331
     },
@@ -3048,7 +3048,7 @@
     "evaluation_coverage": 0.0,
     "evidence_level": "E0",
     "failed_conditions": [],
-    "fully_loaded_cost": 547.37,
+    "fully_loaded_cost": 648.97,
     "human_followup_minutes": {
       "base": 12.0,
       "high": 30.0,
@@ -3067,11 +3067,11 @@
     "p90_ai_wall_minutes": 8.46,
     "potential": {
       "base": {
-        "cost": 547.37,
+        "cost": 648.97,
         "labor_value": 1305.44,
-        "net_value": 758.07,
-        "roi": 1.384932,
-        "roi_percent": 138.493158,
+        "net_value": 656.47,
+        "roi": 1.011557,
+        "roi_percent": 101.155677,
         "saved_hours": 0.870292,
         "saved_minutes": 52.2175
       },
@@ -3101,7 +3101,7 @@
     "recommendations": [
       "Продолжить наблюдение качества и стоимости."
     ],
-    "roi_base": 1.384932,
+    "roi_base": 1.011557,
     "roi_lower": null,
     "roi_upper": null,
     "run_count": 6,
@@ -3132,7 +3132,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.42,
+    "fully_loaded_cost": 19.61,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3181,7 +3181,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.47,
+    "fully_loaded_cost": 19.7,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3230,7 +3230,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.51,
+    "fully_loaded_cost": 19.77,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3279,7 +3279,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.44,
+    "fully_loaded_cost": 19.63,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3328,7 +3328,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.48,
+    "fully_loaded_cost": 19.72,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3377,7 +3377,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.44,
+    "fully_loaded_cost": 19.63,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3426,7 +3426,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.48,
+    "fully_loaded_cost": 19.71,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3475,7 +3475,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.53,
+    "fully_loaded_cost": 19.79,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3524,7 +3524,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.55,
+    "fully_loaded_cost": 19.83,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3573,7 +3573,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 19.57,
+    "fully_loaded_cost": 19.87,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3622,7 +3622,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.92,
+    "fully_loaded_cost": 22.15,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3671,7 +3671,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.99,
+    "fully_loaded_cost": 22.28,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3720,7 +3720,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.01,
+    "fully_loaded_cost": 22.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3769,7 +3769,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.93,
+    "fully_loaded_cost": 22.16,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3818,7 +3818,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.99,
+    "fully_loaded_cost": 22.28,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3867,7 +3867,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.01,
+    "fully_loaded_cost": 22.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3916,7 +3916,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.96,
+    "fully_loaded_cost": 22.22,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -3965,7 +3965,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.98,
+    "fully_loaded_cost": 22.26,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4014,7 +4014,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.0,
+    "fully_loaded_cost": 22.3,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4063,7 +4063,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.92,
+    "fully_loaded_cost": 22.15,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4112,7 +4112,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.0,
+    "fully_loaded_cost": 22.28,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4161,7 +4161,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.02,
+    "fully_loaded_cost": 22.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4210,7 +4210,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 21.93,
+    "fully_loaded_cost": 22.16,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4259,7 +4259,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.0,
+    "fully_loaded_cost": 22.28,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4308,7 +4308,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 22.02,
+    "fully_loaded_cost": 22.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4357,7 +4357,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.18,
+    "fully_loaded_cost": 27.34,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4406,7 +4406,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.08,
+    "fully_loaded_cost": 27.15,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4455,7 +4455,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.22,
+    "fully_loaded_cost": 27.42,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4504,7 +4504,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.08,
+    "fully_loaded_cost": 27.16,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4553,7 +4553,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.27,
+    "fully_loaded_cost": 27.52,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4602,7 +4602,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.28,
+    "fully_loaded_cost": 27.54,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4651,7 +4651,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.18,
+    "fully_loaded_cost": 27.35,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4700,7 +4700,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.32,
+    "fully_loaded_cost": 27.62,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4749,7 +4749,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.18,
+    "fully_loaded_cost": 27.36,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4798,7 +4798,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.38,
+    "fully_loaded_cost": 27.72,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4847,7 +4847,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.76,
+    "fully_loaded_cost": 26.56,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4896,7 +4896,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.66,
+    "fully_loaded_cost": 26.37,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4945,7 +4945,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.8,
+    "fully_loaded_cost": 26.64,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -4994,7 +4994,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.66,
+    "fully_loaded_cost": 26.38,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5043,7 +5043,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.85,
+    "fully_loaded_cost": 26.73,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5092,7 +5092,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.86,
+    "fully_loaded_cost": 26.76,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5141,7 +5141,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.76,
+    "fully_loaded_cost": 26.57,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5190,7 +5190,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.91,
+    "fully_loaded_cost": 26.84,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5239,7 +5239,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.77,
+    "fully_loaded_cost": 26.58,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5288,7 +5288,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.96,
+    "fully_loaded_cost": 26.93,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5337,7 +5337,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.94,
+    "fully_loaded_cost": 26.9,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5386,7 +5386,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.84,
+    "fully_loaded_cost": 26.71,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5435,7 +5435,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.98,
+    "fully_loaded_cost": 26.98,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5484,7 +5484,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.84,
+    "fully_loaded_cost": 26.71,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5533,7 +5533,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.02,
+    "fully_loaded_cost": 27.06,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5582,7 +5582,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.04,
+    "fully_loaded_cost": 27.1,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5631,7 +5631,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.94,
+    "fully_loaded_cost": 26.9,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5680,7 +5680,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.09,
+    "fully_loaded_cost": 27.17,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5729,7 +5729,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.94,
+    "fully_loaded_cost": 26.91,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5778,7 +5778,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.13,
+    "fully_loaded_cost": 27.26,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5827,7 +5827,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.15,
+    "fully_loaded_cost": 27.3,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5876,7 +5876,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.06,
+    "fully_loaded_cost": 27.12,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5925,7 +5925,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.2,
+    "fully_loaded_cost": 27.39,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -5974,7 +5974,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.06,
+    "fully_loaded_cost": 27.12,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6023,7 +6023,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.25,
+    "fully_loaded_cost": 27.47,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6072,7 +6072,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.27,
+    "fully_loaded_cost": 27.51,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6121,7 +6121,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.17,
+    "fully_loaded_cost": 27.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6170,7 +6170,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.15,
+    "fully_loaded_cost": 25.42,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6219,7 +6219,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.17,
+    "fully_loaded_cost": 27.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6268,7 +6268,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.35,
+    "fully_loaded_cost": 27.66,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6317,7 +6317,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.65,
+    "fully_loaded_cost": 26.36,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6366,7 +6366,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.8,
+    "fully_loaded_cost": 26.63,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6415,7 +6415,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.65,
+    "fully_loaded_cost": 26.36,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6464,7 +6464,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.84,
+    "fully_loaded_cost": 26.7,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6513,7 +6513,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.86,
+    "fully_loaded_cost": 26.74,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6562,7 +6562,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.76,
+    "fully_loaded_cost": 26.55,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6611,7 +6611,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.9,
+    "fully_loaded_cost": 26.82,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6660,7 +6660,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.76,
+    "fully_loaded_cost": 26.55,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6709,7 +6709,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.95,
+    "fully_loaded_cost": 26.91,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6758,7 +6758,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.87,
+    "fully_loaded_cost": 26.76,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6807,7 +6807,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.01,
+    "fully_loaded_cost": 27.03,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6856,7 +6856,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.87,
+    "fully_loaded_cost": 26.76,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6905,7 +6905,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.05,
+    "fully_loaded_cost": 27.11,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -6954,7 +6954,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.07,
+    "fully_loaded_cost": 27.14,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7003,7 +7003,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.97,
+    "fully_loaded_cost": 26.95,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7052,7 +7052,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.12,
+    "fully_loaded_cost": 27.22,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7101,7 +7101,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.97,
+    "fully_loaded_cost": 26.95,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7150,7 +7150,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 26.16,
+    "fully_loaded_cost": 27.3,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7199,7 +7199,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.8,
+    "fully_loaded_cost": 26.63,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7248,7 +7248,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.84,
+    "fully_loaded_cost": 26.71,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7297,7 +7297,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.86,
+    "fully_loaded_cost": 26.75,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7346,7 +7346,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 25.76,
+    "fully_loaded_cost": 26.57,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7395,7 +7395,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 36.46,
+    "fully_loaded_cost": 37.63,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7444,7 +7444,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 36.04,
+    "fully_loaded_cost": 36.85,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7493,7 +7493,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 36.09,
+    "fully_loaded_cost": 36.94,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7542,7 +7542,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 35.95,
+    "fully_loaded_cost": 36.68,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7591,7 +7591,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 36.14,
+    "fully_loaded_cost": 37.02,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7640,7 +7640,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 36.06,
+    "fully_loaded_cost": 36.87,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7689,7 +7689,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 39.98,
+    "fully_loaded_cost": 40.7,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7738,7 +7738,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.13,
+    "fully_loaded_cost": 40.97,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7787,7 +7787,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 39.99,
+    "fully_loaded_cost": 40.7,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7836,7 +7836,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.17,
+    "fully_loaded_cost": 41.04,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7885,7 +7885,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.19,
+    "fully_loaded_cost": 41.08,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7934,7 +7934,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.09,
+    "fully_loaded_cost": 40.89,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -7983,7 +7983,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.23,
+    "fully_loaded_cost": 41.16,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8032,7 +8032,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.09,
+    "fully_loaded_cost": 40.9,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8081,7 +8081,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.28,
+    "fully_loaded_cost": 41.25,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8130,7 +8130,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.2,
+    "fully_loaded_cost": 41.1,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8179,7 +8179,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.34,
+    "fully_loaded_cost": 41.37,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8228,7 +8228,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.2,
+    "fully_loaded_cost": 41.1,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8277,7 +8277,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.38,
+    "fully_loaded_cost": 41.44,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8326,7 +8326,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.41,
+    "fully_loaded_cost": 41.48,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8375,7 +8375,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.3,
+    "fully_loaded_cost": 41.29,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8424,7 +8424,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.46,
+    "fully_loaded_cost": 41.57,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8473,7 +8473,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.32,
+    "fully_loaded_cost": 41.31,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8522,7 +8522,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 40.5,
+    "fully_loaded_cost": 41.65,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8571,7 +8571,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 43.48,
+    "fully_loaded_cost": 44.4,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8620,7 +8620,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 43.8,
+    "fully_loaded_cost": 44.99,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8669,7 +8669,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.42,
+    "fully_loaded_cost": 53.6,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8718,7 +8718,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 47.41,
+    "fully_loaded_cost": 51.72,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8767,7 +8767,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.42,
+    "fully_loaded_cost": 53.61,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8816,7 +8816,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.6,
+    "fully_loaded_cost": 53.95,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8865,7 +8865,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.62,
+    "fully_loaded_cost": 53.99,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8914,7 +8914,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.52,
+    "fully_loaded_cost": 53.8,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -8963,7 +8963,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 47.51,
+    "fully_loaded_cost": 51.92,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9012,7 +9012,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.53,
+    "fully_loaded_cost": 53.81,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9061,7 +9061,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 48.71,
+    "fully_loaded_cost": 54.16,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9110,7 +9110,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.48,
+    "fully_loaded_cost": 57.86,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9159,7 +9159,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.47,
+    "fully_loaded_cost": 55.97,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9208,7 +9208,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.48,
+    "fully_loaded_cost": 57.86,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9257,7 +9257,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.67,
+    "fully_loaded_cost": 58.2,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9306,7 +9306,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.69,
+    "fully_loaded_cost": 58.24,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9355,7 +9355,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.59,
+    "fully_loaded_cost": 58.05,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9404,7 +9404,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.58,
+    "fully_loaded_cost": 56.17,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9453,7 +9453,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.59,
+    "fully_loaded_cost": 58.06,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9502,7 +9502,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.77,
+    "fully_loaded_cost": 58.4,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9551,7 +9551,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.7,
+    "fully_loaded_cost": 58.27,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9600,7 +9600,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.89,
+    "fully_loaded_cost": 58.61,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9649,7 +9649,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.91,
+    "fully_loaded_cost": 58.65,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9698,7 +9698,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.81,
+    "fully_loaded_cost": 58.47,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9747,7 +9747,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 53.0,
+    "fully_loaded_cost": 58.82,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9796,7 +9796,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 52.93,
+    "fully_loaded_cost": 58.68,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9845,7 +9845,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 53.11,
+    "fully_loaded_cost": 59.02,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9894,7 +9894,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 53.13,
+    "fully_loaded_cost": 59.06,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9943,7 +9943,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 53.06,
+    "fully_loaded_cost": 58.94,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -9992,7 +9992,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 53.25,
+    "fully_loaded_cost": 59.28,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10041,7 +10041,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.27,
+    "fully_loaded_cost": 55.59,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10090,7 +10090,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.45,
+    "fully_loaded_cost": 55.93,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10139,7 +10139,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.48,
+    "fully_loaded_cost": 55.97,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10188,7 +10188,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.38,
+    "fully_loaded_cost": 55.79,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10237,7 +10237,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.56,
+    "fully_loaded_cost": 56.13,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10286,7 +10286,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 50.45,
+    "fully_loaded_cost": 54.05,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10335,7 +10335,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 51.46,
+    "fully_loaded_cost": 55.94,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10384,7 +10384,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.26,
+    "fully_loaded_cost": 60.9,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10433,7 +10433,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.28,
+    "fully_loaded_cost": 60.94,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10482,7 +10482,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.18,
+    "fully_loaded_cost": 60.75,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10531,7 +10531,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 55.17,
+    "fully_loaded_cost": 58.87,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10580,7 +10580,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.19,
+    "fully_loaded_cost": 60.76,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10629,7 +10629,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.37,
+    "fully_loaded_cost": 61.1,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10678,7 +10678,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.29,
+    "fully_loaded_cost": 60.96,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10727,7 +10727,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 55.28,
+    "fully_loaded_cost": 59.07,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10776,7 +10776,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.29,
+    "fully_loaded_cost": 60.96,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10825,7 +10825,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.48,
+    "fully_loaded_cost": 61.3,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10874,7 +10874,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.5,
+    "fully_loaded_cost": 61.34,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10923,7 +10923,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.4,
+    "fully_loaded_cost": 61.15,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -10972,7 +10972,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 55.39,
+    "fully_loaded_cost": 59.27,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11021,7 +11021,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.54,
+    "fully_loaded_cost": 61.41,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11070,7 +11070,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 56.76,
+    "fully_loaded_cost": 61.83,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11119,7 +11119,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 57.09,
+    "fully_loaded_cost": 62.43,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11168,7 +11168,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 108.38,
+    "fully_loaded_cost": 114.05,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11217,7 +11217,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 63.47,
+    "fully_loaded_cost": 69.45,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11266,7 +11266,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 99.82,
+    "fully_loaded_cost": 123.29,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11315,7 +11315,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 98.81,
+    "fully_loaded_cost": 121.4,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11364,7 +11364,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 100.01,
+    "fully_loaded_cost": 123.64,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11413,7 +11413,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 99.93,
+    "fully_loaded_cost": 123.49,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11462,7 +11462,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 112.13,
+    "fully_loaded_cost": 135.77,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11511,7 +11511,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 129.63,
+    "fully_loaded_cost": 153.72,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11560,7 +11560,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 130.02,
+    "fully_loaded_cost": 154.45,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11609,7 +11609,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 130.04,
+    "fully_loaded_cost": 154.49,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11658,7 +11658,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 129.92,
+    "fully_loaded_cost": 154.27,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11707,7 +11707,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 155.59,
+    "fully_loaded_cost": 180.13,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11756,7 +11756,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 155.47,
+    "fully_loaded_cost": 179.91,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11805,7 +11805,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 155.66,
+    "fully_loaded_cost": 180.26,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11854,7 +11854,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 240.39,
+    "fully_loaded_cost": 338.41,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11903,7 +11903,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 240.3,
+    "fully_loaded_cost": 338.23,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -11952,7 +11952,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 239.27,
+    "fully_loaded_cost": 336.32,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12001,7 +12001,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 240.27,
+    "fully_loaded_cost": 338.19,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12050,7 +12050,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 240.43,
+    "fully_loaded_cost": 338.48,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12099,7 +12099,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 240.44,
+    "fully_loaded_cost": 338.51,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12148,7 +12148,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 240.39,
+    "fully_loaded_cost": 338.41,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12197,7 +12197,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 282.98,
+    "fully_loaded_cost": 381.14,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12246,7 +12246,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 282.93,
+    "fully_loaded_cost": 381.05,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12295,7 +12295,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 283.05,
+    "fully_loaded_cost": 381.27,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12344,7 +12344,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 282.98,
+    "fully_loaded_cost": 381.13,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12393,7 +12393,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 283.19,
+    "fully_loaded_cost": 381.54,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12442,7 +12442,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 283.23,
+    "fully_loaded_cost": 381.61,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12491,7 +12491,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 368.13,
+    "fully_loaded_cost": 466.56,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12540,7 +12540,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 368.23,
+    "fully_loaded_cost": 466.74,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12589,7 +12589,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 368.1,
+    "fully_loaded_cost": 466.5,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12638,7 +12638,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 368.1,
+    "fully_loaded_cost": 466.5,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12687,7 +12687,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 368.3,
+    "fully_loaded_cost": 466.85,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12736,7 +12736,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 2449.62,
+    "fully_loaded_cost": 4278.45,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12785,7 +12785,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 2449.79,
+    "fully_loaded_cost": 4278.77,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12834,7 +12834,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 2449.8,
+    "fully_loaded_cost": 4278.79,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12883,7 +12883,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 2619.4,
+    "fully_loaded_cost": 4448.28,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
@@ -12932,7 +12932,7 @@
     "failed_conditions": [
       "economic_passport"
     ],
-    "fully_loaded_cost": 2619.49,
+    "fully_loaded_cost": 4448.46,
     "human_followup_minutes": null,
     "manual_minutes": null,
     "marginal_cost": 0.0,
