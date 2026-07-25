@@ -188,10 +188,10 @@ Economics is deliberately downstream from `analyze` and accepts:
 Passports may target `cluster`, `known_use_case`, or `category`. A missing or
 abstained passport produces `INSUFFICIENT_EVIDENCE`; values are not invented.
 
-The passport field `manual_minutes` means the likely baseline process without
-the agent platform. It may describe fully manual work, ordinary web AI, an
-existing automation, asking a colleague, reduced scope, or a task that would
-not be done. The exact route is recorded with:
+The passport field `manual_minutes` means expected manual/organizational effort
+without the agent platform: reading, searching, moving data between systems,
+Excel work, checking and preparing the final answer. The exact route is
+recorded with:
 
 | Field | Type | Notes |
 |---|---|---|

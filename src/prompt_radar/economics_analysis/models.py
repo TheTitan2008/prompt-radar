@@ -16,11 +16,7 @@ BaselineEvidenceSource = Literal[
 ]
 BaselineType = Literal[
     "baseline_manual",
-    "baseline_web_ai",
-    "baseline_automation",
     "baseline_colleague",
-    "baseline_not_done",
-    "baseline_reduced_scope",
 ]
 TargetType = Literal["cluster", "known_use_case", "category"]
 

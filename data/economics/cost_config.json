@@ -27,6 +27,6 @@
   "minimum_proven_coverage": 0.5,
   "minimum_economic_classification_margin": 0.05,
   "high_risk_threshold": 0.8,
-  "simple_automation_manual_minutes": 15,
+  "simple_automation_manual_minutes": 0,
   "excessive_context_tokens": 50000
 }

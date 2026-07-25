@@ -2,8 +2,8 @@
 
 ## Economics baseline additions
 
-- `manual_minutes` is the likely non-agent baseline process, not necessarily
-  fully manual work from zero.
+- `manual_minutes` is expected manual/organizational work without the agent
+  platform.
 - Baseline source is explicit: `MODEL_ESTIMATE`, `EXPERT_REVIEWED`,
   `PROCESS_OWNER_APPROVED`, or `MEASURED`.
 - Proven ROI requires a measured or process-owner-approved baseline plus

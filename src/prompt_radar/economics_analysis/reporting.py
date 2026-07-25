@@ -237,7 +237,7 @@ def build_economics_report(
             "## Interpretation limits",
             "",
             "- Potential ROI uses q=1 and is not observed quality.",
-            "- `manual_minutes` means the most likely process without the agent platform, not necessarily fully manual work from zero.",
+            "- `manual_minutes` means expected manual/organizational work without the agent platform.",
             "- `MODEL_ESTIMATE` baselines are potential-only; proven economics requires MEASURED or PROCESS_OWNER_APPROVED baseline evidence plus sufficient quality coverage.",
             "- Repeated runs inside one business_task_episode count value once and cost every attempt.",
             "- Unknown-value runs stay in platform cost and reduce conservative ROI.",

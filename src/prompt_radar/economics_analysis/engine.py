@@ -115,7 +115,7 @@ def _adjustment_factors(row: dict[str, Any]) -> tuple[dict[str, float], list[str
     goal = str(row.get("current_goal") or "")
     token_value = float(tokens) if isinstance(tokens, (int, float)) else len(goal) / 4
     if token_value < 250:
-        size_label, size_factor = "small", 0.6
+        size_label, size_factor = "small", 1.0
     elif token_value < 4000:
         size_label, size_factor = "medium", 1.0
     elif token_value < 50000:
@@ -132,7 +132,7 @@ def _adjustment_factors(row: dict[str, Any]) -> tuple[dict[str, float], list[str
         float(attachment_tokens) if isinstance(attachment_tokens, (int, float)) else 0
     )
     if attachment_count == 0 and attachment_token_value == 0:
-        attachment_label, attachment_factor = "no_attachments", 0.8
+        attachment_label, attachment_factor = "no_attachments", 1.0
     elif attachment_count <= 1 and attachment_token_value < 8000:
         attachment_label, attachment_factor = "one_simple_file", 1.0
     elif attachment_count <= 4 and attachment_token_value < 50000:
@@ -159,7 +159,7 @@ def _adjustment_factors(row: dict[str, Any]) -> tuple[dict[str, float], list[str
     elif any(word in goal_lower for word in ("несколько", "шаг", "потом", "сначала")):
         complexity_label, complexity_factor = "multi_step", 1.5
     else:
-        complexity_label, complexity_factor = "simple_lookup", 0.7
+        complexity_label, complexity_factor = "simple_lookup", 1.0
 
     return (
         {
@@ -282,8 +282,6 @@ def _status(
         return "POTENTIALLY_INEFFECTIVE", "BASE отрицателен, но диапазон пересекает ноль.", []
     if q_base is not None and q_base >= config.high_risk_threshold:
         return "HIGH_RISK", "Требуемое качество близко к 100%.", []
-    if manual_base is not None and manual_base <= config.simple_automation_manual_minutes and base["net_value"] < 0:
-        return "USE_SIMPLE_AUTOMATION", "Малое ручное время при непропорциональной стоимости.", []
     if base["saved_minutes"] > 0 and base["net_value"] < 0:
         return "OPTIMIZE_COST", "Экономия времени положительна, но стоимость уничтожает ROI.", []
     if (
@@ -868,7 +866,6 @@ def _recommendations(status: str, missing: list[str]) -> list[str]:
     mapping = {
         "OPTIMIZE_COST": "Снизить стоимость модели, инструментов или число вызовов.",
         "HIGH_RISK": "Повысить качество и проверить сценарий на большей выборке.",
-        "USE_SIMPLE_AUTOMATION": "Сравнить агент с простым скриптом или правилом.",
         "IMPOSSIBLE_TO_BREAK_EVEN": "Пересмотреть baseline, стоимость и границы сценария.",
         "INCONCLUSIVE": "Увеличить проверенную выборку и провести E2/E3 сравнение.",
     }

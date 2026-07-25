@@ -13,10 +13,9 @@ endpoint.
 The separate `economics` layer calculates evidence-aware potential and proven
 economics from an existing analysis directory. It never calls an API.
 
-Economics treats `manual_minutes` as the most likely process without the
-agent platform: manual work, ordinary web AI, Excel, an existing script, a
-colleague, reduced scope or a task that would not be done. It is not
-automatically "work fully by hand from zero".
+Economics treats `manual_minutes` as the expected manual/organizational effort
+to complete the business task without the agent platform: reading, searching,
+copying between systems, Excel work, checking and preparing the final answer.
 
 ## Why the unit of analysis is `run_id`
 
@@ -449,7 +448,7 @@ What to say:
 - the model now also exposes token economics and FTE-based value;
 - the statistics report shows totals, request types and per-person usage;
 - these are sensitivity results unless prompt effort and quality are measured.
-- baseline is now the likely non-agent process, not always "fully manual";
+- baseline is expected manual/organizational work without the agent platform;
 - unknown-value requests stay in the cost denominator.
 
 4. If asked about “what happens on another dataset”:

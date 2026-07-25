@@ -1,21 +1,19 @@
 # Economics Baseline and Episodes
 
-This note explains the second economics layer additions that protect Prompt
-Radar from overstating ROI.
+This note explains the second economics layer additions that keep Prompt Radar
+auditable while preserving a clear demo interpretation of ROI.
 
 ## Baseline
 
-`manual_minutes` means the most likely process without the agent platform. It
-does not automatically mean fully manual work from zero.
+`manual_minutes` means the expected manual/organizational effort to complete
+the business task without the agent platform: reading source materials,
+searching internal systems, moving data between tools, Excel work, checking and
+preparing the final answer.
 
 Supported baseline routes:
 
 - `baseline_manual`
-- `baseline_web_ai`
-- `baseline_automation`
 - `baseline_colleague`
-- `baseline_not_done`
-- `baseline_reduced_scope`
 
 Every baseline carries `baseline_evidence_source`:
 
@@ -51,7 +49,9 @@ The run ledger stores:
 Factors are derived from already available analysis data: prompt length,
 token count, attachment count and volume, long-context signals, multi-goal
 signals, category and known-use-case hints. Weak inputs are recorded as
-assumptions.
+assumptions. In the demo configuration factors do not reduce a normal task
+below the passport baseline; they mainly increase the baseline for larger,
+file-heavy or multi-step tasks.
 
 ## Business Task Episodes
 
